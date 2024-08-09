@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on The Arboreal Repository</title>
+    <link>https://hedeenza.github.io/arborealrepository/tags/r/</link>
+    <description>Recent content in R on The Arboreal Repository</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS: Break It to Learn It - Day 1</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
+      <description>Building a Blogdown Site Learning by Breaking </description>
+    </item>
+  </channel>
+</rss>

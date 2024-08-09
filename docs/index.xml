@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Arboreal Repository</title>
+    <link>https://hedeenza.github.io/arborealrepository/</link>
+    <description>Recent content on The Arboreal Repository</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hedeenza.github.io/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fig Balsamic Dressing</title>
+      <link>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</link>
+      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</guid>
+      <description>Ingredients Yields 2 Cups&#xD;Ingredient Amount Soaked Black Mission Figs 10 Balsamic Vinegar 1/3 Cup Olive Oil 1 Cup Black Pepper 1/2 tsp Salt 1 tsp Lemon Juice 1 tsp Dijon Mustard 1 Tbsp Preparation Pre-soak Black Mission Figs in 1 cup of water for 2 hours, then reserve the water for later.&#xA;Blend all ingredients until smooth, starting slow and adding reserved water if necessary.&#xA;Should be creamy and thick.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://hedeenza.github.io/arborealrepository/about/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/about/</guid>
+      <description>Recent Realizations At the time of writing I&amp;rsquo;m only a little more than 4 months into coding, but I&amp;rsquo;m learning a lot quickly. I started with a one-day, six-hour workshop with the University of Oregon data services department covering basic R in late March. The skills I learned in that workshop served as the foundation for data processing that amplified my primary career. From there I learned to make a basic website to showcase a resume and basic portfolio pieces.</description>
+    </item>
+    <item>
+      <title>&#34;The Arboreal Repository&#34;</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
+      <description>Recent Realizations I&amp;rsquo;m only 3 months into coding, but I&amp;rsquo;m learning a lot quickly R resume website then linux commands accidentally then SQL then Python out of need blogdown website&#xA;Title Meaning Repository - a safe place to store and retrieve information&#xA;arboreal - like a tree, I&amp;rsquo;m not perfect and am going to make mistakes and not do things perfectly. better to log while I&amp;rsquo;m going through it and not in hind-site.</description>
+    </item>
+    <item>
+      <title>CSS: Break It to Learn It - Day 1</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
+      <description>Building a Blogdown Site Learning by Breaking </description>
+    </item>
+    <item>
+      <title>further test</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/further-test/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/further-test/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>project test </title>
+      <link>https://hedeenza.github.io/arborealrepository/projects/project-test/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/projects/project-test/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>what will it take?</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/07/20/what-will-it-take/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/07/20/what-will-it-take/</guid>
+      <description>this is a new test of everything</description>
+    </item>
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://hedeenza.github.io/arborealrepository/2020/12/01/hello-r-markdown/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2020/12/01/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.&#xA;You can embed an R code chunk like this:&#xA;summary(cars)&#xD;## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    <item>
+      <title>A Plain Markdown Post</title>
+      <link>https://hedeenza.github.io/arborealrepository/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2016/12/30/a-plain-markdown-post/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&#xA;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc. There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+    </item>
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://hedeenza.github.io/arborealrepository/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2015/01/01/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+  </channel>
+</rss>
