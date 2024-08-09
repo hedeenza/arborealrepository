@@ -1,0 +1,55 @@
+baseurl: /
+languageCode: en-US
+title: The Arboreal Repository
+description: this is a description
+theme: hugo-lithium
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+permalinks:
+  post: /:year/:month/:day/:slug/
+menu:
+  main:
+    - name: About
+      url: /about/
+      weight: 1
+    - name: Projects
+      url: /projects/
+      weight: 2
+    - name: Recipes
+      url: /recipes/
+      weight: 3
+    - name: GitHub
+      url: https://github.com/hedeenza
+      weight: 4
+    - name: Twitter
+      url: https://twitter.com/rstudio
+      icon: fas fa-band-aid
+      weight: 5
+    - icon: fa-github fa-2x
+      href: https://github.com/hedeenza
+      weight: 6
+params:
+  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
+  MathJaxVersion: 2.7.5
+  description: A website built through Hugo and blogdown.
+  favicon: ar-icon.ico
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 9.12.0
+  logo:
+    alt:
+    height: 
+    url: miquella.png
+    width: 150
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: yes
+  highlight:
+    codeFences: no
