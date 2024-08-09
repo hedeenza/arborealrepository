@@ -1,0 +1,30 @@
+---
+title: New live test
+author: Zach Hedeen
+date: '2024-08-09'
+slug: new-live-test
+categories:
+  - Git
+tags:
+  - Git
+  - Blogdown
+  - R
+---
+
+# We made it!
+
+&emsp; If you're reading this, it means that the site is live. As a beginner, I ran into many challenges that will likely give my later self a good laugh. Adding the .nojekyll file and adding the "publishDir: docs" line to the config.yaml seem to have done the trick in getting this live. 
+
+&emsp; Now that it's live, I need to test updating the content. My first attempt will be the following steps:
+
+1. (Using R Studio) Addins - Serve Site (to automatially knit new content)
+1. (Using R Studio) Addins - New Post
+2. Build Website (under the build tab next to the environment tab)
+3. Open Git BASH
+4. Navigate to the local directory containing my website
+4. git add docs
+5. git commit -m "my update message"
+6. git push 
+7. Hope it all worked!
+
+Note: it seems my previous _site.yaml was overriding the config.yaml and preventing site layout updates. I've removed the _site.yaml and the config.yaml seems to be functioning now.
