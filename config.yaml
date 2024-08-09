@@ -1,4 +1,5 @@
 baseurl: https://hedeenza.github.io/arborealrepository/
+publishDir: docs
 languageCode: en-US
 title: The Arboreal Repository
 description: this is a description
