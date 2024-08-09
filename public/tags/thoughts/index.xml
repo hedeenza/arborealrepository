@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on The Arboreal Repository</title>
+    <link>//localhost:4321/tags/thoughts/</link>
+    <description>Recent content in Thoughts on The Arboreal Repository</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:4321/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#34;The Arboreal Repository&#34;</title>
+      <link>//localhost:4321/2024/07/23/the-arboreal-repository/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/2024/07/23/the-arboreal-repository/</guid>
+      <description>Recent Realizations I&amp;rsquo;m only 3 months into coding, but I&amp;rsquo;m learning a lot quickly R resume website then linux commands accidentally then SQL then Python out of need blogdown website&#xA;Title Meaning Repository - a safe place to store and retrieve information&#xA;arboreal - like a tree, I&amp;rsquo;m not perfect and am going to make mistakes and not do things perfectly. better to log while I&amp;rsquo;m going through it and not in hind-site.</description>
+    </item>
+  </channel>
+</rss>
