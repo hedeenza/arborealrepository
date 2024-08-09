@@ -1,0 +1,48 @@
+---
+title: "About"
+author: "Zach Hedeen"
+date: "2024-08-08"
+output: html_document
+---
+
+
+
+# Recent Realizations
+
+&emsp; At the time of writing I'm only a little more than 4 months into coding, but I'm learning a lot quickly. I started with a one-day, six-hour workshop with the University of Oregon [data services department](https://dataservices.uoregon.edu/) covering basic R in late March. The skills I learned in that workshop served as the foundation for data processing that amplified my primary career. From there I learned to make a basic website to showcase a resume and basic portfolio pieces.  
+
+&emsp; Many job listings for data positions express a need for SQL knowledge, so I began a [Coursera.org](https://www.coursera.org/) listing that covered basic [Linux and SQL.](https://www.coursera.org/learn/linux-and-sql) The Linux half of the course got me interested enough in Linux I set up the Windows Subsystem for Linux (WSL). Between Linux and PowerShell, I have learned several functions that have aided in many projects since. Needing more SQL I began the [SQL for Data Science](https://www.coursera.org/learn/sql-for-data-science) course from UC Davis on Coursera. 
+
+&emsp; While R and the Command Line tools covered much of the functionality I needed, Python seemed to be the proper tool for some emergent projects. I began my learning with the Software Carpentry [Python Course](https://swcarpentry.github.io/python-novice-inflammation/)
+
+&emsp; There is still much I need to learn across each language I've learned and several I haven't. While I've collected several useful resources, because they are neither distilled nor centralized much is getting lost. That realization sparked the memory of a line from Critical Role - Exandria Unlimited: Calamity, where Marisha Ray as Patia Por'co says: 
+
+> "You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."
+
+&emsp; That caused me a weird sense of dread. I'm not sure whether starting a website with `{blogdown}` is the most logical response to that feeling, but it does address some of my main worries:
+
+- The things I learn can be useful to someone other than me, even after I die.  
+- I'm still so new to coding, some record of my growth as its happening may be particularly useful, rather than going back and reflecting on it after I've gained some semblance of skill. 
+- Chance (likely) won't destroy the library.
+
+
+# Title Meaning 
+
+> **Arboreal** *(adj) - "of or relating to or formed by trees"* 
+
+&emsp; This site will grow over time. I'm not perfect and I am going to make mistakes and do things sub-optimally, but that's part of the point. Those imperfections will be useful to me one day, and they may be useful to someone else some day too. 
+
+> **Repository** *(n) - "a facility where things can be deposited for storage or safekeeping."*
+
+&emsp; The material on this site will theoretically be safe. A computer bricking itself, a fire, or a mistyped command won't destroy the records for all time.
+
+# Goals of this Site
+
+&emsp; As I learn cool things, I'll write about it here. 
+
+&emsp; Any projects of portfolio pieces will go here. It's much easier to update a blogdown site than a simple website in RMarkdown. 
+
+&emsp; Skills that have been useful to my journey will go here, rather than getting lost in the endless list of bookmarks and videos on my "Watch Later" playlist. 
+
+&emsp; Writing about something is an excellent way to learn about something, discussed [here.](https://youtu.be/lML0ndFlBuc?si=S61iDQhxRSrsA29n) Hopefully writing about what I learn will aid in its understanding. 
+
