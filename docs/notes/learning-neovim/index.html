@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Learning Neovim (pt. 1) - The Arboreal Repository</title>
+<meta property="og:title" content="Learning Neovim (pt. 1) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Learning Neovim (pt. 1)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <h1 id="sidestepping-the-roadblock">Sidestepping the Roadblock&hellip;</h1>
+<p>  While attempting to work through Git BASH yesterday to get this site set up, I got Trapped in Vim™, which is apparently a very normal experience for beginners:</p>
+<div style = "float:left; position:relative; width: 38.2%; right: 10px; top: 0px;">
+<img src="exit-vim-meme.png" width="360" />
+</div>
+<p>  After trying what felt like everything that made sense and caving in to my impatience in the moment, I closed the window and learned how to change the default editor in Git Bash and <a href="https://stackoverflow.com/questions/13257519/how-to-change-the-default-editor-for-git">set it to nano</a>:</p>
+<pre><code>git config --global core.editor &quot;nano&quot;
+</code></pre>
+<p>That way I would be able to type my commit messages and progress. Moments later I learned you can bypass the need for an editor in this step <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">with the -m option</a>, rendering this change unnecessary:</p>
+<pre><code>git commit -m &quot;my message for this commit&quot;
+</code></pre>
+<p>  But that left me feeling like there was a missed opportunity to learn a potentially valuable tool. I&rsquo;d heard that Vim was a &ldquo;love-it-or-hate-it&rdquo; editor that could be incredibly powerful, but only after a lot of headache. The more I sat with it, the more that sounded like exactly the type of challenge I crave.</p>
+<h1 id="-only-to-go-back">&hellip; Only to Go Back</h1>
+<p>  I&rsquo;ve decided to work with Neovim because it sounds like it&rsquo;s Vim but with some added features and quality of life updates. To get Neovim installed on the WSL (Windows Subsystem for Linux), I ran an update, then installed Neovim:</p>
+<pre><code>wsl sudo apt update 
+
+wsl sudo apt install neovim
+
+wsl neovim
+</code></pre>
+<div style = "float:right; position:relative; width: 38.2%; right: 10px; top: 0px;">
+<img src="neovim-intro.png" width="358" />
+&emsp; The Neovim intro page.
+</div>
+<p>  After being greeted by the intro page, which I&rsquo;ve learned you can open at any time with &ldquo;:intro<Enter>&rdquo;, I saw that there&rsquo;s a section right at the top for beginners. PERFECT. For some reason my gut reaction to seeing &ldquo;:&rdquo; is that it&rsquo;s indicative of a command but does not require any particular action by the user. For Vim though, you actually need to type &ldquo;:&rdquo; in order to make those commands happen. Before committing to a tutorial I checked out the help page:</p>
+<div style = "float:left; position:relative; width: 38.2%; right: 10px; top: 0px;">
+<img src="neovim-help.png" width="494" />
+</div>
+<p>  It&rsquo;s going to take some time to adjust to learning to move the cursor with the h, j, k, and l keys. But the real gold of this page is learning how to exit the page &ldquo;:q&rdquo; or exit vim entirely &ldquo;:qa!&rdquo;. I&rsquo;ll never be trapped again.</p>
+<div style = "float:right; position:relative; width: 38.2%; right: 10px; top: 0px;">
+<img src="neovim-new-here.png" width="474" />
+</div>
+<p>  I wasn&rsquo;t a Vim user, but I am now, so I didn&rsquo;t require any of the functions to transfer from Vim to Neovim. But I spotted an option for a Tutorial for those new to Vim which could be accessed with &ldquo;:Tutor<Enter>&rdquo;. The core contents of that tutorial will be the subject of my next post about Neovim.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+
