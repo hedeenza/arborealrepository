@@ -1,0 +1,83 @@
+---
+title: 'SQL: Zero to Advanced pt. 1'
+author: "Zach Hedeen"
+date: "2024-08-09"
+slug: "sql-zero-to-advanced-pt-1"
+categories: Learning
+tags:
+- Coding
+- SQL
+- Notes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F, warning = F)
+library(tidyverse)
+library(kableExtra)
+```
+
+*materials by Bosscoder Academy, found on LinkedIn*
+
+# Format
+
+&emsp; The materials are sorted into 24 "days" of learning, each with a central theme. My goal is to break them into 3 posts, 8 "days" each, with a distillation of the already brief material in each section as a review of SQL. 
+
+# 1. Introduction to SQL and Relational Databases 
+
+## 1.1 Content
+
+**SELECT** -
+
+**INSERT** -
+
+**UPDATE** -
+
+**DELETE** -
+
+## 1.2 Practice Questions
+```{r}
+practice_1 <- tribble(
+  ~Question, ~Answer,
+  'Write a SQL query to insert a new record into the "employees" table', 'Answer',
+  'Write a SQL query to update the "quantity" column of the "products" table to 10 where the "product_id" is 5.', 'answer',
+  'Write a SQL query to delete all records from the "orders" able where the "status" is "cancelled"', "ans"
+)
+
+knitr::kable(practice_1, align = "l") |>
+  kable_styling(full_width = T) |>
+  column_spec(1, width = '50%') |>
+  row_spec(0, align = 'c')
+
+```
+
+
+# 2. Introduction to SQL and Relational Databases 
+
+## 2.1 Content
+
+**SELECT** - Determines which columns will be displayed. Use * to select all available columns
+
+**INSERT** -
+
+**UPDATE** -
+
+**DELETE** -
+
+## 2.2 Practice Questions
+```{r}
+practice_2 <- tribble(
+  ~Question, ~Answer,
+  'Write a SQL query to insert a new record into the "employees" table', 'Answer \n test of concept test again',
+  'Write a SQL query to update the "quantity" column of the "products" table to 10 where the "product_id" is 5.', 'answer',
+  'Write a SQL query to delete all records from the "orders" able where the "status" is "cancelled"', "ans"
+)
+
+knitr::kable(practice_1, align = "l") |>
+  kable_styling(full_width = T) |>
+  column_spec(1, width = '50%') |>
+  row_spec(0, align = 'c')
+
+```
+
+
+

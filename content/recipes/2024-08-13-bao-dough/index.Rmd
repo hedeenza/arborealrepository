@@ -1,0 +1,59 @@
+---
+title: Bao Dough
+author: B
+date: '2024-08-13'
+slug: bao-dough
+categories:
+  - Bao
+tags:
+  - Bread
+  - Dough
+  - Bao
+  - Revenge
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+library(kableExtra)
+```
+
+by B
+
+# Ingredients
+
+```{r}
+ingredients <- 
+  tribble(
+    ~Ingredient, ~Amount,
+    'Water ~Body Temperature', '236 g',
+    'Yeast', "6 g",
+    'Flour', '381 g',
+    'Cornstarch', '78 g',
+    'Sugar', '70 g',
+    'Salt', '12 g',
+    'Pork fat OR Butter', '2 Tbsp'
+  )
+
+knitr::kable(ingredients, align = 'lr') |> 
+  kable_styling(full_width = T) |>
+  add_header_above(c("Yields 1 batch" = 2))
+
+```
+
+
+# Preparation 
+
+1. Add yeast to the water - let stand until foamy.
+
+2. Mix flour, cornstarch, sugar, and salt in the stand mixer bowl.
+
+3. Add the water mixture and mix until a cohesive ball forms. 
+
+4. Once the ball is formed, add the pork fat a little bit at a time until it is all added. 
+
+5. Let rise for **1.5 hours** (or until doubled).
+
+6. *Don't forget to oil the bowl while the dough is rising.*
+
+7. Fill with the filling of your choice and steam for 13 minutes so that they are fluffy. 

@@ -1,0 +1,64 @@
+---
+title: Zaatar Bread
+author: Fresh Corner Market
+date: '2024-08-13'
+slug: zaatar-bread
+categories:
+  - Recipes
+tags:
+  - Bread
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+by Fresh Corner Market (University of Oregon)
+
+# Ingredients
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+
+ingredients <- 
+  tribble(
+    ~Ingredient, ~Amount,
+    'Thyme', 'to taste (?)',
+    'Toasted Sesame Seeds', "to taste (?)",
+    'Sumac', 'to taste (?)',
+    'Coarse Salt', 'to taste (?)',
+
+  )
+
+knitr::kable(ingredients, align = 'lr') |> 
+  kable_styling(full_width = T) |>
+  add_header_above(c("4 Tbsp Zaatar Spice Blend" = 2))
+
+```
+
+&emsp;
+
+```{r}
+ingredients_2 <- 
+  tribble(
+    ~Ingredient, ~Amount,
+    'Small Naan Bread', '40',
+    'Olive Oil', "1/4 Cup",
+    'Toasted Sesame Seeds', '1/2 Cup',
+
+  )
+
+knitr::kable(ingredients_2, align = 'lr') |> 
+  kable_styling(full_width = T) |>
+  add_header_above(c("Assembly" = 2))
+
+```
+
+
+# Preparation 
+
+1. Mix your zaatar blend.
+
+2. Brush naan with olive oil and sprinkle generously with zaatar bread.
+
+3. Sprinkle toasted sesame seeds on the bread.
