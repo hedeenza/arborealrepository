@@ -16,6 +16,8 @@ output: html_document
   - [SQL and R](https://www.datacamp.com/tutorial/sqlite-in-r), 
   - [Creation](https://www.datacamp.com/tutorial/building-a-tweet-etl-pipeline-using-r)
 - Machine [Learning in R](https://www.datacamp.com/tutorial/tutorial-machine-learning-pipelines-mlops-deployment) 
+- Rower Hometown Interactive Map
+- State Senator Hometown Map
 
 
 # Future Posts
@@ -25,4 +27,11 @@ output: html_document
   - Open Neovim, :Tutor
   - Neovim customization notes
 - ffmpeg Notes
-
+- Learn C
+- Learn Rust? (fast, secure)
+- Learning Statistics [with R](https://learningstatisticswithr.com/) notes 
+- R for Data Science [2e](https://r4ds.hadley.nz/) notes
+- Tidy Modeling [with R](https://www.tmwr.org/) notes
+- Text Mining [with R](https://www.tidytextmining.com/) notes
+- Supervised Machine Learning for [Text Analysis with R](https://smltar.com/) notes
+- A Practical Approach for [Predictive Models](https://bookdown.org/max/FES/) notes
