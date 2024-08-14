@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Rower Hometown Map - pt.1 - The Arboreal Repository</title>
+<meta property="og:title" content="Rower Hometown Map - pt.1 - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Rower Hometown Map - pt.1</h1>
+
+    
+
+    <div class="article-content">
+      
+      <h1 id="introduction">Introduction</h1>
+<p>  An important part of building a continually successful rowing team - or any team with turnover for that matter -  is strategic recruitment. If you don&rsquo;t have high quality people coming in as your previous high quality people leave, you&rsquo;re going to be in a tough spot. Many Division 1 teams in the United States recruit from all across the country and internationally to find the talent that will help their team continue their storied legacy of excellence.
+  I thought it would be interesting to visualize the areas Division 1 rowing teams are recruiting from to see if there are any patterns. A full sense of the scope of recruitment practices across many years may help identify:</p>
+<ul>
+<li>Changes in the areas athletes have been recruited over time.</li>
+<li>Differences in recruitment practices between universities or conferences.</li>
+<li>Areas that may be producing high quality rowing talent, but are not being examined as closely.</li>
+</ul>
+<p>  My goal by the end of this is to have an interactive map that users can examine while manipulating variables like year and conference. Many of the skills are beyond my current ability, but the framework of this project will help guide me to acquiring the skills I need.</p>
+<h1 id="building-a-web-scraper">Building a Web-Scraper</h1>
+<p>  For a list of links, the scraper should be able to pull roster data and append that data to the end of a table. To perform this in R, I used the {rvest} package.</p>
+<pre><code>library(tidyverse)
+library(rvest)
+</code></pre>
+<p>  First I needed to find a URL:</p>
+<pre><code># Assign the URL
+url &lt;- &quot;https://osubeavers.com/sports/mens-rowing/roster&quot;
+</code></pre>
+<p>  Using rvest::read_html(url) I was able to scrape the web-page information that I needed.</p>
+<pre><code># Reading the HTML
+html_source &lt;- read_html(url)
+</code></pre>
+<p>  Past web-scraping projects have had their challenges, but with this one it almost seemed like the data wasn&rsquo;t getting loaded in. I went back and used the rvest::html_text() function to determine whether or not content had in fact been pulled. Once I ran this, it was clear the content made it into R.</p>
+<pre><code># The HTML actually got read in 
+html_source %&gt;% html_text()
+</code></pre>
+<p>  Inspecting the web page I was able to navigate to the proper node to grab the roster table information. Don&rsquo;t mind the messy name. It took a couple tries.</p>
+<pre><code># Which section of the page will go to the table
+css_test_2 &lt;- &quot;.c-rosterpage__content&quot;
+</code></pre>
+<h1 id="if-at-first-you-dont-succeed">If At First You Don&rsquo;t Succeed&hellip;</h1>
+<p>  Likely due to a page formatting issue, I was unable to use rvest::html_table() like I have in the past. Unfortunately I would need to do a lot of manipulation by hand in order to make a tidy table. I used rvest:: html_text2() because it resulted in the line breaks displaying as &ldquo;\n&rdquo; which I could use to split the text into multiple lines.</p>
+<pre><code># Extracting the text, because the table function isn't functioning
+# html_text2() to insert the \n at line breaks to help ease the next steps
+tester &lt;- html_nodes(html_source, css_test_2) %&gt;% html_text2()
+
+# Splitting on the line breaks
+paragraphs &lt;- tester %&gt;% str_split(&quot;\n&quot;)
+</code></pre>
+<p>  Manipulation with {stringr} requires a vector, so I coerced it. Don&rsquo;t ask how long it took me to realize that that&rsquo;s what the problem was.</p>
+<pre><code># Coerce to vector to allow work with {stringr}
+df &lt;- as_vector(paragraphs)
+</code></pre>
+<p>  Though the lines were Separated by line break, I realized many of them had run together. I used Regex commands to detect the lower-case letter running into the upper-case letter. Running this let me know that R could see what I was going after.</p>
+<pre><code># Can detect the pattern 
+str_detect(df, &quot;[:lower:][:upper:]&quot;)
+</code></pre>
+<p>  With that green light, I began creating line breaks in the text to allow me to separate the text in the cells into their own cells. &ldquo;\1&rdquo; and &ldquo;\2&rdquo; are used to reference the first and second item that were detected.</p>
+<pre><code># Make a line break between the mashed together lower case and upper case values in adjacent columns
+str_replace_all(df, &quot;([:lower:])([:upper:])&quot;, &quot;\\1 \n \\2&quot;) |&gt;
+# Make a line break between the mashed together period and upper case values in adjacent columns
+str_replace_all(&quot;([:punct:])([:upper:])&quot;, &quot;\\1 \n \\2&quot;) |&gt;
+# Split into their own cells
+str_split(&quot;\n&quot;) |&gt;
+
+as_vector() |&gt;
+head()
+</code></pre>
+<p>  The test ran well, so I went ahead and assigned in to a variable. I removed all of the text that will eventually go into the column names and trimmed off the white space on both sides.</p>
+<pre><code># Detecting the cells running together, inserting a line break between them, separating into their own rows
+clean_df &lt;- 
+  str_replace_all(df, &quot;([:lower:])([:upper:])&quot;, &quot;\\1 \n \\2&quot;) |&gt;
+  str_replace_all(&quot;([:punct:])([:upper:])&quot;, &quot;\\1 \n \\2&quot;) |&gt;
+  str_split(&quot;\n&quot;) |&gt;
+  as_vector() |&gt;
+str_remove_all('Name|Position|Academic Year|Height|Hometown|Last School') |&gt;
+  str_trim(side = &quot;both&quot;) |&gt;
+  as_vector() |&gt;
+  print()
+</code></pre>
+<p>  That&rsquo;s when I realized something was wrong. It didn&rsquo;t look right. I saw that there was a &ldquo;Full Bio&rdquo; column so I used {stringr} to detect it. That&rsquo;s when I saw that there were unequal numbers of &ldquo;FALSE&rdquo; values between each &ldquo;TRUE&rdquo; where the Full Bio cells were. There were missing values. I looked back at the table on the website and indeed, that was the case.</p>
+<pre><code># Oh no... not everyone has the same amount of information...
+str_detect(clean_df, &quot;Full Bio&quot;)
+</code></pre>
+<p><strong>Always take a careful look at what you&rsquo;re scraping before you commit to a plan of action.</strong></p>
+<h1 id="-try-try-again">&hellip; Try, Try Again</h1>
+<p>  Next I decided to try without the line breaks (&quot;\n&quot;) provided by rvest::html_text2().</p>
+<pre><code># Well there's different amounts of information on everyone, but there's always a FULL BIO link,
+tester_2 &lt;- html_nodes(html_source, css_test_2) %&gt;% html_text()
+</code></pre>
+<p>  I realized that because there was a FULL BIO section at the end of the original line for each athlete, even if they were missing other data, I decided to use that as a marker to create my rows.</p>
+<pre><code>in_rows &lt;- 
+  tester_2 |&gt;
+  
+  # Separate run togethers of punctuation and upper case
+  str_replace_all(&quot;([:punct:])([:upper:])&quot;, &quot;\\1 \\2&quot;) |&gt;
+  
+  # Separate run-togethers of lower and upper
+  str_replace_all(&quot;([:lower:])([:upper:])&quot;, &quot;\\1 \\2&quot;) |&gt;
+  
+  # Replacing the FULL BIO FOR &quot;FIRST&quot; &quot;LAST&quot; with a line break, because that's always present, 
+    grabbing the next two full words, which are the athlete's first and last, also always present
+  str_replace_all(&quot;Full Bio  for \\w+ \\w+&quot;, &quot; \n&quot;) |&gt;
+  
+  # Splitting each athlete into their own line
+  str_split(&quot;\n&quot;) |&gt;
+  
+  # Coercing to vector to continue work 
+  as_vector() |&gt;
+  
+  # Removing the blank space from the sides
+  str_trim(side = &quot;both&quot;) |&gt;
+  
+  # Removing the category names
+  str_remove_all(&quot;Position|Academic Year|Height|Hometown|Last School&quot;) |&gt;
+  
+  # Removing errant white space in the middle
+  str_squish() |&gt;
+  print()
+</code></pre>
+<p>  Looking at the printed data, I could see that there were a couple errors specific to the scraped data. Getting those cleared was next.</p>
+<pre><code>specific_errors &lt;-
+  in_rows |&gt;
+  # Removing a single error caused by a hyphenated last name
+  str_replace_all(&quot;- Hull Sasha Herrmann&quot;, &quot;Sasha Herrman&quot;) |&gt;
+  # Removed another individual name case
+  str_remove_all(&quot;Custom Field 1Ethan de Borja&quot;) |&gt;
+  print()
+</code></pre>
+<p>  Now the fun step. I needed to come up with a way to widen the data. Thankfully there&rsquo;s tidyr::separate_wider_delim(). With the data as it was, there&rsquo;s no clean way to widen as I desired, so I used {stringr} functions to add a chosen delimiter, &ldquo;*&rdquo;, where I wanted the breaks between columns to be.</p>
+<pre><code>delim_add &lt;-
+  specific_errors |&gt;
+  # Adding custom delimiters between values that will feed into each column
+  str_replace_all(&quot; Rower &quot;, &quot;*Rower*&quot;) |&gt;
+  str_replace_all(&quot; Coxswain &quot;, &quot;*Coxswain*&quot;) |&gt;
+  
+  # There was a space between the N. H. for New Hampshire, which first needed to be collapsed
+  str_replace_all(&quot;\\. [:upper:]\\.&quot;, '.H.') |&gt;
+  
+  # Adding the delimiter after the academic year
+  str_replace_all(&quot;\\. &quot;, &quot;\\.*&quot;) |&gt;
+  
+  # Adding the delimiter after the height
+  str_replace_all(&quot;\'' &quot;, &quot;\''*&quot;) |&gt;
+  
+  as.data.frame() |&gt;
+  print()
+</code></pre>
+<p>  The name of the single column was messy, so I cleaned it to make it easier to work with tidyr::separate_wider_delim()</p>
+<pre><code>names(delim_add) &lt;- &quot;Athletes&quot;
+
+wide_roster &lt;-
+  delim_add |&gt;
+  separate_wider_delim(
+    delim = &quot;*&quot;,
+    cols = Athletes,
+    names = c(&quot;Name&quot;, &quot;Position&quot;, &quot;Acacdemic Year&quot;, &quot;Height&quot;, &quot;Hometown&quot;, &quot;Last School&quot;),
+    too_few = 'align_start')
+</code></pre>
+<p>  All that was left was to add some additional information as to which team the data came from so groups could be assigned when the master, combined table would eventually be created.</p>
+<pre><code>roster_tags &lt;-
+  wide_roster |&gt;
+  mutate(University = &quot;OSU&quot;, 
+         Team = &quot;Men&quot;,
+         Year = &quot;2023-2024&quot;)
+</code></pre>
+<h1 id="automated-scraper">Automated Scraper</h1>
+<p>  Now that the data could be scraped and tidied, it was time to put it in some kind of automation. I used a for loop. I assigned the links to a vector, then created a &ldquo;blank&rdquo; data frame the scraper could fill in.</p>
+<pre><code># Oregon State University - FUNCTIONS 
+osu_links &lt;- c(&quot;https://osubeavers.com/sports/mens-rowing/roster&quot;,
+               &quot;https://osubeavers.com/sports/womens-rowing/roster&quot;)
+osu_roster &lt;- data.frame(0, 0, 0, 0, 0, 0)
+  names(osu_roster) = c(&quot;Name&quot;, &quot;Position&quot;, &quot;Acacdemic-Year&quot;, &quot;Height&quot;, &quot;Hometown&quot;, &quot;Link&quot;)
+</code></pre>
+<p>  Here&rsquo;s the full for loop</p>
+<pre><code># OSU Scraper - for loop
+for (squad in osu_links) {    # for each link in the links vector
+  url &lt;- squad                # assign the url
+  html &lt;- read_html(url) |&gt;   # scrape the page
+    html_nodes(&quot;.c-rosterpage__content&quot;) |&gt;
+    html_text() |&gt; 
+    str_replace_all(&quot;([:punct:])([:upper:])&quot;, &quot;\\1 \\2&quot;) |&gt;   # Do all of the tidying work from the stages before
+    str_replace_all(&quot;([:lower:])([:upper:])&quot;, &quot;\\1 \\2&quot;) |&gt;
+    str_replace_all(&quot;Full Bio  for \\w+ \\w+&quot;, &quot; \n&quot;) |&gt;
+    str_split(&quot;\n&quot;) |&gt;
+    as_vector() |&gt;
+    str_trim(side = &quot;both&quot;) |&gt;
+    str_remove_all(&quot;Position|Academic Year|Height|Hometown|Last School&quot;) |&gt;
+    str_squish() |&gt;
+    str_replace_all(&quot;- Hull Sasha Herrmann&quot;, &quot;Sasha Herrman&quot;) |&gt;
+    str_remove_all(&quot;Custom Field 1Ethan de Borja&quot;) |&gt;
+    str_replace_all(&quot; Rower &quot;, &quot;*Rower*&quot;) |&gt;
+    str_replace_all(&quot; Coxswain &quot;, &quot;*Coxswain*&quot;) |&gt;
+    str_replace_all(&quot;\\. [:upper:]\\.&quot;, '.H.') |&gt;
+    str_replace_all(&quot;\\. &quot;, &quot;\\.*&quot;) |&gt;
+    str_replace_all(&quot;\'' &quot;, &quot;\''*&quot;) |&gt;
+    as.data.frame()
+  
+  names(html) &lt;- &quot;Athletes&quot;       # Clean the name
+  
+  wide_roster &lt;-        # Widen the data
+    html |&gt;
+    separate_wider_delim(
+      delim = &quot;*&quot;,
+      cols = Athletes,
+      names = c(&quot;Name&quot;, &quot;Position&quot;, &quot;Acacdemic-Year&quot;, &quot;Height&quot;, &quot;Hometown&quot;, &quot;Last-School&quot;),
+      too_few = 'align_start',
+      too_many = &quot;drop&quot;)
+  
+  roster_tags &lt;-        # Add the additional data
+    wide_roster |&gt;
+    select(Name, Position, `Acacdemic-Year`, Height, Hometown) |&gt;
+    mutate(Link = squad)
+  
+  osu_roster &lt;- rbind(osu_roster, roster_tags)        # Bind the rows you process to the growing table
+  
+  print(paste(&quot;Done:&quot;, squad))        # Let us know you're done with each loop
+}
+</code></pre>
+<p>  Lastly, I wrote the data to a local csv so the next time I pick this up I don&rsquo;t have to harass their website.</p>
+<pre><code># Writing the roster data to a local csv
+write_csv(osu_roster, &quot;Data/osu_roster.csv&quot;)
+</code></pre>
+<p>  The data is a little messy due to some missing values in the womens team roster, but it&rsquo;s nothing some persistence can&rsquo;t clean.</p>
+<h1 id="when-its-the-same-but-not">When It&rsquo;s the Same but Not</h1>
+<p>  Most D1 university rowing team websites appear almost identical. When I started this project I thought it would be a simple matter of pasting in additional links to the vector and running the loop. This was not the case.</p>
+<p>  I tried to run all of the former PAC12 Division 1 team rosters, but wound up with only 94 athletes getting their data loaded. Putting the links into smaller batches revealed that the scraping loop as is worked for a couple of teams, but not <em>at all</em> for others. Inspecting the University of Washington page source code revealed that while the aesthetic is similar to the Oregon State University page, the underlying architecture is just different enough that the scraper tool will need to be tweaked in order to get the information I&rsquo;m after.</p>
+<p>  The tweaks needed to import the data from the other rosters, importing the other rosters, and potential next steps will be the subject of the next post for this project.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+
