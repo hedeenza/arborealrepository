@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Learning Neovim (pt. 2) - The Arboreal Repository</title>
+<meta property="og:title" content="Learning Neovim (pt. 2) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Learning Neovim (pt. 2)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <h1 id="version-troubles">Version Troubles</h1>
+<p>  I&rsquo;ve been playing around with Neo Vim a lot more than I&rsquo;ve been writing about it. It&rsquo;s been 19 days since I first got trapped and despite that short time, I feel quite comfortable using the tool. There is certainly a ton of learning still to go before I&rsquo;ll be able to zoom around and manipulate code at the speed of thought, but progress is progress.</p>
+<p>  The version that the Windows Subsystem for Linux installs is v0.6.1. This version is too old to support a lot of the plug-ins and additional tools that make Neo Vim especially powerful. Too much time was spent wondering why the tutorials I tried to follow online weren&rsquo;t working only for the answer to be that simple. If things aren&rsquo;t working for you, make sure you&rsquo;re using a new enough version of Neo Vim.</p>
+<h1 id="tutor">:Tutor</h1>
+<p>  To open the Tutorial, enter the command <code>:Tutor</code>. While this post will summarize the main points of the page&rsquo;s many lessons, nothing is going to replace actually practicing with the tools. Make sure to do the tutorial yourself and find as many opportunities as you can to employ and expand upon the skills you learn.</p>
+<p>  <em>Everything from here on is a direct copy of the &lsquo;Welcome to the VIM Tutor&rsquo; page. Credit to the authors Bram Moolenaar and Felipe Morales.</em></p>
+<h1 id="lesson-1-summary">Lesson 1 Summary</h1>
+<ol>
+<li>
+<p>The cursor is moved using either the arrow keys or the hjkl keys.<br>
+  <code>h (left) - j (down) - k (up) - l (right)</code></p>
+</li>
+<li>
+<p>To start Vim from the shell prompt type:<br>
+  <code>$ nvim FILENAME</code></p>
+</li>
+<li>
+<p>To exit Vim type: <Esc> :q! <Enter> to trash all changes.<br>
+  <code>OR type: &lt;Esc&gt; :wq &lt;Enter&gt; to save the changes.</code></p>
+</li>
+<li>
+<p>To delete the character at the cursor type: x</p>
+</li>
+<li>
+<p>To insert or append text type:<br>
+  <code>i insert text &lt;Esc&gt; &amp;emsp; insert before the cursor.</code><br>
+  <code>A append text &lt;Esc&gt; &amp;emsp; append after the line.</code></p>
+</li>
+</ol>
+<p>NOTE: Pressing <Esc> will place you in Normal mode or will cancel an unwanted and partially completed command.</p>
+<h1 id="lesson-2-summary">Lesson 2 Summary</h1>
+<ol>
+<li>
+<p>To delete from the cursor up to the next word type:    dw</p>
+</li>
+<li>
+<p>To delete from the cursor to the end of a line type:   d$</p>
+</li>
+<li>
+<p>To delete a whole line type:                           dd</p>
+</li>
+<li>
+<p>To repeat a motion prepend it with a number:           2w</p>
+</li>
+<li>
+<p>The format for a change command is:</p>
+</li>
+</ol>
+<p>  <code>operator  [number]  motion</code></p>
+<p>where:<br>
+  operator - is what to do, such as d for delete<br>
+  [number] - is an optional count to repeat the motion<br>
+  motion   - moves over the text to operate on, such as:<br>
+    <code>w</code> (word),<br>
+    <code>$</code> (to the end of line), etc.</p>
+<ol start="6">
+<li>
+<p>To move to the start of the line use a zero: 0</p>
+</li>
+<li>
+<p>To undo previous actions, type:            <code>u</code>  (lowercase u)<br>
+To undo all the changes on a line, type:   <code>U</code>  (capital U)<br>
+To undo the undo&rsquo;s, type:                  <code>&lt;C-r&gt;</code></p>
+</li>
+</ol>
+<h1 id="lesson-3-summary">Lesson 3 Summary</h1>
+<ol>
+<li>
+<p>To put back text that has just been deleted, type <code>p</code>. This puts the 434 deleted text AFTER the cursor
+(if a line was deleted it will go on 435 line below the cursor).</p>
+</li>
+<li>
+<p>To replace the character under the cursor, type <code>r</code> and then the character you want to have there.</p>
+</li>
+<li>
+<p>The change operator allows you to change from the cursor to where the motion takes you. Type <code>ce</code> to change from the cursor to the end of the word, <code>c$</code> to change to the end of a line.</p>
+</li>
+<li>
+<p>The format for change is:<br>
+  c   [number]   motion</p>
+</li>
+</ol>
+<h1 id="lesson-4-summary">Lesson 4 Summary</h1>
+<ol>
+<li>
+<p><code>&lt;C-g&gt;</code> - displays your location and the file status.<br>
+<code>G</code> - moves to the end of the file.<br>
+<code>number G</code> - moves to that line number.<br>
+<code>gg</code> - moves to the first line.</p>
+</li>
+<li>
+<p>Typing <code>/</code> followed by a phrase searches FORWARD for the phrase.<br>
+Typing <code>?</code> followed by a phrase searches BACKWARD for the phrase.<br>
+After a search type <code>n</code> to find the next occurrence in the same direction or <code>N</code> to search in the opposite direction.<br>
+<code>&lt;C-o&gt;</code> - takes you back to older positions,<br>
+<code>&lt;C-i&gt;</code> to newer positions.</p>
+</li>
+<li>
+<p>Typing <code>%</code> while the cursor is on a (,),[,],{, or } goes to its match.</p>
+</li>
+<li>
+<p>To substitute new for the first old in a line type<br>
+  <code>:s/old/new</code></p>
+</li>
+</ol>
+<p>To substitute new for all &lsquo;old&rsquo;s on a line type<br>
+  <code>:s/old/new/g</code></p>
+<p>To substitute phrases between two line #&rsquo;s type<br>
+  <code>:#,#s/old/new/g</code></p>
+<p>To substitute all occurrences in the file type<br>
+  <code>:%s/old/new/g</code></p>
+<p>To ask for confirmation each time add &lsquo;c&rsquo;<br>
+  <code>:%s/old/new/gc</code></p>
+<h1 id="lesson-5-summary">Lesson 5 Summary</h1>
+<ol>
+<li>
+<p><code>:!</code> - command executes an external command.<br>
+  Some useful examples are:<br>
+    <code>:!ls</code> - shows a directory listing<br>
+    <code>:!rm FILENAME</code> - removes file FILENAME</p>
+</li>
+<li>
+<p><code>:w FILENAME</code> - writes the current Vim file to disk with name FILENAME.</p>
+</li>
+<li>
+<p><code>v motion :w FILENAME</code> - saves the Visually selected lines in file FILENAME.</p>
+</li>
+<li>
+<p><code>:r FILENAME</code> - retrieves disk file FILENAME and puts it below the cursor position.</p>
+</li>
+<li>
+<p><code>:r !dir</code> - reads the output of the dir command and puts it below the cursor position.</p>
+</li>
+</ol>
+<h1 id="lesson-6-summary">Lesson 6 Summary</h1>
+<ol>
+<li>
+<p>Type <code>o</code> to open a line BELOW the cursor and start Insert mode.<br>
+Type <code>O</code> to open a line ABOVE the cursor.</p>
+</li>
+<li>
+<p>Type <code>a</code> to insert text AFTER the cursor.<br>
+Type <code>A</code> to insert text after the end of the line.</p>
+</li>
+<li>
+<p>The <code>e</code> command moves to the end of a word.</p>
+</li>
+<li>
+<p>The <code>y</code> operator copies text, <code>p</code> pastes it.</p>
+</li>
+<li>
+<p>Typing a capital <code>R</code> enters Replace mode until <code>&lt;Esc&gt;</code> is pressed.</p>
+</li>
+<li>
+<p>Typing <code>:set xxx</code> sets the option &ldquo;xxx&rdquo;. Some options are:<br>
+  &lsquo;ic&rsquo; &lsquo;ignorecase&rsquo; - ignore upper/lower case when searching<br>
+  &lsquo;is&rsquo; &lsquo;incsearch&rsquo; - show partial matches for a search phrase<br>
+  &lsquo;hls&rsquo; &lsquo;hlsearch&rsquo; - highlight all matching phrases</p>
+</li>
+</ol>
+<p>You can either use the long or the short option name.</p>
+<ol start="7">
+<li>
+<p>Prepend &ldquo;no&rdquo; to switch an option off:<br>
+  <code>:set noic</code></p>
+</li>
+<li>
+<p>Prepend &ldquo;inv&rdquo; to toggle an option:<br>
+  <code>:set invic</code></p>
+</li>
+</ol>
+<h1 id="lesson-7-summary">Lesson 7 Summary</h1>
+<ol>
+<li>
+<p>Type <code>:help</code> or press <code>&lt;F1&gt;</code> or <code>&lt;Help&gt;</code> to open a help window.</p>
+</li>
+<li>
+<p>Type <code>:help</code> TOPIC to find help on TOPIC.</p>
+</li>
+<li>
+<p>Type <code>&lt;C-w&gt;&lt;C-w&gt;</code> to jump to another window</p>
+</li>
+<li>
+<p>Type <code>:q</code> to close the help window</p>
+</li>
+<li>
+<p>Create a vimrc startup script to keep your preferred settings.</p>
+</li>
+<li>
+<p>While in command mode, press <code>&lt;C-d&gt;</code> to see possible completions. Press <code>&lt;Tab&gt;</code> to use one completion.</p>
+</li>
+</ol>
+<h1 id="conclusion-and-online-resources">Conclusion and Online Resources</h1>
+<p>This was intended to give a brief overview of the Vim editor, just enough to allow you to use the editor fairly easily. It is far from complete as Vim has many many more commands. Consult the help often.There are many resources online to learn more about vim. Here&rsquo;s a bunch of them:</p>
+<ul>
+<li><a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/">Learn Vim Progressively</a></li>
+<li><a href="http://benmccormick.org/learning-vim-in-2014/">Learning Vim in 2013</a></li>
+<li><a href="http://vimcasts.org/">Vimcasts</a></li>
+<li><a href="http://derekwyatt.org/vim/tutorials/">Vim Video-Tutorials by Derek Wyatt</a></li>
+<li><a href="http://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript the Hard Way</a></li>
+<li><a href="http://www.moolenaar.net/habits.html">7 Habits of Effective Text Editing</a></li>
+<li><a href="https://github.com/mhinz/vim-galore">vim-galore</a></li>
+</ul>
+<p>If you prefer a book, Practical Vim by Drew Neil is recommended often (the sequel, Modern Vim, includes material specific to nvim).</p>
+<p>This tutorial was written by Michael C. Pierce and Robert K. Ware, Colorado School of Mines using ideas supplied by Charles Smith, Colorado State University. E-mail: <a href="mailto:bware@mines.colorado.edu">bware@mines.colorado.edu</a>.</p>
+<p>Modified for Vim by Bram Moolenaar.<br>
+Modified for vim-tutor-mode by Felipe Morales.</p>
+<h1 id="additional-commands-and-thoughts">Additional Commands and Thoughts</h1>
+<p><code>b</code> - go back one word<br>
+<code>H</code> - jump to the top visible line<br>
+<code>L</code> - jump to the bottom visible line<br>
+<code>gM</code> - jump to the middle of the line<br>
+<code>&lt;C-f&gt;</code> - go forward one page<br>
+<code>&lt;C-b&gt;</code> - go backward one page<br>
+<code>:#,# %norm xxx</code> - apply a series of commands (xxx) to all lines in the specified range. Do not include the numbered lines if you want changes to happen to all lines in the document.<br>
+<code>:split</code> - splits the screen horizontally with another document in Neo Vim<br>
+<code>:vsplit</code> - splits the screen vertically with another document in Neo Vim<br>
+<code>:new</code> - creates a new document with Neo Vim<br>
+<code>:only</code> - closes all other screen splits</p>
+<p>  The basics covered in the tutorial have been incredibly helpful. The additional commands in this last section were ones that I found through reading the extended documentation. There are times I&rsquo;m editing text or code in other IDEs and find myself wishing I had some of the capabilities that Neo Vim does. It sounds like there are extensions in most IDEs that allow the utilization of Vim motions so they can be enjoyed without having to give up all the things you like about your current setup.</p>
+<p>  I&rsquo;ve found some series on YouTube that discuss how to get more out of Neo Vim. My notes on those videos will be the subject of my next posts about Neo Vim.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+

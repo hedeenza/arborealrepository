@@ -6,8 +6,15 @@
     <description>Recent content in Neovim on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/categories/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Neovim (pt. 2)</title>
+      <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim-pt-2/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim-pt-2/</guid>
+      <description>Version Troubles I&amp;rsquo;ve been playing around with Neo Vim a lot more than I&amp;rsquo;ve been writing about it. It&amp;rsquo;s been 19 days since I first got trapped and despite that short time, I feel quite comfortable using the tool. There is certainly a ton of learning still to go before I&amp;rsquo;ll be able to zoom around and manipulate code at the speed of thought, but progress is progress.&#xA;The version that the Windows Subsystem for Linux installs is v0.</description>
+    </item>
     <item>
       <title>Learning Neovim (pt. 1)</title>
       <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</link>
