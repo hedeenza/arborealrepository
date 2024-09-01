@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/bao/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+    <loc>https://hedeenza.github.io/arborealrepository/ctf/capture-the-flag-intro/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/ctf/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/intentions/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/thoughts/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/bao/</loc>
     <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/cuda/</loc>
@@ -60,12 +84,6 @@
     <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/recipes/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/</loc>
     <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/troubleshooting/</loc>
@@ -194,16 +212,10 @@
     <loc>https://hedeenza.github.io/arborealrepository/tags/html/</loc>
     <lastmod>2024-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/intentions/</loc>
-    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/projects/project-test/</loc>
     <lastmod>2024-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/reflection/</loc>
-    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/thoughts/</loc>
     <lastmod>2024-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/new-category/</loc>

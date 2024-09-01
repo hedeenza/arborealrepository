@@ -75,7 +75,39 @@
     <div class="article-content">
       
       <h1 id="neo-vim-lesson-series">Neo Vim Lesson Series</h1>
-<p><code>diw</code> - delete the word you&rsquo;re int eh middle of<br>
+<p>  Looking up all the Vim content on YouTube told the algorithm to send me some more. I stumbled upon a series by the creator ThePrimeagen that details more commands in Vim and Neo Vim. I&rsquo;ll do my best to only add here what hasn&rsquo;t been covered already. But if you&rsquo;re interested, here&rsquo;s the <a href="https://www.youtube.com/watch?v=X6AR2RMB5tE&amp;list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R">link</a> to the full playlist.</p>
+<h1 id="introduction-1">Introduction (#1)</h1>
+<p>  This covers a lot of the basics that the Vim :Tutor does.</p>
+<h1 id="horizontal-2">Horizontal (#2)</h1>
+<p><code>_</code> - go to the first filled character of a line<br>
+<code>0</code> - go to the 0th space in a line</p>
+<p><code>fx</code> - jump to the next x in the line<br>
+<code>Fx</code> - jump BACK to the previous x in the line</p>
+<p><code>tx</code> - jump up to, but not on, the next x in the line
+<code>Tx</code> - jump BACK to, but not on, the previous x in the line</p>
+<p><code>;</code> - jump forward to the next instance of whatever you jumped to with f or t
+<code>,</code> - jump BACK to the next instance of whatever you jumped to with f or t</p>
+<p><code>dfx</code> - delete from the cursor up through the next instance of x in the line
+<code>dtx</code> - delete from the cursor up to, but not including, the next instance of x in the line</p>
+<p><code>dFx</code> / <code>dTx</code> - the same as the above but going backwards</p>
+<p><code>yfx</code> - yank from the cursor up through the next instance of x in the line
+<code>ytx</code> - yank from the cursor up to, but not including the next instance of x in the line</p>
+<p><code>yFx</code> / <code>yTx</code> - the same as the above but going backwards</p>
+<p><code>d2fx</code> - delete everything up to, and including, the SECOND instance of x in the line from the cursor</p>
+<h1 id="vertical-3">Vertical (#3)</h1>
+<p>Making sure relative lines are set is going to make quick jumping with movements like <code>5j</code> and <code>17k</code> to move <em>exactly</em> where you need to up and down quickly much easier.</p>
+<p><code>(</code> -
+<code>[</code> -
+<code>{</code> -</p>
+<p><code>&lt;Ctrl-d&gt;</code> - move half a page down
+<code>&lt;Ctrl-u&gt;</code> - move half a page up</p>
+<p><code>gg</code> - jump to the beginning of the file
+<code>G</code> - jump to the end of the file</p>
+<h1 id="advanced-motions-p1-4">Advanced Motions P1 (#4)</h1>
+<h1 id="advanced-motions-p2-5">Advanced Motions P2 (#5)</h1>
+<h1 id="heading"></h1>
+<h1 id="from-shorts">From Shorts</h1>
+<p><code>diw</code> - delete the word you&rsquo;re in the middle of<br>
 <code>diW</code> - delete everything between the white spaces on the outside of where your cursor is</p>
 
     </div>
