@@ -24,18 +24,21 @@ menu:
     - name: Projects
       url: /projects/
       weight: 4
+    - name: CTF
+      url: /ctf/
+      weight: 5
     - name: Notes
       url: /notes/
-      weight: 5
+      weight: 6
     - name: Future
       url: /future/
-      weight: 6
+      weight: 7
     - name: Recipes
       url: /recipes/
-      weight: 7
+      weight: 8
     - name: GitHub
       url: https://github.com/hedeenza
-      weight: 8
+      weight: 9
 
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
