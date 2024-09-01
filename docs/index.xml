@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Installing PyTorch</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/08/29/installing-pytorch/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/08/29/installing-pytorch/</guid>
+      <description>Introduction I looked into working with PyTorch because it appears I&amp;rsquo;ll be running some machine-learning type projects in the near future, and PyTorch is a way to run that within Python - another area I&amp;rsquo;m actively expanding my skills. My hardware isn&amp;rsquo;t the strongest, so it was a question about whether I&amp;rsquo;d even meet the system requirements going in.&#xA;What is PyTorch? From their github page:&#xA;&amp;quot;PyTorch is a Python package that provides two high-level features: - Tensor computation (like NumPy) with strong GPU acceleration - Deep neural networks built on a tape-based autograd system You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed.</description>
+    </item>
+    <item>
       <title>Korean Ground Beef</title>
       <link>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
@@ -21,6 +28,13 @@
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim-pt-2/</guid>
       <description>Version Troubles I&amp;rsquo;ve been playing around with Neo Vim a lot more than I&amp;rsquo;ve been writing about it. It&amp;rsquo;s been 19 days since I first got trapped and despite that short time, I feel quite comfortable using the tool. There is certainly a ton of learning still to go before I&amp;rsquo;ll be able to zoom around and manipulate code at the speed of thought, but progress is progress.&#xA;The version that the Windows Subsystem for Linux installs is v0.</description>
+    </item>
+    <item>
+      <title>Neo Vim with ThePrimeagen (Neo Vim pt. 3)</title>
+      <link>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</guid>
+      <description>Neo Vim Lesson Series diw - delete the word you&amp;rsquo;re int eh middle of&#xA;diW - delete everything between the white spaces on the outside of where your cursor is</description>
     </item>
     <item>
       <title>Pizza Dough</title>
@@ -69,7 +83,7 @@
       <link>https://hedeenza.github.io/arborealrepository/future/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/future/</guid>
-      <description>Future Projects Textual Analysis of a Novel Art generated from the word cloud Twitter Data Pipeline Creation SQLite, SQL and R, Creation Machine Learning in R Rower Hometown Interactive Map State Senator Hometown Map Future Posts Free CCNA Networking Course Notes Neovim Tutorial Notes Open Neovim, :Tutor Neovim customization notes ffmpeg Notes Learn C Learn Rust? (fast, secure) Learning Statistics with R notes R for Data Science 2e notes Tidy Modeling with R notes Text Mining with R notes Supervised Machine Learning for Text Analysis with R notes A Practical Approach for Predictive Models notes Coursera course notes </description>
+      <description>Future Projects Textual Analysis of a Novel Art generated from the word cloud Twitter Data Pipeline Creation SQLite, SQL and R, Creation Machine Learning in R Rower Hometown Interactive Map State Senator Hometown Map Future Posts Free CCNA Networking Course Notes Neovim Tutorial Notes Open Neovim, :Tutor ✔ Neovim customization notes ffmpeg Notes Learn C Learn Rust? (fast, secure) Learning Statistics with R notes R for Data Science 2e notes Tidy Modeling with R notes Text Mining with R notes Supervised Machine Learning for Text Analysis with R notes A Practical Approach for Predictive Models notes Coursera course notes picoCTF challenge walk-throughs </description>
     </item>
     <item>
       <title>Learning Neovim (pt. 1)</title>

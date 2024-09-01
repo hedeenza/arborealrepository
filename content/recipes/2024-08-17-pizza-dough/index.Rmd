@@ -1,0 +1,55 @@
+---
+title: Pizza Dough
+author: ''
+date: '2024-08-17'
+slug: pizza-dought
+categories:
+  - Recipes
+tags:
+  - Dough
+  - Pizza
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+library(kableExtra)
+```
+
+by B
+
+# Ingredients
+
+```{r}
+ingredients <- 
+  tribble(
+    ~Ingredient, ~Amount,
+    'Warm Water', '325 - 340 g',
+    'Sugar', "1 tsp",
+    'Yeast', '2 1/4 tsp OR 1 package',
+    'All Purpose Flour OR Bread Flour', '500 g',
+    'Olive Oil', '1 Tbsp + for coating',
+    'Salt', '1 tsp'
+  )
+
+knitr::kable(ingredients, align = 'lr') |> 
+  kable_styling(full_width = T) |>
+  add_header_above(c("Yields 1 batch" = 2))
+
+```
+
+
+# Preparation 
+
+1. Combine the water, sugar, and yeast in a small bowl.
+
+2. Place the flour into a bowl, and add the salt along with the olive oil.
+
+3. Add the yeast mixture and mix/knead with until you have a stretchy dough. 
+    - NOTE: If using a stand mixer, leave it on for ~5 minutes with the dough hook attachment.
+
+4. Cover the dough ball with a light layer of olive oil and place into a bowl. 
+
+5. Cover the dough with plastic wrap.
+
+6. Let rise in the bowl until doubled. 

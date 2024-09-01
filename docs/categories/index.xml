@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CUDA</title>
+      <link>https://hedeenza.github.io/arborealrepository/categories/cuda/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/cuda/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Filling</title>
       <link>https://hedeenza.github.io/arborealrepository/categories/filling/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
@@ -27,6 +34,20 @@
       <link>https://hedeenza.github.io/arborealrepository/categories/neovim/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/categories/neovim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://hedeenza.github.io/arborealrepository/categories/python/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://hedeenza.github.io/arborealrepository/categories/troubleshooting/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/troubleshooting/</guid>
       <description></description>
     </item>
     <item>

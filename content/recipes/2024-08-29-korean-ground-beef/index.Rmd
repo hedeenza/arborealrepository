@@ -1,0 +1,57 @@
+---
+title: Korean Ground Beef
+author: ''
+date: '2024-08-29'
+slug: korean-ground-beef
+categories:
+  - Meat
+  - Filling
+tags:
+  - Bao
+  - Korean
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+library(kableExtra)
+```
+
+by Unknown
+
+# Ingredients
+
+```{r}
+ingredients <- 
+  tribble(
+    ~Ingredient, ~Amount,
+    'Lean Ground Beef', '1 lb / 454 g',
+    'Brown Sugar', "1/2 Cup",
+    'Sesame Oil', '1 tsp',
+    'Soy Sauce', '1/2 Cup',
+    'Minced Garlic', '3 cloves',
+    'Sriracha', '1 tsp',
+    'Fresh, Minced Ginger', '1 tsp',
+    'Green Onions', '2'
+  )
+
+knitr::kable(ingredients, align = 'lr') |> 
+  kable_styling(full_width = T) |>
+  add_header_above(c("Yields ~4 servings (or 1 very hungry person)" = 2))
+
+```
+
+
+# Preparation 
+
+~20 minutes
+
+1. Heat a large pan over medium - high heat.
+
+2. Brown meat with sesame oil, garlic, and ginger. 
+
+3. Drain 75% of the fat, add in the brown sugar, soy sauce, and sriracha.
+
+4. Cook until liquid has reabsorbed and the meat is shiny but not soupy.
+
+5. Top with green onions, toss together and serve. 

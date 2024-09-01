@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Installing PyTorch - The Arboreal Repository</title>
+<meta property="og:title" content="Installing PyTorch - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">Installing PyTorch</h1>
+
+    
+    <span class="article-date">2024-08-29</span>
+    
+
+    <div class="article-content">
+      
+      <h1 id="introduction">Introduction</h1>
+<p>  I looked into working with PyTorch because it appears I&rsquo;ll be running some machine-learning type projects in the near future, and PyTorch is a way to run that within Python - another area I&rsquo;m actively expanding my skills. My hardware isn&rsquo;t the strongest, so it was a question about whether I&rsquo;d even meet the system requirements going in.</p>
+<p>  What is <a href="https://www.youtube.com/watch?v=ORMx45xqWkA">PyTorch?</a> From <a href="https://github.com/pytorch/pytorch">their github page</a>:</p>
+<pre><code>&quot;PyTorch is a Python package that provides two high-level features:  
+- Tensor computation (like NumPy) with strong GPU acceleration  
+- Deep neural networks built on a tape-based autograd system  
+
+You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed.&quot;
+</code></pre>
+<h1 id="hardware-check">Hardware Check</h1>
+<p>  There was no point in continuing if my hardware wasn&rsquo;t compatible with what I was trying to do. From what I read, it was recommended that you run a lot of this sort of task through your GPU using CUDA (Compute Unified Device Architecture), which is an NVIDIA parallel computing platform and application programming interface (API) that allows acceleration of general processing through harnessing a GPU (from Wikipedia). I ran the <code>nvidia-smi</code> command in the terminal:</p>
+<pre><code>nvidia-smi
+
+---------------------------+
+    CUDA Version: 12.6     |
+
+</code></pre>
+<p>  To my surprise, my little GeForce GTX 1650 Ti GPU was CUDA compatible! The exact text has now been brought up after I&rsquo;ve installed the new version, but the top right corner of the text that gets displayed is what you&rsquo;re after.</p>
+<h1 id="installing-cuda">Installing CUDA</h1>
+<p>  Now that I knew my hardware would work I made my way to the NVIDIA CUDA <a href="https://developer.nvidia.com/cuda-downloads">website</a>. To find the right version of CUDA, I clicked through the prompts:</p>
+<ul>
+<li>Operating System</li>
+<li>Architecture</li>
+<li>Version</li>
+<li>Installer Type</li>
+</ul>
+<p>  It was a somewhat large download at ~3 GB, so I&rsquo;m glad I had the room.</p>
+<h1 id="checking-cuda-installation">Checking CUDA Installation</h1>
+<p>  The CUDA installer was pretty standard. After working through the installer, I ran the following in the terminal and saw that CUDA had in fact installed.</p>
+<pre><code>nvcc --version
+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Fri_Jun_14_16:44:19_Pacific_Daylight_Time_2024
+Cuda compilation tools, release 12.6, V12.6.20
+Build cuda_12.6.r12.6/compiler.34431801_0
+</code></pre>
+<h1 id="installing-pytorch">Installing PyTorch</h1>
+<p>  Before the final steps, it was time to set up a virtual environment for Python with:</p>
+<pre><code>python -m venv .venv 
+</code></pre>
+<p>  Activating the virtual environment to make sure that PyTorch would install here rather than in the main Python directory:</p>
+<pre><code>.venv\Scripts\activate
+</code></pre>
+<p>  It was finally itme to acquire PyTorhc. Selecting the proper version from the PyTorch <a href="https://pytorch.org/get-started/locally/">main site</a> went similarly to selecting the proper version of CUDA:</p>
+<ul>
+<li>Stable(2.4.0)</li>
+<li>Your OS</li>
+<li>Pip</li>
+<li>Python</li>
+<li>CUDA version (I just went with the latest one)</li>
+<li>Copy the command it gives you</li>
+</ul>
+<p>  I ran the command it build for me in the terminal and waited for everything to download and install.</p>
+<h1 id="running-the-install-test">Running The Install Test</h1>
+<p>  Everything seemed to be going well, so it was time to run the test as outlined on the PyTorch webiste. In the shell, to bring up the Python interpreter:</p>
+<pre><code>python
+</code></pre>
+<p>  Then the following commands</p>
+<pre><code>import torch
+x = torch.rand(5, 3)
+print(x)
+</code></pre>
+<p>  The instructions said to expect something like&hellip;</p>
+<pre><code>tensor([[0.3380, 0.3845, 0.3217],
+        [0.8337, 0.9050, 0.2650],
+        [0.2979, 0.7141, 0.9069],
+        [0.1449, 0.1132, 0.1375],
+        [0.4675, 0.3947, 0.1426]])
+</code></pre>
+<p>&amp;emps; But something wasn&rsquo;t working. The import torch command was throwing an error. I checked whether CUDA is enabled on my GPU driver and it is accessible by PyTorch with&hellip;</p>
+<pre><code>import torch
+torch.cuda.is_available()
+</code></pre>
+<p>  and expected it to return a boolean value&hellip; but it was once again failing to import torch. I checked in the local Lib directory and it was definitely there.</p>
+<h1 id="it-seems-theres-a-problem">It Seems There&rsquo;s A Problem</h1>
+<p>  Troubleshooting time. I first checked which version of Python I was running:</p>
+<pre><code>python --version 
+
+Python 3.11.7 | packaged by Anaconda, Inc. ...
+</code></pre>
+<p>  All looked good. I then activate python in the shell</p>
+<pre><code>python 
+
+&gt;&gt;&gt; import torch
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+  File &quot;C:\ ...,&quot; in &lt;module&gt;
+    raise err
+OSError: [WinError 126] The specified module could not be found. Error loading &quot;C:\ ...&quot; or one of its dependencies.
+</code></pre>
+<p>  Well that&rsquo;s a problem&hellip; I searched around a bit before thinking to search specifically for the OSError.</p>
+<h1 id="solution">Solution</h1>
+<p>  After searching for this error I found my way to:</p>
+<p><a href="https://github.com/pytorch/pytorch/issues/131662">https://github.com/pytorch/pytorch/issues/131662</a></p>
+<p>where I found the following:</p>
+<pre><code>guybud commented on July 26
+
+for noobs like me having trouble [figuring] this out still.
+
+- If you havent already, install Visual Studio 2022 - community edition is free. 
+- Search &quot;Visual Studio Installer&quot; in start menu and run it. Click Modify, add Desktop Development with C++.
+- Install it and [you] should be good. Ran that dependency checker again to confirm and it was good to go.
+</code></pre>
+<p>  I made my way to the Microsoft Store application and found Visual Studio 2022 - Community Edition. Upon installation set up - as I didn&rsquo;t have this before, so didn&rsquo;t need to do the alterations the comment described - under the Desktop &amp; Mobile section, there was an option for the Desktop development with C++. Selecting it brought the download size up to ~10 GB.</p>
+<h1 id="running-the-pytorch-installation-test-again">Running the PyTorch Installation Test Again</h1>
+<p>  After restarting my computer for good measure, it was time to try again:</p>
+<pre><code>python
+&gt;&gt;&gt; import torch
+&gt;&gt;&gt; x = torch.rand(5, 3)
+&gt;&gt;&gt; print(x)
+tensor([[0.2544, 0.8235, 0.8823],
+        [0.8874, 0.9768, 0.2595],
+        [0.7319, 0.6048, 0.5291],
+        [0.8760, 0.9874, 0.8595],
+        [0.8292, 0.8068, 0.3532]])
+</code></pre>
+<p>  Success! And to test that PyTorch could find my GPU:</p>
+<pre><code>&gt;&gt;&gt; torch.cuda.is_available()
+True
+&gt;&gt;&gt; exit()
+</code></pre>
+<p>  It works!! That ended up being a little more of an adventure than I was expecting, but once I figured out which dependencies I was missing, everything sorted itself out. Hoping to be able to use some of the newly acquired functionality on some projects soon. I&rsquo;ll document those in future posts.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+

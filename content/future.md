@@ -24,7 +24,7 @@ output: html_document
 
 - Free CCNA Networking [Course](https://youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P&si=3RL_2D8sqQup6trU) Notes
 - Neovim Tutorial Notes
-  - Open Neovim, :Tutor
+  - Open Neovim, :Tutor &#10004;
   - Neovim customization notes
 - ffmpeg Notes
 - Learn C
@@ -35,3 +35,5 @@ output: html_document
 - Text Mining [with R](https://www.tidytextmining.com/) notes
 - Supervised Machine Learning for [Text Analysis with R](https://smltar.com/) notes
 - A Practical Approach for [Predictive Models](https://bookdown.org/max/FES/) notes
+- Coursera course notes
+- picoCTF challenge walk-throughs

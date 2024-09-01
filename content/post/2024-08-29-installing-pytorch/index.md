@@ -1,0 +1,201 @@
+---
+title: Installing PyTorch
+author: 'Zach Hedeen '
+date: '2024-08-29'
+slug: installing-pytorch
+categories:
+  - Python
+  - CUDA
+  - Troubleshooting
+tags:
+  - Python
+  - CUDA
+  - NVIDIA
+---
+
+
+
+# Introduction
+
+&emsp; I looked into working with PyTorch because it appears I'll be running some machine-learning type projects in the near future, and PyTorch is a way to run that within Python - another area I'm actively expanding my skills. My hardware isn't the strongest, so it was a question about whether I'd even meet the system requirements going in. 
+
+&emsp; What is [PyTorch?](https://www.youtube.com/watch?v=ORMx45xqWkA) From [their github page](https://github.com/pytorch/pytorch):
+
+```
+"PyTorch is a Python package that provides two high-level features:  
+- Tensor computation (like NumPy) with strong GPU acceleration  
+- Deep neural networks built on a tape-based autograd system  
+
+You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed."
+```
+
+# Hardware Check
+
+&emsp; There was no point in continuing if my hardware wasn't compatible with what I was trying to do. From what I read, it was recommended that you run a lot of this sort of task through your GPU using CUDA (Compute Unified Device Architecture), which is an NVIDIA parallel computing platform and application programming interface (API) that allows acceleration of general processing through harnessing a GPU (from Wikipedia). I ran the `nvidia-smi` command in the terminal:
+
+```
+nvidia-smi
+
+---------------------------+
+    CUDA Version: 12.6     |
+
+```
+
+&emsp; To my surprise, my little GeForce GTX 1650 Ti GPU was CUDA compatible! The exact text has now been brought up after I've installed the new version, but the top right corner of the text that gets displayed is what you're after. 
+
+# Installing CUDA
+
+&emsp; Now that I knew my hardware would work I made my way to the NVIDIA CUDA [website](https://developer.nvidia.com/cuda-downloads). To find the right version of CUDA, I clicked through the prompts:
+
+- Operating System
+- Architecture
+- Version
+- Installer Type
+
+&emsp; It was a somewhat large download at ~3 GB, so I'm glad I had the room.
+
+
+# Checking CUDA Installation 
+
+&emsp; The CUDA installer was pretty standard. After working through the installer, I ran the following in the terminal and saw that CUDA had in fact installed. 
+
+```
+nvcc --version
+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Fri_Jun_14_16:44:19_Pacific_Daylight_Time_2024
+Cuda compilation tools, release 12.6, V12.6.20
+Build cuda_12.6.r12.6/compiler.34431801_0
+```
+
+# Installing PyTorch
+
+&emsp; Before the final steps, it was time to set up a virtual environment for Python with:
+
+```
+python -m venv .venv 
+```
+
+&emsp; Activating the virtual environment to make sure that PyTorch would install here rather than in the main Python directory:
+
+```
+.venv\Scripts\activate
+```
+
+&emsp; It was finally itme to acquire PyTorhc. Selecting the proper version from the PyTorch [main site](https://pytorch.org/get-started/locally/) went similarly to selecting the proper version of CUDA: 
+
+- Stable(2.4.0)
+- Your OS
+- Pip
+- Python
+- CUDA version (I just went with the latest one)
+- Copy the command it gives you
+
+&emsp; I ran the command it build for me in the terminal and waited for everything to download and install. 
+
+# Running The Install Test
+
+&emsp; Everything seemed to be going well, so it was time to run the test as outlined on the PyTorch webiste. In the shell, to bring up the Python interpreter:
+
+```
+python
+```
+&emsp; Then the following commands
+
+```
+import torch
+x = torch.rand(5, 3)
+print(x)
+```
+
+&emsp; The instructions said to expect something like...
+
+```
+tensor([[0.3380, 0.3845, 0.3217],
+        [0.8337, 0.9050, 0.2650],
+        [0.2979, 0.7141, 0.9069],
+        [0.1449, 0.1132, 0.1375],
+        [0.4675, 0.3947, 0.1426]])
+```
+&emps; But something wasn't working. The import torch command was throwing an error. I checked whether CUDA is enabled on my GPU driver and it is accessible by PyTorch with...
+
+```
+import torch
+torch.cuda.is_available()
+```
+&emsp; and expected it to return a boolean value... but it was once again failing to import torch. I checked in the local Lib directory and it was definitely there. 
+
+# It Seems There's A Problem
+
+&emsp; Troubleshooting time. I first checked which version of Python I was running:
+
+```
+python --version 
+
+Python 3.11.7 | packaged by Anaconda, Inc. ...
+```
+
+&emsp; All looked good. I then activate python in the shell
+
+```
+python 
+
+>>> import torch
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\ ...," in <module>
+    raise err
+OSError: [WinError 126] The specified module could not be found. Error loading "C:\ ..." or one of its dependencies.
+```
+
+&emsp; Well that's a problem... I searched around a bit before thinking to search specifically for the OSError. 
+
+# Solution 
+
+&emsp; After searching for this error I found my way to:
+
+https://github.com/pytorch/pytorch/issues/131662
+
+where I found the following:
+
+```
+guybud commented on July 26
+
+for noobs like me having trouble [figuring] this out still.
+
+- If you havent already, install Visual Studio 2022 - community edition is free. 
+- Search "Visual Studio Installer" in start menu and run it. Click Modify, add Desktop Development with C++.
+- Install it and [you] should be good. Ran that dependency checker again to confirm and it was good to go.
+```
+
+&emsp; I made my way to the Microsoft Store application and found Visual Studio 2022 - Community Edition. Upon installation set up - as I didn't have this before, so didn't need to do the alterations the comment described - under the Desktop & Mobile section, there was an option for the Desktop development with C++. Selecting it brought the download size up to ~10 GB.
+
+# Running the PyTorch Installation Test Again
+
+&emsp; After restarting my computer for good measure, it was time to try again:
+
+```
+python
+>>> import torch
+>>> x = torch.rand(5, 3)
+>>> print(x)
+tensor([[0.2544, 0.8235, 0.8823],
+        [0.8874, 0.9768, 0.2595],
+        [0.7319, 0.6048, 0.5291],
+        [0.8760, 0.9874, 0.8595],
+        [0.8292, 0.8068, 0.3532]])
+```
+
+&emsp; Success! And to test that PyTorch could find my GPU:
+
+```
+>>> torch.cuda.is_available()
+True
+>>> exit()
+```
+
+&emsp; It works!! That ended up being a little more of an adventure than I was expecting, but once I figured out which dependencies I was missing, everything sorted itself out. Hoping to be able to use some of the newly acquired functionality on some projects soon. I'll document those in future posts. 
+
+
+
