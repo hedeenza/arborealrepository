@@ -97,17 +97,45 @@
 <p><code>yFx</code> / <code>yTx</code> - the same as the above but going backwards</p>
 <p><code>d2fx</code> - delete everything up to, and including, the SECOND instance of x in the line from the cursor</p>
 <h1 id="vertical-3">Vertical (#3)</h1>
-<p>Making sure relative lines are set is going to make quick jumping with movements like <code>5j</code> and <code>17k</code> to move <em>exactly</em> where you need to up and down quickly much easier.</p>
-<p><code>(</code> -
-<code>[</code> -
-<code>{</code> -</p>
+<p>  Making sure relative lines are set is going to make quick jumping with movements like <code>5j</code> and <code>17k</code> to move <em>exactly</em> where you need to up and down quickly much easier.</p>
+<p><code>{</code> - move up by a paragraph {continuous, non-blank lines}</p>
 <p><code>&lt;Ctrl-d&gt;</code> - move half a page down
 <code>&lt;Ctrl-u&gt;</code> - move half a page up</p>
+<p><code>zz</code> - centers your view around your cursor position</p>
 <p><code>gg</code> - jump to the beginning of the file
 <code>G</code> - jump to the end of the file</p>
+<p><code>:100</code> - jump directly to line no. 100</p>
+<p><code>*</code> - when the cursor is on a word, it will auto-load that into the search (next/previous with n/N)
+<code>#</code> - inverted search version of <code>*</code></p>
 <h1 id="advanced-motions-p1-4">Advanced Motions P1 (#4)</h1>
+<p><code>vi(</code> - if you&rsquo;re in between parentheses, select everything within, but not, including the parentheses
+<code>va(</code> - if you&rsquo;re in between parentheses, select everything within <strong>AND</strong> including the parentheses</p>
+<ul>
+<li>with both of these commands, if you run them before the section you want, it will select the next occurrence in that line.</li>
+</ul>
+<p><code>ya{</code> - yank everything within <strong>AND</strong> including the next brackets in the line</p>
+<p><code>viw</code> - select the whole word, no matter where your cursor is in that word</p>
+<ul>
+<li>follow that with <code>p</code> and it will paste over the top of that word, in-line, rather than creating a new line
+<code>viW</code> - select all text until the surrounding white space within the line</li>
+</ul>
+<p><code>Vy</code> - does the same as <code>yy</code> but it can feel faster for some folks
+<code>Vd</code> - does the same as <code>dd</code> but it can feel faster for some folks</p>
 <h1 id="advanced-motions-p2-5">Advanced Motions P2 (#5)</h1>
-<h1 id="heading"></h1>
+<p><code>v%</code> - when the cursor is on a &ldquo;(&rdquo;, &ldquo;[&rdquo;, &ldquo;{&rdquo;, will highlight everything from that brace to the one it&rsquo;s paired with including the braces</p>
+<ul>
+<li>can be sped up using <code>va{</code> discussed above</li>
+</ul>
+<p><code>=</code> - auto-aligns things according to the rule set.
+<code>=ap</code> - auto-align the whole paragraph</p>
+<p><code>o</code> - will transfer your cursor to either side of a highlighted section while in highlight mode.</p>
+<p><code>yap</code> - yank all contiguous code (no blank lines in between) <strong>including</strong> the white space
+<code>yip</code> - yank all contiguous code (no blank lines in between) <strong>not including</strong> the white space</p>
+<p><code>dap</code> - delete all contiguous code (no blank lines in between) <strong>including</strong> the white space
+<code>dip</code> - delete contiguous code (no blank lines in between) <strong>not including</strong> the white space</p>
+<p><code>&lt;Ctrl+v&gt;</code> - followed by <code>j</code> or <code>k</code> to create multiple cursors
+<code>&lt;Ctrl+a&gt;</code> - increment your selection once
+<code>&lt;Ctrl+a&gt;&lt;Ctrl+a&gt;</code> - increment each element in your selection</p>
 <h1 id="from-shorts">From Shorts</h1>
 <p><code>diw</code> - delete the word you&rsquo;re in the middle of<br>
 <code>diW</code> - delete everything between the white spaces on the outside of where your cursor is</p>
