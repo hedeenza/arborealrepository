@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ctfs on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/ctf/</link>
-    <description>Recent content in Ctfs on The Arboreal Repository</description>
+    <title>Forensics on The Arboreal Repository</title>
+    <link>https://hedeenza.github.io/arborealrepository/tags/forensics/</link>
+    <description>Recent content in Forensics on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 02 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Verify (picoCTF 1)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/verify-picoctf-1/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/ctf/verify-picoctf-1/</guid>
       <description>Challenge Author: Jeffery John&#xA;Description &amp;ldquo;People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 has and a decrypt script to help you know that my flags are legitimate.&amp;rdquo;&#xA;Process / Notes Downloading the file with wget &amp;lt;link&amp;gt; Unzip the download with unzip &amp;lt;download&amp;gt; Saw that a lot of files got unzipped, originating in the files directory cd into the drop-in directory cat checksum.</description>
-    </item>
-    <item>
-      <title>Capture the Flag - Intro</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/capture-the-flag-intro/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/capture-the-flag-intro/</guid>
-      <description>Introduction Capture the Flag is a means of teaching cybersecurity principles through practical games. Players either try to find flags (often text strings) either held by the event host or other teams using various tools and techniques in order to win. (source Wikipedia)&#xA;The game originated at DEF CON, but after learning that there are a few online platforms to play and learn, I thought it would be fun to try it out.</description>
     </item>
   </channel>
 </rss>

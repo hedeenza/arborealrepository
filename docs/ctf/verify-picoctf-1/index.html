@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Verify (picoCTF 1) - The Arboreal Repository</title>
+<meta property="og:title" content="Verify (picoCTF 1) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Verify (picoCTF 1)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author: Jeffery John</p>
+<h1 id="description">Description</h1>
+<p>  &ldquo;People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&rsquo;m going to provide the SHA-256 has and a decrypt script to help you know that my flags are legitimate.&rdquo;</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li>Downloading the file with <code>wget &lt;link&gt;</code></li>
+<li>Unzip the download with <code>unzip &lt;download&gt;</code></li>
+</ol>
+<ul>
+<li>Saw that a lot of files got unzipped, originating in the <code>files</code> directory</li>
+</ul>
+<ol start="3">
+<li><code>cd</code> into the <code>drop-in</code> directory</li>
+<li><code>cat checksum.txt</code></li>
+<li>Now we need to compare this checksum against the checksum for everything in the <code>files</code> directory</li>
+<li>We can achieve that by first getting the checksums of every file in the <code>files</code> directory with <code>sha256sum files/*</code></li>
+</ol>
+<ul>
+<li>Each line will display the checksum followed by the file the checksum is from</li>
+</ul>
+<ol start="7">
+<li>Then we can pipe the result into <code>grep</code> to produce online the line that matches the checksum from the <code>checksum.txt</code> file.</li>
+<li><code>sha256sum files/* | grep 'checksum-from-the-file'</code></li>
+<li>Now that we have the proper file, we can run the decryption script with <code>./decrypt.sh files/the-file-with-the-flag</code></li>
+</ol>
+<ul>
+<li>There was an error when doing this one on the web-terminal and when performing it locally, but connecting with ssh and running the decryption ended up producing the proper flag</li>
+</ul>
+<h1 id="hints">Hints</h1>
+<ol>
+<li>Checksums let you tell if a file is complete and from the original distributor. If the hash doesn&rsquo;t match, it&rsquo;s a different file.</li>
+<li>You can create a SHA checksum of a file with <code>sha256sum &lt;file&gt;</code> or all files in a directory with <code>sha256sum &lt;directory&gt;/*</code></li>
+<li>Remember you can pipe the output of one command to another with <code>|</code>. Try practicing wtih the &lsquo;First Grep&rsquo; challenge if you&rsquo;re stuck!</li>
+</ol>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>You can get the checksums of a whole directory by using the &lsquo;*&rsquo; wildcard</li>
+<li>You can narrow your search by piping the results into the <code>grep</code> command</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+
