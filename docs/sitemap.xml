@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hedeenza.github.io/arborealrepository/categories/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/forensics/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/post/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/2024/09/03/scan-surprise-picoctf-2/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/</loc>
+    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/2024/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/categories/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/forensics/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
-    <lastmod>2024-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/</loc>
     <lastmod>2024-09-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/verify-picoctf-1/</loc>
@@ -81,9 +87,6 @@
     <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/nvidia/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/post/</loc>
     <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/python/</loc>
