@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/categories/</link>
+    <link>https://hedeenza.github.io/arborealrepository/categories/</link>
     <description>Recent content in Categories on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CTF</title>
-      <link>http://localhost:4321/arborealrepository/categories/ctf/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/ctf/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/ctf/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:4321/arborealrepository/categories/projects/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/projects/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/projects/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>CUDA</title>
-      <link>http://localhost:4321/arborealrepository/categories/cuda/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/cuda/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/cuda/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/cuda/</guid>
       <description></description>
     </item>
     <item>
       <title>Filling</title>
-      <link>http://localhost:4321/arborealrepository/categories/filling/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/filling/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/filling/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/filling/</guid>
       <description></description>
     </item>
     <item>
       <title>Meat</title>
-      <link>http://localhost:4321/arborealrepository/categories/meat/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/meat/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/meat/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/meat/</guid>
       <description></description>
     </item>
     <item>
       <title>Neovim</title>
-      <link>http://localhost:4321/arborealrepository/categories/neovim/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/neovim/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/neovim/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/neovim/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:4321/arborealrepository/categories/python/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/python/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/python/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Troubleshooting</title>
-      <link>http://localhost:4321/arborealrepository/categories/troubleshooting/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/troubleshooting/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/troubleshooting/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/troubleshooting/</guid>
       <description></description>
     </item>
     <item>
       <title>Recipes</title>
-      <link>http://localhost:4321/arborealrepository/categories/recipes/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/recipes/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/recipes/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/recipes/</guid>
       <description></description>
     </item>
     <item>
       <title>Bao</title>
-      <link>http://localhost:4321/arborealrepository/categories/bao/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/bao/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/bao/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/bao/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:4321/arborealrepository/categories/git/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/git/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/git/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
-      <link>http://localhost:4321/arborealrepository/categories/learning/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/learning/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/learning/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Exploration</title>
-      <link>http://localhost:4321/arborealrepository/categories/exploration/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/exploration/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/exploration/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/exploration/</guid>
       <description></description>
     </item>
     <item>
       <title>Reflection</title>
-      <link>http://localhost:4321/arborealrepository/categories/reflection/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/reflection/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/reflection/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/reflection/</guid>
       <description></description>
     </item>
     <item>
       <title>New Category</title>
-      <link>http://localhost:4321/arborealrepository/categories/new-category/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/new-category/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/new-category/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/new-category/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>http://localhost:4321/arborealrepository/categories/r/</link>
+      <link>https://hedeenza.github.io/arborealrepository/categories/r/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>http://localhost:4321/arborealrepository/categories/r/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/categories/r/</guid>
       <description></description>
     </item>
   </channel>
