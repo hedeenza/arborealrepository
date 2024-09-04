@@ -6,15 +6,8 @@
     <description>Recent content in Posts on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Scan Surprise (picoCTF 2)</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/03/scan-surprise-picoctf-2/</link>
-      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/03/scan-surprise-picoctf-2/</guid>
-      <description>Challenge Author: Jeffery John&#xA;Description I&amp;rsquo;ve gotten bored of handing out flags as text. Wouldn&amp;rsquo;t it be cool if they were an image instead?&#xA;Process / Notes Download the zipped file and unzip. file on the file reveals it&amp;rsquo;s a small image. Opening the file shows it&amp;rsquo;s a QR code. Without a phone, the hint about using zbar tools led me to try to figure out what those were. Acquiring zbar tools with sudo apt install zbar-tools Using zbar-tools directly didn&amp;rsquo;t work.</description>
-    </item>
     <item>
       <title>Installing PyTorch</title>
       <link>https://hedeenza.github.io/arborealrepository/2024/08/29/installing-pytorch/</link>
