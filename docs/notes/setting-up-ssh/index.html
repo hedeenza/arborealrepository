@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Setting Up SSH - The Arboreal Repository</title>
+<meta property="og:title" content="Setting Up SSH - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Setting Up SSH</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p><a href="https://youtu.be/YS5Zh7KExvE?si=xMXSBynITWfHZtLM">Video</a> <a href="https://www.youtube.com/@LearnLinuxTV">by Learn Linux TV</a>
+Be sure to check out their channel!</p>
+<h1 id="openssh">OpenSSH</h1>
+<ul>
+<li>Run commands on a server through the terminal like you were standing right there</li>
+<li>Most Linux distributions have OpenSSH by default</li>
+<li>Uses port 22 by default</li>
+</ul>
+<h1 id="installation">Installation</h1>
+<p><code>$ which ssh</code> - Check if SSH is already installed</p>
+<p><code>$ apt search openssh-client</code> - Shows the SSH packaged the SSH utility comes from + will show if it&rsquo;s installed on your device</p>
+<h1 id="connecting">Connecting</h1>
+<p><code>$ ssh user-name@ip-address</code> - Allows you to connect with the username at the target IP address</p>
+<ul>
+<li>If you&rsquo;ve never connected to the server before, you&rsquo;ll get a prompt with a &ldquo;fingerprint&rdquo; asking if you&rsquo;re sure you want to connect.</li>
+</ul>
+<p><code>$ password prompt</code> - Enter your password for that user-name at that server.</p>
+<h1 id="running-commands">Running Commands</h1>
+<ul>
+<li>If everything has gone successfully, you should be logged in and able to run commands on that server like you were using it directly.</li>
+</ul>
+<p><code>CTRL + d</code> - Disconnect from the server</p>
+<h1 id="examining-the-ssh-files">Examining the SSH Files</h1>
+<ul>
+<li>
+<p>In your local <code>.ssh</code> folder, your <code>known_hosts</code> file will contain the fingerprints of servers you&rsquo;ve connected to in the past.</p>
+<ul>
+<li>It&rsquo;s the fingerprint in this file that allows you to skip the &ldquo;first time connecting to this server&rdquo; prompt the next time you connect</li>
+<li>This functionality also helps you avoid a &ldquo;man-in-the-middle&rdquo; attack, where they try to get you to connect to a host with the same IP address. The system will <em>detect that the fingerprint has changed</em> and prompt you again if you really want to connect if that&rsquo;s the case.</li>
+</ul>
+</li>
+<li>
+<p>On the server, <code>/var/log/auth.log</code> contains a log of who (their IP address) accessed the server and when.</p>
+<ul>
+<li>You need root access to get to the log file</li>
+<li>Even if they can&rsquo;t connect but attempt to, you should be able to see that in the log file</li>
+</ul>
+</li>
+</ul>
+<h1 id="simplifying-connections-with-a-config-file">Simplifying Connections with a &ldquo;config&rdquo; File</h1>
+<ul>
+<li>Lives in your <code>.ssh</code> folder
+<ul>
+<li>In the config file, structure each block as:</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Host easier-to-remember-name
+  Hostname ip-address
+  Port port-number
+  User user-name or root</p>
+</blockquote>
+<ul>
+<li>
+<p>Now when you connect, you can just do:</p>
+<ul>
+<li><code>$ ssh easier-to-remember-name</code></li>
+</ul>
+</li>
+<li>
+<p>Now you don&rsquo;t need to remember the host IP, Port, or Username when you want to connect</p>
+</li>
+</ul>
+<h1 id="public-and-private-keys">Public and Private Keys</h1>
+<ul>
+<li>Use them for greater security and greater convenience</li>
+<li>Uses the key for authentication instead of a password
+<ul>
+<li>Can pair with disabling password-authentication to make it very difficult to access the server without the key</li>
+</ul>
+</li>
+</ul>
+<h2 id="creating-an-ssh-key">Creating an SSH Key</h2>
+<p><code>$ ssh-keygen</code>
+- It will generate a RSA-type key by default
+- Make sure to input the file to save the key as, so you don&rsquo;t <strong>accidentally overwrite</strong> an existing key - doing so may lock you out of a server
+- Enter a passphrase
+- Distinct from a password, in that it is only typed locally, and it allows you to start using the key the passphrase is assigned to. Without that, even if someone got access to the key, without a passphrase, they can&rsquo;t use it</p>
+<ul>
+<li>The <em>private key</em> will be the file name (or default file name) you generated
+<ul>
+<li><strong>DO NOT LET THIS ONE GET OUT</strong></li>
+<li>If it does, replace it on <em>everything immediately</em></li>
+</ul>
+</li>
+<li>The <em>public key</em> will be the file name.pub
+<ul>
+<li>Add this to the server end</li>
+<li>Anyone can see this and your security won&rsquo;t be compromised as long as they don&rsquo;t have access to the private key as well.</li>
+</ul>
+</li>
+</ul>
+<h2 id="applying-a-key-pair">Applying a Key Pair</h2>
+<h3 id="the-long-way">The Long Way</h3>
+<ul>
+<li><code>$ cat</code> the public key</li>
+<li>Copy it to the clip board</li>
+<li>Connect to your server</li>
+<li>Navigate to, or create a <code>.ssh</code> directory</li>
+<li>Create or add the public key you copied into the <code>authorized_keys</code> file
+<ul>
+<li>You can store multiple public keys here, each go on their own line (they should only be one line long when you paste them in)</li>
+</ul>
+</li>
+<li>The next time you connect to the server, you will be let in immediately without a password prompt
+<ul>
+<li>Unless you&rsquo;ve set a passphrase. Then it will ask you for your passphrase to unlock use of the key
+<ul>
+<li>You can choose to always decrypt the key locally so you don&rsquo;t have to enter the passphrase each time, but if someone else tries to use the key, they&rsquo;ll have to enter the passphrase even if you select this option</li>
+</ul>
+</li>
+<li>The server compares its public key against your private key, which are mathematically linked, but not identical.</li>
+</ul>
+</li>
+</ul>
+<h3 id="the-short-way">The Short Way</h3>
+<p><code>$ ssh-copy-id -i path-to-input-public-key username@IP-address</code>
+- It will prompt you for your password for your username at that server</p>
+<ul>
+<li>If that&rsquo;s successful, it will tell you how many keys were added. This will likely be just 1</li>
+<li>This command has created the <code>authorized_keys</code> file with the appropriate public key, just like we did manually in the long way</li>
+</ul>
+<h2 id="managing-ssh-keys">Managing SSH Keys</h2>
+<ul>
+<li>Creating individual keys for each client to access a server helps minimize security risks. If that key falls into the wrong hands, and you gave it to every client, then someone can get into <em>all</em> of your clients</li>
+<li>The server may lock you out if you try to many keys, as will happen automatically when you have a ton of keys stored</li>
+</ul>
+<p><code>$ ssh-keygen -t ed25519 -C &quot;your-comment&quot;</code>
+- will create a key of <em>type</em> (-t) ed25519
+- This type of key is both shorter and more secure than the default RSA type
+- Adds a <em>comment</em> (-C) of your choosing, otherwise it will default to &ldquo;username@your-device&rdquo;
+- Your comment can be anything and it won&rsquo;t affect its function, but having a note about what it&rsquo;s for can make managing your keys much easier</p>
+<ul>
+<li>Choosing a name that helps you systematically keep track of your keys can be really beneficial
+<ul>
+<li>Make sure you include the <em>full file path</em> to make sure the keys end up in the right place
+<ul>
+<li>e.g. /home/username/.ssh/your-logical-key-name</li>
+<li>they recommend the &ldquo;ClientName_id_KeyType&rdquo; formate</li>
+</ul>
+</li>
+<li>Use a passphrase so that even if the key fell into the wrong hands, a malicious actor couldn&rsquo;t take over their whole server or anything</li>
+</ul>
+</li>
+</ul>
+<h3 id="caching-the-passphrase-with-the-ssh-agent">Caching the Passphrase with the SSH Agent</h3>
+<ul>
+<li>Will unlock the key for every connection until you close the terminal window</li>
+</ul>
+<h4 id="starting-the-ssh-agent">Starting the SSH Agent</h4>
+<ul>
+<li>Especially useful to know when in a server without a GUI
+<ul>
+<li>Some people will want their key cached on a server known as a &ldquo;bastard host&rdquo;, and it&rsquo;s there that they&rsquo;ll start all of their ssh connections, rather than their own device</li>
+</ul>
+</li>
+</ul>
+<p><code>$ ps aux | grep ssh-agent</code> - Won&rsquo;t find anything if ssh-agent is not running</p>
+<p><code>$ eval &quot;$(ssh-agent)&quot;</code> - Begins the ssh-agent + displays the process id (pid)</p>
+<p><code>$ ps aux | grep ssh-agent</code> - Run this again, and we&rsquo;ll see the agent running at the pid it displayed before
+- If you disconnect from this terminal, the ssh-agent will stop, so add your key before closing anything</p>
+<p><code>$ ssh-add path-to-**private**-key</code> - To store the private key with the ssh-agent
+- You will be prompted for your passphrase
+- But after this time, you won&rsquo;t be prompted for your passphrase again until you close your terminal window</p>
+<h1 id="configuring-openssh">Configuring OpenSSH</h1>
+<ul>
+<li>Configuring the server-side
+<code>$ which sshd</code> - Checks whether the server-side component is installed
+<ul>
+<li>This daemon runs in the background to accept ssh connections</li>
+</ul>
+</li>
+</ul>
+<p><code>$ systemctl status sshd</code> - Allows you to view sshd&rsquo;s status (Active? Running? Enabled to start as soon as the server starts?)
+- Can restart sshd with <code>$ systemctl restart sshd</code>
+- Can stop sshd with <code>$ systemctl stop sshd</code>
+- This will not terminate existing connections, but it will prevent you from reconnecting
+- Can start sshd with <code>$ systemctl start sshd</code>
+- Good to check the status again to make sure before disconnecting</p>
+<p><code>$ systemctl enable sshd</code> or <code>$ systemctl enable ssh</code> (for ubuntu/debian)</p>
+<h2 id="host-keys">Host Keys</h2>
+<ul>
+<li>In <code>/etc/ssh</code>
+<ul>
+<li>Don&rsquo;t delete the hostkeys!</li>
+<li>But if you&rsquo;re cloning the server, you don&rsquo;t want the same hostkeys on multiple servers, so make sure you regenerate the keys on the new server instead of using the same ones</li>
+</ul>
+</li>
+</ul>
+<h2 id="server-side-configuration">Server-Side Configuration</h2>
+<ul>
+<li>In <code>sshd_config</code>
+<ul>
+<li>You can change the port number
+<ul>
+<li>Un-comment the line, change the number to what you want</li>
+<li>Slightly improves the security of the server by avoiding bots online that are scanning for the default port 22
+<ul>
+<li>A determined malicious actor who really wants to find the port number can do so quickly, but it helps avoid the automated scanning</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can set PermitRootLogin to no
+<ul>
+<li>Only do this if you have another user that you can log in as, or you&rsquo;ll lock yourself out of the server!!!</li>
+<li>But if you are set up to do this, changing this option to no can help keep you safe from malicious actors trying to log in as root</li>
+</ul>
+</li>
+<li>You can set PasswordAuthentication to no
+<ul>
+<li>Only set this to no if you already have the ssh key set up and functioning</li>
+<li>But setting this to no hugely increases the security of the server</li>
+</ul>
+</li>
+<li>Save your changes</li>
+</ul>
+</li>
+<li>Restart sshd to apply the changes to the configuration file
+<ul>
+<li><strong>DO NOT DISCONNECT YET</strong> or you may be locked out if there was an error</li>
+<li>Create a new terminal tab, and try to log in again normally first
+<ul>
+<li>Make sure you are connecting to the proper port with -p ### if you ended up changing the port in the configuration file earlier</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="trying-to-log-in-without-a-key">Trying to Log In without a Key</h2>
+<ul>
+<li>If you&rsquo;ve disabed password authentication and try to log in without a key, it will display:
+<ul>
+<li><code>Permission denied (publickey).</code></li>
+<li>Can&rsquo;t brute-force the password if password login isn&rsquo;t even allowed!</li>
+</ul>
+</li>
+</ul>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<ul>
+<li>A &ldquo;timeout&rdquo; error may mean that port 22 is not listening on the host end, or that the firewall on that side of things has blocked you
+<ul>
+<li>Will not say it&rsquo;s &ldquo;blocked&rdquo; as that would let a malicious actor know that there is indeed a real server there</li>
+<li>By saying &ldquo;nothing&rdquo; it&rsquo;s unclear what&rsquo;s going on, which slightly increases security</li>
+</ul>
+</li>
+<li>The .ssh directory should only have permissions for you
+<ul>
+<li>If the group or other have permissions, you will probably get blocked and be unable to use ssh, because an ssh directory with permissions beyond your username is <em>highly suspicious</em></li>
+<li>If your public key permissions are not <code>-rw-r--r--</code> OR</li>
+<li>Your private key permissions are not <code>-rw-------</code> you may not be able to access ssh, as the system will detect that that is <em>highly suspicious</em>
+<ul>
+<li>This is true both on the client end but also on the host end</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If a user can&rsquo;t connect, you can <code>tail</code> the log file while they try to connect and see which errors it&rsquo;s throwing
+<ul>
+<li>You will also be able to see the username they&rsquo;re trying to log in with</li>
+<li>You can get blocked if you type in the wrong password too many times
+<code>$ journalctl -fu ssh</code> OR <code>$ journalctl -fu sshd</code> is another way of tailing the log file</li>
+<li>Use the ssh version for Debian, Ubuntu, and other Debian-based distributions</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+
