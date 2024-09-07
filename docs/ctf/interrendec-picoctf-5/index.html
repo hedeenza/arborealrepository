@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>interrendec (picoCTF 5) - The Arboreal Repository</title>
+<meta property="og:title" content="interrendec (picoCTF 5) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">interrendec (picoCTF 5)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author:</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>Can you get the real meaning from this file?</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li><code>wget</code> the file</li>
+<li><code>file</code> shows its ASCII text</li>
+<li>The tags on the challenge indicate <em>base64</em> and <em>Caesar cipher</em></li>
+<li>Both <code>cat</code> and <code>strings</code> display the same thing</li>
+<li>Trying <code>base64</code> first</li>
+<li>Looks like we&rsquo;re getting somewhere</li>
+<li>Using the inbuilt Neo Vim rot13 cipher with <code>g??</code></li>
+<li>That didn&rsquo;t seem to help. What about rot13, then base64?</li>
+<li>No luck</li>
+<li><code>base64</code> decode nor encode seemed to do anything. What about encode first?</li>
+<li><code>base64 -d</code> the original text from the file, then trying to <code>base64 -d</code> it AGAIN</li>
+<li>Now it&rsquo;s starting to look like a pictoCTF flag with the &ldquo;{}&rdquo; present</li>
+<li>Now going to try <code>g??</code></li>
+<li>Nothing with rot13. But online it looks like there&rsquo;s a built in <code>tr</code> command line command that may help</li>
+<li>The <code>tr</code> command will:
+<ul>
+<li>Translate, squeeze, and/or delete characters from standard input, writing to standard output. STRING1 and STRING2 specify arrays of characters. ARRAY1 and ARRAY2 that control the action</li>
+</ul>
+</li>
+<li>There&rsquo;s an example using regex expressions for custom offsets on Stack Overflow</li>
+<li>With w and c 6 characters apart, going to try that in my expression</li>
+<li>Wait, that&rsquo;s the wrong combination of characters to look at!
+<ul>
+<li><code>echo 'string' | tr '[a-zA-Z]' '[g-za-fG-ZA-F]'</code> is not the right offset</li>
+</ul>
+</li>
+<li>I need &lsquo;j&rsquo; to become &lsquo;p&rsquo;</li>
+<li>With the <code>[g-za-fG-ZA-F]</code> rotation, the flag is revealed</li>
+</ol>
+<p><strong>21 minutes 9 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<ol>
+<li>Engaging in various decoding processes is of the utmost importance</li>
+</ol>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Messages may be double, triple, or more encoded, even in the same manner, as with the <code>base64</code> encoding</li>
+<li>How to use <code>tr</code> to rotate characters encrypted with a Caesar cipher</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+

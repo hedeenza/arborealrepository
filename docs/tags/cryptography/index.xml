@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cryptography on The Arboreal Repository</title>
+    <link>https://hedeenza.github.io/arborealrepository/tags/cryptography/</link>
+    <description>Recent content in Cryptography on The Arboreal Repository</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>interrendec (picoCTF 5)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/interrendec-picoctf-5/</link>
+      <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/interrendec-picoctf-5/</guid>
+      <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Can you get the real meaning from this file?&#xA;Process / Notes wget the file file shows its ASCII text The tags on the challenge indicate base64 and Caesar cipher Both cat and strings display the same thing Trying base64 first Looks like we&amp;rsquo;re getting somewhere Using the inbuilt Neo Vim rot13 cipher with g?? That didn&amp;rsquo;t seem to help. What about rot13, then base64? No luck base64 decode nor encode seemed to do anything.</description>
+    </item>
+  </channel>
+</rss>
