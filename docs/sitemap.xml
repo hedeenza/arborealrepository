@@ -3,15 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/</loc>
-    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/cryptography/</loc>
-    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
+    <loc>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
-    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/general-skills/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/</loc>
+    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/cryptography/</loc>
     <lastmod>2024-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/interrendec-picoctf-5/</loc>
@@ -26,19 +41,10 @@
     <loc>https://hedeenza.github.io/arborealrepository/notes/</loc>
     <lastmod>2024-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
-    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/notes/setting-up-ssh/</loc>
     <lastmod>2024-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/ssh/</loc>
-    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
-    <lastmod>2024-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/</loc>
     <lastmod>2024-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</loc>
@@ -66,9 +72,6 @@
     <lastmod>2024-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/forensics/</loc>
-    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/general-skills/</loc>
     <lastmod>2024-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/learning/</loc>
