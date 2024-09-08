@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/tags/learning/</link>
+    <link>http://localhost:4321/arborealrepository/tags/learning/</link>
     <description>Recent content in Learning on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/tags/learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Secret of the Polyglot (picoCTF 4)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description The Network Operations Center (NOC) of your local institution picked up a suspicious file. They&amp;rsquo;re getting conflicting information on what type of file it is. They&amp;rsquo;ve brought you in as an external expert to examine the file. Can you extract all the information from this strange file?&#xA;Process / Notes Probably going to need to use the file command. Potentially exiftool as well. The file is pdf format, but file reveals that it&amp;rsquo;s a 50x50 png.</description>
     </item>
     <item>
       <title>Super SSH (picoCTF 3)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Using a secure shell (ssh) is going to be pretty important. Additional details will be available after launching your challenge instance.&#xA;Process / Notes Will need to ssh into this one. ssh -p &amp;rsquo;the port number&amp;rsquo; username@destination enter the password It gave me the flag! 3 minutes 52 seconds to complete&#xA;Hints None used Core Lessons Understanding how to SSH into a specific port with a specific username at a desired target is a core skill.</description>
     </item>
     <item>
       <title>Neo Vim with ThePrimeagen (Neo Vim pt. 3)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</link>
+      <link>http://localhost:4321/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</guid>
       <description>Neo Vim Lesson Series Looking up all the Vim content on YouTube told the algorithm to send me some more. I stumbled upon a series by the creator ThePrimeagen that details more commands in Vim and Neo Vim. I&amp;rsquo;ll do my best to only add here what hasn&amp;rsquo;t been covered already. But if you&amp;rsquo;re interested, here&amp;rsquo;s the link to the full playlist.&#xA;Introduction (#1) This covers a lot of the basics that the Vim :Tutor does.</description>
     </item>
     <item>
       <title>Learning Neovim (pt. 1)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</link>
+      <link>http://localhost:4321/arborealrepository/notes/learning-neovim/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/learning-neovim/</guid>
       <description>Sidestepping the Roadblock&amp;hellip; While attempting to work through Git BASH yesterday to get this site set up, I got Trapped in Vim™, which is apparently a very normal experience for beginners:&#xA;After trying what felt like everything that made sense and caving in to my impatience in the moment, I closed the window and learned how to change the default editor in Git Bash and set it to nano:&#xA;git config --global core.</description>
     </item>
     <item>
       <title>&#34;The Arboreal Repository&#34;</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</link>
+      <link>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
       <description>Recent Realizations I&amp;rsquo;m only 3 months into coding, but I&amp;rsquo;m learning a lot quickly R resume website then linux commands accidentally then SQL then Python out of need blogdown website&#xA;Title Meaning Repository - a safe place to store and retrieve information&#xA;arboreal - like a tree, I&amp;rsquo;m not perfect and am going to make mistakes and not do things perfectly. better to log while I&amp;rsquo;m going through it and not in hind-site.</description>
     </item>
   </channel>

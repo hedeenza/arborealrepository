@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/tags/visualization/</link>
+    <link>http://localhost:4321/arborealrepository/tags/visualization/</link>
     <description>Recent content in Visualization on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rower Hometown Map - pt.1</title>
-      <link>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</link>
+      <link>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
       <description>Introduction An important part of building a continually successful rowing team - or any team with turnover for that matter - is strategic recruitment. If you don&amp;rsquo;t have high quality people coming in as your previous high quality people leave, you&amp;rsquo;re going to be in a tough spot. Many Division 1 teams in the United States recruit from all across the country and internationally to find the talent that will help their team continue their storied legacy of excellence.</description>
     </item>
   </channel>

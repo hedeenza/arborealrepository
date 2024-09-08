@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meat on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/categories/meat/</link>
+    <link>http://localhost:4321/arborealrepository/categories/meat/</link>
     <description>Recent content in Meat on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/meat/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/categories/meat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Korean Ground Beef</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</guid>
       <description>by Unknown&#xA;Ingredients Yields ~4 servings (or 1 very hungry person)&#xD;Ingredient Amount Lean Ground Beef 1 lb / 454 g Brown Sugar 1/2 Cup Sesame Oil 1 tsp Soy Sauce 1/2 Cup Minced Garlic 3 cloves Sriracha 1 tsp Fresh, Minced Ginger 1 tsp Green Onions 2 Preparation ~20 minutes&#xA;Heat a large pan over medium - high heat.&#xA;Brown meat with sesame oil, garlic, and ginger.&#xA;Drain 75% of the fat, add in the brown sugar, soy sauce, and sriracha.</description>
     </item>
     <item>
       <title>Chinese BBQ Pork</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/chinese-bbq-pork/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/chinese-bbq-pork/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/chinese-bbq-pork/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/chinese-bbq-pork/</guid>
       <description>by B&#xA;Ingredients Yields ~1-3 lbs&#xD;Ingredient Amount Pork shoulder, cut into slabs 1-3 lbs Brown Sugar 3 Tbsp Honey 3 Tbsp Chinese 5-Spice 1.5 tsp Shaoxing Rice Wine 2 Tbsp Soy Sauce 1 Tbsp Hoisin Sauce 2 Tbsp (+1 if no Bean Curd) Red or Black Bean Curd 1 Tbsp Sesame Oil 1 Tbsp Salt 2 Tbsp Preparation Mix brown sugar, 5-spice, shaoxing rice wine, soy sauce, hoisin sauce, bean curd, sesame oil, and sea salt together in a bowl.</description>
     </item>
   </channel>

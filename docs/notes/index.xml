@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/notes/</link>
+    <link>http://localhost:4321/arborealrepository/notes/</link>
     <description>Recent content in Notes on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting Up SSH</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/setting-up-ssh/</link>
+      <link>http://localhost:4321/arborealrepository/notes/setting-up-ssh/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/setting-up-ssh/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/setting-up-ssh/</guid>
       <description>Video by Learn Linux TV Be sure to check out their channel!&#xA;OpenSSH Run commands on a server through the terminal like you were standing right there Most Linux distributions have OpenSSH by default Uses port 22 by default Installation $ which ssh - Check if SSH is already installed&#xA;$ apt search openssh-client - Shows the SSH packaged the SSH utility comes from + will show if it&amp;rsquo;s installed on your device</description>
     </item>
     <item>
       <title>Assign a Specific Python Version to a Virtual Environment</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</link>
+      <link>http://localhost:4321/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</guid>
       <description>Check Python Versions First we need to figure out what versions of python we have. I started with 3.11.&#xA;PS py --list&#xD;Download Python Next we need to download the version of Python we need for our specific project. Once the file is downloaded, follow the installation prompts.&#xA;Check Download After the download is complete, we can check that we have the additional version of Python installed. We should see both versions listed, and a star next to the active version.</description>
     </item>
     <item>
       <title>Learning Neovim (pt. 2)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim-pt-2/</link>
+      <link>http://localhost:4321/arborealrepository/notes/learning-neovim-pt-2/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim-pt-2/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/learning-neovim-pt-2/</guid>
       <description>Version Troubles I&amp;rsquo;ve been playing around with Neo Vim a lot more than I&amp;rsquo;ve been writing about it. It&amp;rsquo;s been 19 days since I first got trapped and despite that short time, I feel quite comfortable using the tool. There is certainly a ton of learning still to go before I&amp;rsquo;ll be able to zoom around and manipulate code at the speed of thought, but progress is progress.&#xA;The version that the Windows Subsystem for Linux installs is v0.</description>
     </item>
     <item>
       <title>Neo Vim with ThePrimeagen (Neo Vim pt. 3)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</link>
+      <link>http://localhost:4321/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</guid>
       <description>Neo Vim Lesson Series Looking up all the Vim content on YouTube told the algorithm to send me some more. I stumbled upon a series by the creator ThePrimeagen that details more commands in Vim and Neo Vim. I&amp;rsquo;ll do my best to only add here what hasn&amp;rsquo;t been covered already. But if you&amp;rsquo;re interested, here&amp;rsquo;s the link to the full playlist.&#xA;Introduction (#1) This covers a lot of the basics that the Vim :Tutor does.</description>
     </item>
     <item>
       <title>Learning Neovim (pt. 1)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</link>
+      <link>http://localhost:4321/arborealrepository/notes/learning-neovim/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/learning-neovim/</guid>
       <description>Sidestepping the Roadblock&amp;hellip; While attempting to work through Git BASH yesterday to get this site set up, I got Trapped in Vim™, which is apparently a very normal experience for beginners:&#xA;After trying what felt like everything that made sense and caving in to my impatience in the moment, I closed the window and learned how to change the default editor in Git Bash and set it to nano:&#xA;git config --global core.</description>
     </item>
     <item>
       <title>SQL: Zero to Advanced pt. 1</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
+      <link>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
       <description>materials by Bosscoder Academy, found on LinkedIn&#xA;Format The materials are sorted into 24 &amp;ldquo;days&amp;rdquo; of learning, each with a central theme. My goal is to break them into 3 posts, 8 &amp;ldquo;days&amp;rdquo; each, with a distillation of the already brief material in each section as a review of SQL.&#xA;1. Introduction to SQL and Relational Databases 1.1 Content SELECT -&#xA;INSERT -&#xA;UPDATE -&#xA;DELETE -&#xA;1.2 Practice Questions Question Answer Write a SQL query to insert a new record into the &#34;</description>
     </item>
   </channel>

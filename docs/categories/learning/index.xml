@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/categories/learning/</link>
+    <link>http://localhost:4321/arborealrepository/categories/learning/</link>
     <description>Recent content in Learning on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/learning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/categories/learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL: Zero to Advanced pt. 1</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
+      <link>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
       <description>materials by Bosscoder Academy, found on LinkedIn&#xA;Format The materials are sorted into 24 &amp;ldquo;days&amp;rdquo; of learning, each with a central theme. My goal is to break them into 3 posts, 8 &amp;ldquo;days&amp;rdquo; each, with a distillation of the already brief material in each section as a review of SQL.&#xA;1. Introduction to SQL and Relational Databases 1.1 Content SELECT -&#xA;INSERT -&#xA;UPDATE -&#xA;DELETE -&#xA;1.2 Practice Questions Question Answer Write a SQL query to insert a new record into the &#34;</description>
     </item>
   </channel>

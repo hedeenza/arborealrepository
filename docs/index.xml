@@ -2,248 +2,255 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/</link>
+    <link>http://localhost:4321/arborealrepository/</link>
     <description>Recent content on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4321/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collaborative Development (picoCTF 7)</title>
+      <link>http://localhost:4321/arborealrepository/ctf/collaborative-development-picoctf-7/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/arborealrepository/ctf/collaborative-development-picoctf-7/</guid>
+      <description>Challenge Author: Jeffery John&#xA;Difficulty: Easy&#xA;Description My team has been working very hard on new features for our flag printing program! I wonder how they&amp;rsquo;ll work together?&#xA;Process / Notes wget the zip Another git-based challenge There&amp;rsquo;s a python file (.py) cat on the commitedit message says to add part 3 to the program in refs/heads/feature here seem to be 3 parts git log It looks like we&amp;rsquo;re on the version with just the flag printer.</description>
+    </item>
     <item>
       <title>Commitment Issues (picoCTF 6)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description I accidentally wrote the flag down. Good thing I deleted it!&#xA;Process / Notes A lot of files in a .git folder got unzipped cat on a message reads &amp;ldquo;TOP SECRET&amp;rdquo; Recursively grepping grep -r &#39;pico&#39; .git/* - a few things pop up, looks like it&amp;rsquo;ll be in the log file with the initial commit Using tree to help navigate around cat into the files doesn&amp;rsquo;t seem to help.</description>
     </item>
     <item>
       <title>interrendec (picoCTF 5)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/interrendec-picoctf-5/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/interrendec-picoctf-5/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/interrendec-picoctf-5/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/interrendec-picoctf-5/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Can you get the real meaning from this file?&#xA;Process / Notes wget the file file shows its ASCII text The tags on the challenge indicate base64 and Caesar cipher Both cat and strings display the same thing Trying base64 first Looks like we&amp;rsquo;re getting somewhere Using the inbuilt Neo Vim rot13 cipher with g?? That didn&amp;rsquo;t seem to help. What about rot13, then base64? No luck base64 decode nor encode seemed to do anything.</description>
     </item>
     <item>
       <title>Setting Up SSH</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/setting-up-ssh/</link>
+      <link>http://localhost:4321/arborealrepository/notes/setting-up-ssh/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/setting-up-ssh/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/setting-up-ssh/</guid>
       <description>Video by Learn Linux TV Be sure to check out their channel!&#xA;OpenSSH Run commands on a server through the terminal like you were standing right there Most Linux distributions have OpenSSH by default Uses port 22 by default Installation $ which ssh - Check if SSH is already installed&#xA;$ apt search openssh-client - Shows the SSH packaged the SSH utility comes from + will show if it&amp;rsquo;s installed on your device</description>
     </item>
     <item>
       <title>Assign a Specific Python Version to a Virtual Environment</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</link>
+      <link>http://localhost:4321/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</link>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/assign-a-specific-python-version-to-a-virtual-environment/</guid>
       <description>Check Python Versions First we need to figure out what versions of python we have. I started with 3.11.&#xA;PS py --list&#xD;Download Python Next we need to download the version of Python we need for our specific project. Once the file is downloaded, follow the installation prompts.&#xA;Check Download After the download is complete, we can check that we have the additional version of Python installed. We should see both versions listed, and a star next to the active version.</description>
     </item>
     <item>
       <title>Civic Data Challenge (Open Data Syracuse pt. 1)</title>
-      <link>https://hedeenza.github.io/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</link>
+      <link>http://localhost:4321/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</guid>
       <description>The Syracuse Civic Data Challenge from https://data.syr.gov/pages/data-challenge&#xA;&amp;ldquo;Civic Data Challenge is a month-long contest where members of the community get the chance to use datasets from Open Data Syracuse to build an interesting data visualization, website application, data analysis, map, chatbot, or any other type of project that uses the featured dataset.&amp;rdquo;&#xA;Judging Criteria Judging Criteria&#xD;Category Weights Not Known Creativity Execution Wow factor Informational value Data Sources It sounds like we&amp;rsquo;ll need to use one data set from Open Data Syracuse, and any other additional data sets that will help strengthen the project.</description>
     </item>
     <item>
       <title>Secret of the Polyglot (picoCTF 4)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description The Network Operations Center (NOC) of your local institution picked up a suspicious file. They&amp;rsquo;re getting conflicting information on what type of file it is. They&amp;rsquo;ve brought you in as an external expert to examine the file. Can you extract all the information from this strange file?&#xA;Process / Notes Probably going to need to use the file command. Potentially exiftool as well. The file is pdf format, but file reveals that it&amp;rsquo;s a 50x50 png.</description>
     </item>
     <item>
       <title>Super SSH (picoCTF 3)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Using a secure shell (ssh) is going to be pretty important. Additional details will be available after launching your challenge instance.&#xA;Process / Notes Will need to ssh into this one. ssh -p &amp;rsquo;the port number&amp;rsquo; username@destination enter the password It gave me the flag! 3 minutes 52 seconds to complete&#xA;Hints None used Core Lessons Understanding how to SSH into a specific port with a specific username at a desired target is a core skill.</description>
     </item>
     <item>
       <title>Scan Surprise (picoCTF 2)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/scan-surprise-picoctf-2/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/scan-surprise-picoctf-2/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/scan-surprise-picoctf-2/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/scan-surprise-picoctf-2/</guid>
       <description>Challenge Author: Jeffery John&#xA;Description I&amp;rsquo;ve gotten bored of handing out flags as text. Wouldn&amp;rsquo;t it be cool if they were an image instead?&#xA;Process / Notes Download the zipped file and unzip. file on the file reveals it&amp;rsquo;s a small image. Opening the file shows it&amp;rsquo;s a QR code. Without a phone, the hint about using zbar tools led me to try to figure out what those were. Acquiring zbar tools with sudo apt install zbar-tools Using zbar-tools directly didn&amp;rsquo;t work.</description>
     </item>
     <item>
       <title>Verify (picoCTF 1)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/verify-picoctf-1/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/verify-picoctf-1/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/verify-picoctf-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/verify-picoctf-1/</guid>
       <description>Challenge Author: Jeffery John&#xA;Description &amp;ldquo;People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 has and a decrypt script to help you know that my flags are legitimate.&amp;rdquo;&#xA;Process / Notes Downloading the file with wget &amp;lt;link&amp;gt; Unzip the download with unzip &amp;lt;download&amp;gt; Saw that a lot of files got unzipped, originating in the files directory cd into the drop-in directory cat checksum.</description>
     </item>
     <item>
       <title>Capture the Flag - Intro</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/capture-the-flag-intro/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/capture-the-flag-intro/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/capture-the-flag-intro/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/capture-the-flag-intro/</guid>
       <description>Introduction Capture the Flag is a means of teaching cybersecurity principles through practical games. Players either try to find flags (often text strings) either held by the event host or other teams using various tools and techniques in order to win. (source Wikipedia)&#xA;The game originated at DEF CON, but after learning that there are a few online platforms to play and learn, I thought it would be fun to try it out.</description>
     </item>
     <item>
       <title>Installing PyTorch</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/08/29/installing-pytorch/</link>
+      <link>http://localhost:4321/arborealrepository/2024/08/29/installing-pytorch/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/08/29/installing-pytorch/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/08/29/installing-pytorch/</guid>
       <description>Introduction I looked into working with PyTorch because it appears I&amp;rsquo;ll be running some machine-learning type projects in the near future, and PyTorch is a way to run that within Python - another area I&amp;rsquo;m actively expanding my skills. My hardware isn&amp;rsquo;t the strongest, so it was a question about whether I&amp;rsquo;d even meet the system requirements going in.&#xA;What is PyTorch? From their github page:&#xA;&amp;quot;PyTorch is a Python package that provides two high-level features: - Tensor computation (like NumPy) with strong GPU acceleration - Deep neural networks built on a tape-based autograd system You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed.</description>
     </item>
     <item>
       <title>Korean Ground Beef</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</guid>
       <description>by Unknown&#xA;Ingredients Yields ~4 servings (or 1 very hungry person)&#xD;Ingredient Amount Lean Ground Beef 1 lb / 454 g Brown Sugar 1/2 Cup Sesame Oil 1 tsp Soy Sauce 1/2 Cup Minced Garlic 3 cloves Sriracha 1 tsp Fresh, Minced Ginger 1 tsp Green Onions 2 Preparation ~20 minutes&#xA;Heat a large pan over medium - high heat.&#xA;Brown meat with sesame oil, garlic, and ginger.&#xA;Drain 75% of the fat, add in the brown sugar, soy sauce, and sriracha.</description>
     </item>
     <item>
       <title>Learning Neovim (pt. 2)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim-pt-2/</link>
+      <link>http://localhost:4321/arborealrepository/notes/learning-neovim-pt-2/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim-pt-2/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/learning-neovim-pt-2/</guid>
       <description>Version Troubles I&amp;rsquo;ve been playing around with Neo Vim a lot more than I&amp;rsquo;ve been writing about it. It&amp;rsquo;s been 19 days since I first got trapped and despite that short time, I feel quite comfortable using the tool. There is certainly a ton of learning still to go before I&amp;rsquo;ll be able to zoom around and manipulate code at the speed of thought, but progress is progress.&#xA;The version that the Windows Subsystem for Linux installs is v0.</description>
     </item>
     <item>
       <title>Neo Vim with ThePrimeagen (Neo Vim pt. 3)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</link>
+      <link>http://localhost:4321/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/neo-vim-with-theprimeagen-pt-3/</guid>
       <description>Neo Vim Lesson Series Looking up all the Vim content on YouTube told the algorithm to send me some more. I stumbled upon a series by the creator ThePrimeagen that details more commands in Vim and Neo Vim. I&amp;rsquo;ll do my best to only add here what hasn&amp;rsquo;t been covered already. But if you&amp;rsquo;re interested, here&amp;rsquo;s the link to the full playlist.&#xA;Introduction (#1) This covers a lot of the basics that the Vim :Tutor does.</description>
     </item>
     <item>
       <title>Pizza Dough</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/pizza-dought/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/pizza-dought/</guid>
       <description>by B&#xA;Ingredients Yields 1 batch&#xD;Ingredient Amount Warm Water 325 - 340 g Sugar 1 tsp Yeast 2 1/4 tsp OR 1 package All Purpose Flour OR Bread Flour 500 g Olive Oil 1 Tbsp + for coating Salt 1 tsp Preparation Combine the water, sugar, and yeast in a small bowl.&#xA;Place the flour into a bowl, and add the salt along with the olive oil.&#xA;Add the yeast mixture and mix/knead with until you have a stretchy dough.</description>
     </item>
     <item>
       <title>Critical Role: The Almost Impossible (Campaign 1 - Vox Machina)</title>
-      <link>https://hedeenza.github.io/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</link>
+      <link>http://localhost:4321/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</guid>
       <description>This is a repost of a previous project originally from 15 June 2024.&#xA;1. Introduction Critical Role is a series in which a star-studded cast of Hollywood voice actors play Dungeons &amp;amp; Dragons. It&amp;rsquo;s a story known for its length (and you thought catching up on the Marvel Cinematic Universe was bad):&#xA;Critical Role Run Time in Context&#xD;Campaign Start Date End Date Play Time # of 45&#39; Cable TV Episodes 1 - Vox Machina March 2015 October 2017 373 hours 23 minutes 497.</description>
     </item>
     <item>
       <title>Rower Hometown Map - pt.1</title>
-      <link>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</link>
+      <link>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
       <description>Introduction An important part of building a continually successful rowing team - or any team with turnover for that matter - is strategic recruitment. If you don&amp;rsquo;t have high quality people coming in as your previous high quality people leave, you&amp;rsquo;re going to be in a tough spot. Many Division 1 teams in the United States recruit from all across the country and internationally to find the talent that will help their team continue their storied legacy of excellence.</description>
     </item>
     <item>
       <title>Bao Dough</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/bao-dough/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/bao-dough/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/bao-dough/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/bao-dough/</guid>
       <description>by B&#xA;Ingredients Yields 1 batch&#xD;Ingredient Amount Water ~Body Temperature 236 g Yeast 6 g Flour 381 g Cornstarch 78 g Sugar 70 g Salt 12 g Pork fat OR Butter 2 Tbsp Preparation Add yeast to the water - let stand until foamy.&#xA;Mix flour, cornstarch, sugar, and salt in the stand mixer bowl.&#xA;Add the water mixture and mix until a cohesive ball forms.&#xA;Once the ball is formed, add the pork fat a little bit at a time until it is all added.</description>
     </item>
     <item>
       <title>Chinese BBQ Pork</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/chinese-bbq-pork/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/chinese-bbq-pork/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/chinese-bbq-pork/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/chinese-bbq-pork/</guid>
       <description>by B&#xA;Ingredients Yields ~1-3 lbs&#xD;Ingredient Amount Pork shoulder, cut into slabs 1-3 lbs Brown Sugar 3 Tbsp Honey 3 Tbsp Chinese 5-Spice 1.5 tsp Shaoxing Rice Wine 2 Tbsp Soy Sauce 1 Tbsp Hoisin Sauce 2 Tbsp (+1 if no Bean Curd) Red or Black Bean Curd 1 Tbsp Sesame Oil 1 Tbsp Salt 2 Tbsp Preparation Mix brown sugar, 5-spice, shaoxing rice wine, soy sauce, hoisin sauce, bean curd, sesame oil, and sea salt together in a bowl.</description>
     </item>
     <item>
       <title>Zaatar Bread</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/zaatar-bread/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/zaatar-bread/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/zaatar-bread/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/zaatar-bread/</guid>
       <description>by Fresh Corner Market (University of Oregon)&#xA;Ingredients 4 Tbsp Zaatar Spice Blend&#xD;Ingredient Amount Thyme to taste (?) Toasted Sesame Seeds to taste (?) Sumac to taste (?) Coarse Salt to taste (?) Assembly&#xD;Ingredient Amount Small Naan Bread 40 Olive Oil 1/4 Cup Toasted Sesame Seeds 1/2 Cup Preparation Mix your zaatar blend.&#xA;Brush naan with olive oil and sprinkle generously with zaatar bread.&#xA;Sprinkle toasted sesame seeds on the bread.</description>
     </item>
     <item>
       <title>Future Projects</title>
-      <link>https://hedeenza.github.io/arborealrepository/future/</link>
+      <link>http://localhost:4321/arborealrepository/future/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/future/</guid>
+      <guid>http://localhost:4321/arborealrepository/future/</guid>
       <description>Future Projects Textual Analysis of a Novel Art generated from the word cloud Twitter Data Pipeline Creation SQLite, SQL and R, Creation Machine Learning in R Rower Hometown Interactive Map State Senator Hometown Map Future Posts Free CCNA Networking Course Notes Neovim Tutorial Notes Open Neovim, :Tutor ✔ Neovim customization notes ffmpeg Notes Learn C Learn Rust? (fast, secure) Learning Statistics with R notes R for Data Science 2e notes Tidy Modeling with R notes Text Mining with R notes Supervised Machine Learning for Text Analysis with R notes A Practical Approach for Predictive Models notes Coursera course notes picoCTF challenge walk-throughs </description>
     </item>
     <item>
       <title>Learning Neovim (pt. 1)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</link>
+      <link>http://localhost:4321/arborealrepository/notes/learning-neovim/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/learning-neovim/</guid>
       <description>Sidestepping the Roadblock&amp;hellip; While attempting to work through Git BASH yesterday to get this site set up, I got Trapped in Vim™, which is apparently a very normal experience for beginners:&#xA;After trying what felt like everything that made sense and caving in to my impatience in the moment, I closed the window and learned how to change the default editor in Git Bash and set it to nano:&#xA;git config --global core.</description>
     </item>
     <item>
       <title>Fig Balsamic Dressing</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</guid>
       <description>by Fresh Corner Market (University of Oregon)&#xA;Ingredients Yields 2 Cups&#xD;Ingredient Amount Soaked Black Mission Figs 10 Balsamic Vinegar 1/3 Cup Olive Oil 1 Cup Black Pepper 1/2 tsp Salt 1 tsp Lemon Juice 1 tsp Dijon Mustard 1 Tbsp Preparation Pre-soak Black Mission Figs in 1 cup of water for 2 hours, then reserve the water for later.&#xA;Blend all ingredients until smooth, starting slow and adding reserved water if necessary.</description>
     </item>
     <item>
       <title>New live test</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</link>
+      <link>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</guid>
       <description>We made it! If you&amp;rsquo;re reading this, it means that the site is live. As a beginner, I ran into many challenges that will likely give my later self a good laugh. Adding the .nojekyll file and adding the &amp;ldquo;publishDir: docs&amp;rdquo; line to the config.yaml seem to have done the trick in getting this live.&#xA;Now that it&amp;rsquo;s live, I need to test updating the content. My first attempt will be the following steps:</description>
     </item>
     <item>
       <title>SQL: Zero to Advanced pt. 1</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
+      <link>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
       <description>materials by Bosscoder Academy, found on LinkedIn&#xA;Format The materials are sorted into 24 &amp;ldquo;days&amp;rdquo; of learning, each with a central theme. My goal is to break them into 3 posts, 8 &amp;ldquo;days&amp;rdquo; each, with a distillation of the already brief material in each section as a review of SQL.&#xA;1. Introduction to SQL and Relational Databases 1.1 Content SELECT -&#xA;INSERT -&#xA;UPDATE -&#xA;DELETE -&#xA;1.2 Practice Questions Question Answer Write a SQL query to insert a new record into the &#34;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://hedeenza.github.io/arborealrepository/about/</link>
+      <link>http://localhost:4321/arborealrepository/about/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/about/</guid>
+      <guid>http://localhost:4321/arborealrepository/about/</guid>
       <description>Recent Realizations At the time of writing I&amp;rsquo;m only a little more than 4 months into coding, but I&amp;rsquo;m learning a lot quickly. I started with a one-day, six-hour workshop with the University of Oregon data services department covering basic R in late March. The skills I learned in that workshop served as the foundation for data processing that amplified my primary career. From there I learned to make a basic website to showcase a resume and basic portfolio pieces.</description>
     </item>
     <item>
       <title>&#34;The Arboreal Repository&#34;</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</link>
+      <link>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
       <description>Recent Realizations I&amp;rsquo;m only 3 months into coding, but I&amp;rsquo;m learning a lot quickly R resume website then linux commands accidentally then SQL then Python out of need blogdown website&#xA;Title Meaning Repository - a safe place to store and retrieve information&#xA;arboreal - like a tree, I&amp;rsquo;m not perfect and am going to make mistakes and not do things perfectly. better to log while I&amp;rsquo;m going through it and not in hind-site.</description>
     </item>
     <item>
       <title>CSS: Break It to Learn It - Day 1</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
+      <link>http://localhost:4321/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
       <description>Building a Blogdown Site Learning by Breaking </description>
     </item>
     <item>
       <title>further test</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/further-test/</link>
+      <link>http://localhost:4321/arborealrepository/2024/07/23/further-test/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/further-test/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/07/23/further-test/</guid>
       <description></description>
     </item>
     <item>
       <title>project test </title>
-      <link>https://hedeenza.github.io/arborealrepository/projects/project-test/</link>
+      <link>http://localhost:4321/arborealrepository/projects/project-test/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/projects/project-test/</guid>
+      <guid>http://localhost:4321/arborealrepository/projects/project-test/</guid>
       <description></description>
     </item>
     <item>
       <title>what will it take?</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/20/what-will-it-take/</link>
+      <link>http://localhost:4321/arborealrepository/2024/07/20/what-will-it-take/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/20/what-will-it-take/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/07/20/what-will-it-take/</guid>
       <description>this is a new test of everything</description>
     </item>
     <item>
       <title>Hello R Markdown</title>
-      <link>https://hedeenza.github.io/arborealrepository/2020/12/01/hello-r-markdown/</link>
+      <link>http://localhost:4321/arborealrepository/2020/12/01/hello-r-markdown/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2020/12/01/hello-r-markdown/</guid>
+      <guid>http://localhost:4321/arborealrepository/2020/12/01/hello-r-markdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.&#xA;You can embed an R code chunk like this:&#xA;summary(cars)&#xD;## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     <item>
       <title>A Plain Markdown Post</title>
-      <link>https://hedeenza.github.io/arborealrepository/2016/12/30/a-plain-markdown-post/</link>
+      <link>http://localhost:4321/arborealrepository/2016/12/30/a-plain-markdown-post/</link>
       <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2016/12/30/a-plain-markdown-post/</guid>
+      <guid>http://localhost:4321/arborealrepository/2016/12/30/a-plain-markdown-post/</guid>
       <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&#xA;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc. There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
     </item>
     <item>
       <title>Lorem Ipsum</title>
-      <link>https://hedeenza.github.io/arborealrepository/2015/01/01/lorem-ipsum/</link>
+      <link>http://localhost:4321/arborealrepository/2015/01/01/lorem-ipsum/</link>
       <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2015/01/01/lorem-ipsum/</guid>
+      <guid>http://localhost:4321/arborealrepository/2015/01/01/lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
   </channel>

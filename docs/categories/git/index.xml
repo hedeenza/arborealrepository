@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/categories/git/</link>
+    <link>http://localhost:4321/arborealrepository/categories/git/</link>
     <description>Recent content in Git on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New live test</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</link>
+      <link>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</guid>
       <description>We made it! If you&amp;rsquo;re reading this, it means that the site is live. As a beginner, I ran into many challenges that will likely give my later self a good laugh. Adding the .nojekyll file and adding the &amp;ldquo;publishDir: docs&amp;rdquo; line to the config.yaml seem to have done the trick in getting this live.&#xA;Now that it&amp;rsquo;s live, I need to test updating the content. My first attempt will be the following steps:</description>
     </item>
   </channel>

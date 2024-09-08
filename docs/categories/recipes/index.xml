@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recipes on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/categories/recipes/</link>
+    <link>http://localhost:4321/arborealrepository/categories/recipes/</link>
     <description>Recent content in Recipes on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/categories/recipes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pizza Dough</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/pizza-dought/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/pizza-dought/</guid>
       <description>by B&#xA;Ingredients Yields 1 batch&#xD;Ingredient Amount Warm Water 325 - 340 g Sugar 1 tsp Yeast 2 1/4 tsp OR 1 package All Purpose Flour OR Bread Flour 500 g Olive Oil 1 Tbsp + for coating Salt 1 tsp Preparation Combine the water, sugar, and yeast in a small bowl.&#xA;Place the flour into a bowl, and add the salt along with the olive oil.&#xA;Add the yeast mixture and mix/knead with until you have a stretchy dough.</description>
     </item>
     <item>
       <title>Zaatar Bread</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/zaatar-bread/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/zaatar-bread/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/zaatar-bread/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/zaatar-bread/</guid>
       <description>by Fresh Corner Market (University of Oregon)&#xA;Ingredients 4 Tbsp Zaatar Spice Blend&#xD;Ingredient Amount Thyme to taste (?) Toasted Sesame Seeds to taste (?) Sumac to taste (?) Coarse Salt to taste (?) Assembly&#xD;Ingredient Amount Small Naan Bread 40 Olive Oil 1/4 Cup Toasted Sesame Seeds 1/2 Cup Preparation Mix your zaatar blend.&#xA;Brush naan with olive oil and sprinkle generously with zaatar bread.&#xA;Sprinkle toasted sesame seeds on the bread.</description>
     </item>
     <item>
       <title>Fig Balsamic Dressing</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</guid>
       <description>by Fresh Corner Market (University of Oregon)&#xA;Ingredients Yields 2 Cups&#xD;Ingredient Amount Soaked Black Mission Figs 10 Balsamic Vinegar 1/3 Cup Olive Oil 1 Cup Black Pepper 1/2 tsp Salt 1 tsp Lemon Juice 1 tsp Dijon Mustard 1 Tbsp Preparation Pre-soak Black Mission Figs in 1 cup of water for 2 hours, then reserve the water for later.&#xA;Blend all ingredients until smooth, starting slow and adding reserved water if necessary.</description>
     </item>
   </channel>

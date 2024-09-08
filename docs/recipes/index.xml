@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recipes on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/recipes/</link>
+    <link>http://localhost:4321/arborealrepository/recipes/</link>
     <description>Recent content in Recipes on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/recipes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Korean Ground Beef</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</guid>
       <description>by Unknown&#xA;Ingredients Yields ~4 servings (or 1 very hungry person)&#xD;Ingredient Amount Lean Ground Beef 1 lb / 454 g Brown Sugar 1/2 Cup Sesame Oil 1 tsp Soy Sauce 1/2 Cup Minced Garlic 3 cloves Sriracha 1 tsp Fresh, Minced Ginger 1 tsp Green Onions 2 Preparation ~20 minutes&#xA;Heat a large pan over medium - high heat.&#xA;Brown meat with sesame oil, garlic, and ginger.&#xA;Drain 75% of the fat, add in the brown sugar, soy sauce, and sriracha.</description>
     </item>
     <item>
       <title>Pizza Dough</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/pizza-dought/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/pizza-dought/</guid>
       <description>by B&#xA;Ingredients Yields 1 batch&#xD;Ingredient Amount Warm Water 325 - 340 g Sugar 1 tsp Yeast 2 1/4 tsp OR 1 package All Purpose Flour OR Bread Flour 500 g Olive Oil 1 Tbsp + for coating Salt 1 tsp Preparation Combine the water, sugar, and yeast in a small bowl.&#xA;Place the flour into a bowl, and add the salt along with the olive oil.&#xA;Add the yeast mixture and mix/knead with until you have a stretchy dough.</description>
     </item>
     <item>
       <title>Bao Dough</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/bao-dough/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/bao-dough/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/bao-dough/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/bao-dough/</guid>
       <description>by B&#xA;Ingredients Yields 1 batch&#xD;Ingredient Amount Water ~Body Temperature 236 g Yeast 6 g Flour 381 g Cornstarch 78 g Sugar 70 g Salt 12 g Pork fat OR Butter 2 Tbsp Preparation Add yeast to the water - let stand until foamy.&#xA;Mix flour, cornstarch, sugar, and salt in the stand mixer bowl.&#xA;Add the water mixture and mix until a cohesive ball forms.&#xA;Once the ball is formed, add the pork fat a little bit at a time until it is all added.</description>
     </item>
     <item>
       <title>Chinese BBQ Pork</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/chinese-bbq-pork/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/chinese-bbq-pork/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/chinese-bbq-pork/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/chinese-bbq-pork/</guid>
       <description>by B&#xA;Ingredients Yields ~1-3 lbs&#xD;Ingredient Amount Pork shoulder, cut into slabs 1-3 lbs Brown Sugar 3 Tbsp Honey 3 Tbsp Chinese 5-Spice 1.5 tsp Shaoxing Rice Wine 2 Tbsp Soy Sauce 1 Tbsp Hoisin Sauce 2 Tbsp (+1 if no Bean Curd) Red or Black Bean Curd 1 Tbsp Sesame Oil 1 Tbsp Salt 2 Tbsp Preparation Mix brown sugar, 5-spice, shaoxing rice wine, soy sauce, hoisin sauce, bean curd, sesame oil, and sea salt together in a bowl.</description>
     </item>
     <item>
       <title>Zaatar Bread</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/zaatar-bread/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/zaatar-bread/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/zaatar-bread/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/zaatar-bread/</guid>
       <description>by Fresh Corner Market (University of Oregon)&#xA;Ingredients 4 Tbsp Zaatar Spice Blend&#xD;Ingredient Amount Thyme to taste (?) Toasted Sesame Seeds to taste (?) Sumac to taste (?) Coarse Salt to taste (?) Assembly&#xD;Ingredient Amount Small Naan Bread 40 Olive Oil 1/4 Cup Toasted Sesame Seeds 1/2 Cup Preparation Mix your zaatar blend.&#xA;Brush naan with olive oil and sprinkle generously with zaatar bread.&#xA;Sprinkle toasted sesame seeds on the bread.</description>
     </item>
     <item>
       <title>Fig Balsamic Dressing</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</guid>
       <description>by Fresh Corner Market (University of Oregon)&#xA;Ingredients Yields 2 Cups&#xD;Ingredient Amount Soaked Black Mission Figs 10 Balsamic Vinegar 1/3 Cup Olive Oil 1 Cup Black Pepper 1/2 tsp Salt 1 tsp Lemon Juice 1 tsp Dijon Mustard 1 Tbsp Preparation Pre-soak Black Mission Figs in 1 cup of water for 2 hours, then reserve the water for later.&#xA;Blend all ingredients until smooth, starting slow and adding reserved water if necessary.</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General Skills on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/tags/general-skills/</link>
+    <link>http://localhost:4321/arborealrepository/tags/general-skills/</link>
     <description>Recent content in General Skills on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/general-skills/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/tags/general-skills/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Commitment Issues (picoCTF 6)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description I accidentally wrote the flag down. Good thing I deleted it!&#xA;Process / Notes A lot of files in a .git folder got unzipped cat on a message reads &amp;ldquo;TOP SECRET&amp;rdquo; Recursively grepping grep -r &#39;pico&#39; .git/* - a few things pop up, looks like it&amp;rsquo;ll be in the log file with the initial commit Using tree to help navigate around cat into the files doesn&amp;rsquo;t seem to help.</description>
     </item>
     <item>
       <title>Super SSH (picoCTF 3)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Using a secure shell (ssh) is going to be pretty important. Additional details will be available after launching your challenge instance.&#xA;Process / Notes Will need to ssh into this one. ssh -p &amp;rsquo;the port number&amp;rsquo; username@destination enter the password It gave me the flag! 3 minutes 52 seconds to complete&#xA;Hints None used Core Lessons Understanding how to SSH into a specific port with a specific username at a desired target is a core skill.</description>
     </item>
   </channel>

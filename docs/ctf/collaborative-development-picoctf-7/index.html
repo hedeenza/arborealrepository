@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.129.0">
 
 
-<title>Korean Ground Beef - The Arboreal Repository</title>
-<meta property="og:title" content="Korean Ground Beef - The Arboreal Repository">
+<title>Collaborative Development (picoCTF 7) - The Arboreal Repository</title>
+<meta property="og:title" content="Collaborative Development (picoCTF 7) - The Arboreal Repository">
 
 
   <link href='http://localhost:4321/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
@@ -70,77 +70,46 @@
   <article class="article">
     
 
-    <h1 class="article-title">Korean Ground Beef</h1>
+    <h1 class="article-title">Collaborative Development (picoCTF 7)</h1>
 
     
 
     <div class="article-content">
       
-      <script src="/arborealrepository/recipes/korean-ground-beef/index_files/kePrint/kePrint.js"></script>
-<link href="/arborealrepository/recipes/korean-ground-beef/index_files/lightable/lightable.css" rel="stylesheet" />
-<p>by Unknown</p>
-<h1 id="ingredients">Ingredients</h1>
-<table class="table" style="margin-left: auto; margin-right: auto;">
- <thead>
-<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Yields ~4 servings (or 1 very hungry person)</div></th></tr>
-  <tr>
-   <th style="text-align:left;"> Ingredient </th>
-   <th style="text-align:right;"> Amount </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Lean Ground Beef </td>
-   <td style="text-align:right;"> 1 lb / 454 g </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Brown Sugar </td>
-   <td style="text-align:right;"> 1/2 Cup </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Sesame Oil </td>
-   <td style="text-align:right;"> 1 tsp </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Soy Sauce </td>
-   <td style="text-align:right;"> 1/2 Cup </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Minced Garlic </td>
-   <td style="text-align:right;"> 3 cloves </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Sriracha </td>
-   <td style="text-align:right;"> 1 tsp </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Fresh, Minced Ginger </td>
-   <td style="text-align:right;"> 1 tsp </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Green Onions </td>
-   <td style="text-align:right;"> 2 </td>
-  </tr>
-</tbody>
-</table>
-<h1 id="preparation">Preparation</h1>
-<p>~20 minutes</p>
+      <p>Challenge Author: Jeffery John</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>My team has been working very hard on new features for our flag printing program! I wonder how they&rsquo;ll work together?</p>
+<h1 id="process--notes">Process / Notes</h1>
 <ol>
-<li>
-<p>Heat a large pan over medium - high heat.</p>
-</li>
-<li>
-<p>Brown meat with sesame oil, garlic, and ginger.</p>
-</li>
-<li>
-<p>Drain 75% of the fat, add in the brown sugar, soy sauce, and sriracha.</p>
-</li>
-<li>
-<p>Cook until liquid has reabsorbed and the meat is shiny but not soupy.</p>
-</li>
-<li>
-<p>Top with green onions, toss together and serve.</p>
-</li>
+<li><code>wget</code> the zip</li>
+<li>Another git-based challenge</li>
+<li>There&rsquo;s a python file (.py)</li>
+<li><code>cat</code> on the commitedit message says to add part 3 to the program</li>
+<li>in <code>refs/heads/feature</code> here seem to be 3 parts</li>
+<li><code>git log</code></li>
+<li>It looks like we&rsquo;re on the version with just the flag printer. So we&rsquo;ll need to go to a version with everything assembled</li>
+<li><code>cat refs/heads/feature/part-3</code></li>
+<li>git checkout the result of that10.</li>
+<li>Now when we cat the python file, it also has the flag! BUT it doesn&rsquo;t look like the whole flag. Going to check out the other parts next.</li>
+<li>Checking part 1 and it has revealed the beginning of the flag</li>
+<li>Part 2 contains the middle of the flag</li>
+<li>All together&hellip; we have the full flag</li>
+<li>Looking at the hints, it looks like there&rsquo;s a more elegant way to solve this than checking each part individually</li>
+<li>From one tutorial video, it looks like we can use:<br>
+  <code>git merge &lt;branch-name-you-got-from-the-git-branch--a-command&gt;</code></li>
+</ol>
+<p><strong>16 minutes 38 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<ol>
+<li><code>git branch -a</code> will let you see the available branches</li>
+<li>How can fill &lsquo;diffs&rsquo; be brought to the main branch? Don&rsquo;t forget to use <code>git config</code>!</li>
+<li>Merge conflicts can be tricky! Try a text editor like nano, emacs, or vim.</li>
+</ol>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>The <code>git branch -a</code> command to see the available branches</li>
+<li>The <code>git merge &lt;branch&gt;</code> command to merge in the desired git branches</li>
 </ol>
 
     </div>

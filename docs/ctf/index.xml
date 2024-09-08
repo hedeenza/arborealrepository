@@ -2,59 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ctfs on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/ctf/</link>
+    <link>http://localhost:4321/arborealrepository/ctf/</link>
     <description>Recent content in Ctfs on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4321/arborealrepository/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collaborative Development (picoCTF 7)</title>
+      <link>http://localhost:4321/arborealrepository/ctf/collaborative-development-picoctf-7/</link>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/arborealrepository/ctf/collaborative-development-picoctf-7/</guid>
+      <description>Challenge Author: Jeffery John&#xA;Difficulty: Easy&#xA;Description My team has been working very hard on new features for our flag printing program! I wonder how they&amp;rsquo;ll work together?&#xA;Process / Notes wget the zip Another git-based challenge There&amp;rsquo;s a python file (.py) cat on the commitedit message says to add part 3 to the program in refs/heads/feature here seem to be 3 parts git log It looks like we&amp;rsquo;re on the version with just the flag printer.</description>
+    </item>
     <item>
       <title>Commitment Issues (picoCTF 6)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description I accidentally wrote the flag down. Good thing I deleted it!&#xA;Process / Notes A lot of files in a .git folder got unzipped cat on a message reads &amp;ldquo;TOP SECRET&amp;rdquo; Recursively grepping grep -r &#39;pico&#39; .git/* - a few things pop up, looks like it&amp;rsquo;ll be in the log file with the initial commit Using tree to help navigate around cat into the files doesn&amp;rsquo;t seem to help.</description>
     </item>
     <item>
       <title>interrendec (picoCTF 5)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/interrendec-picoctf-5/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/interrendec-picoctf-5/</link>
       <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/interrendec-picoctf-5/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/interrendec-picoctf-5/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Can you get the real meaning from this file?&#xA;Process / Notes wget the file file shows its ASCII text The tags on the challenge indicate base64 and Caesar cipher Both cat and strings display the same thing Trying base64 first Looks like we&amp;rsquo;re getting somewhere Using the inbuilt Neo Vim rot13 cipher with g?? That didn&amp;rsquo;t seem to help. What about rot13, then base64? No luck base64 decode nor encode seemed to do anything.</description>
     </item>
     <item>
       <title>Secret of the Polyglot (picoCTF 4)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/secret-of-the-polyglot-picoctf4/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description The Network Operations Center (NOC) of your local institution picked up a suspicious file. They&amp;rsquo;re getting conflicting information on what type of file it is. They&amp;rsquo;ve brought you in as an external expert to examine the file. Can you extract all the information from this strange file?&#xA;Process / Notes Probably going to need to use the file command. Potentially exiftool as well. The file is pdf format, but file reveals that it&amp;rsquo;s a 50x50 png.</description>
     </item>
     <item>
       <title>Super SSH (picoCTF 3)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Using a secure shell (ssh) is going to be pretty important. Additional details will be available after launching your challenge instance.&#xA;Process / Notes Will need to ssh into this one. ssh -p &amp;rsquo;the port number&amp;rsquo; username@destination enter the password It gave me the flag! 3 minutes 52 seconds to complete&#xA;Hints None used Core Lessons Understanding how to SSH into a specific port with a specific username at a desired target is a core skill.</description>
     </item>
     <item>
       <title>Scan Surprise (picoCTF 2)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/scan-surprise-picoctf-2/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/scan-surprise-picoctf-2/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/scan-surprise-picoctf-2/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/scan-surprise-picoctf-2/</guid>
       <description>Challenge Author: Jeffery John&#xA;Description I&amp;rsquo;ve gotten bored of handing out flags as text. Wouldn&amp;rsquo;t it be cool if they were an image instead?&#xA;Process / Notes Download the zipped file and unzip. file on the file reveals it&amp;rsquo;s a small image. Opening the file shows it&amp;rsquo;s a QR code. Without a phone, the hint about using zbar tools led me to try to figure out what those were. Acquiring zbar tools with sudo apt install zbar-tools Using zbar-tools directly didn&amp;rsquo;t work.</description>
     </item>
     <item>
       <title>Verify (picoCTF 1)</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/verify-picoctf-1/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/verify-picoctf-1/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/verify-picoctf-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/verify-picoctf-1/</guid>
       <description>Challenge Author: Jeffery John&#xA;Description &amp;ldquo;People keep trying to trick my players with imitation flags. I want to make sure they get the real thing! I&amp;rsquo;m going to provide the SHA-256 has and a decrypt script to help you know that my flags are legitimate.&amp;rdquo;&#xA;Process / Notes Downloading the file with wget &amp;lt;link&amp;gt; Unzip the download with unzip &amp;lt;download&amp;gt; Saw that a lot of files got unzipped, originating in the files directory cd into the drop-in directory cat checksum.</description>
     </item>
     <item>
       <title>Capture the Flag - Intro</title>
-      <link>https://hedeenza.github.io/arborealrepository/ctf/capture-the-flag-intro/</link>
+      <link>http://localhost:4321/arborealrepository/ctf/capture-the-flag-intro/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/ctf/capture-the-flag-intro/</guid>
+      <guid>http://localhost:4321/arborealrepository/ctf/capture-the-flag-intro/</guid>
       <description>Introduction Capture the Flag is a means of teaching cybersecurity principles through practical games. Players either try to find flags (often text strings) either held by the event host or other teams using various tools and techniques in order to win. (source Wikipedia)&#xA;The game originated at DEF CON, but after learning that there are a few online platforms to play and learn, I thought it would be fun to try it out.</description>
     </item>
   </channel>
