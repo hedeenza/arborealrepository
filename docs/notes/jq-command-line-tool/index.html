@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>jq Command Line Tool - The Arboreal Repository</title>
+<meta property="og:title" content="jq Command Line Tool - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">jq Command Line Tool</h1>
+
+    
+
+    <div class="article-content">
+      
+      <h1 id="intro">Intro</h1>
+<blockquote>
+<p>  jq is a lightweight and flexible command-line JSON processor akin to sed,awk,grep, and friends for JSON data. It&rsquo;s written in portable C and has zero runtime dependencies, allowing you to easily slice, filter, map, and transform structured data.
+knitr::tufte::quote_footer(&ldquo;From The jq [github page](jq is a lightweight and flexible command-line JSON processor akin to sed,awk,grep, and friends for JSON data. It&rsquo;s written in portable C and has zero runtime dependencies, allowing you to easily slice, filter, map, and transform structured data.)&rdquo;)</p>
+</blockquote>
+<p>  Learned about from a ThePrimeTime <a href="https://www.youtube.com/watch?v=n8sOmEe2SDg">video</a></p>
+<h1 id="basic-commands">Basic Commands</h1>
+<p>  Learning basic commands from <a href="https://youtu.be/j7xZ2VkLYIY?si=blz4C2PxNfrAuWXl">this video</a> by <em>Navek</em> on YouTube</p>
+<p><code>jq '.' your_file.json</code> - Pretty print your JSON to the terminal
+- The period is representative of the object that is passed into jq</p>
+<p><code>jq '.TARGET-KEY' your_file.json</code> - Will return only the value associated with the key you&rsquo;re looking for
+- e.g. <code>... '.apiVersion' ...</code> will go to the <code>&quot;apiVersion&quot;: &quot;v2&quot;</code> lines, and returns just &ldquo;v2&rdquo;
+- the <code>-r</code> option, placed at the end of the command, will removed the double quotes around the returned values</p>
+<p>You can specify embeded keys by building onto the TARGET-KEY specifications
+- e.g. &ldquo;Name&rdquo; is embedded within &ldquo;User&rdquo;, and that&rsquo;s the one I want: <code>... '.user.name' ...</code></p>
+<p><code>... '..' ...</code> - Double period will print the whole JSON, the next level of keys, then their values</p>
+<p><code>jq '.[]' json.json</code> - Will unpack your objects from any array they&rsquo;re embedded in, and return them individually
+- Further, you can place an index, or range of indexes, within the brackets, e.g. [0], to return only the objects at those indexes
+- This can be paired with continuing to specify the desired keys as well, e.g. <code>.[2:4].title</code></p>
+<p><code>jq '.[]' | .title .id</code> - You can pipe the jq output into the key-specifications to return each item as a pair rather than <em>all</em> of the titles, then <em>all</em> of the id&rsquo;s</p>
+<p><code>jq. '.[]' | .NEW-KEY = &lt;input&gt;</code> - Add another key to your JSON</p>
+<p><code>jq. '.[]' | {NEW-KEY-NAME: .OLD-KEY-NAME, SECOND-NEW-KEY-NAME: .SECOND-OLD-KEY-NAME}</code> - Rename an existing key(s) and assign values associated with an old key(s) to those new keys</p>
+<p><code>jq. '.[] | &quot;Our title is \(.title)&quot; '</code> - Will print lines reading &ldquo;Our title is&rdquo; followed by the values in each of the title keys for the whole JSON</p>
+<h2 id="built-in-jq-functions">Built-In jq Functions</h2>
+<p><code>jq '.[] | keys'</code> - Will return the keys for every object in your JSON</p>
+<p><code>jq '.[] | length'</code> - Will return the length of each object in your JSON</p>
+<p><code>jq '. | length'</code> - Will return the length of the whole JSON</p>
+<p><code>jq '. | map(.id += 1)</code> - Will add 1 to each instance of the id key in the whole JSON</p>
+<p><code>jq '. | map(.title += new_title)</code> - Will append &ldquo;new_title&rdquo; to every title (use = rather than += to replace the titles with the new input)</p>
+<p><code>jq '.[] | select(.id &gt; 19)</code> - Will select only the objects with id values that are greater than 19
+<code>jq '.[] | select(.completed = &quot;true&quot;)</code> - Will select only the objects with a completed key equal to &ldquo;true&rdquo;</p>
+<p>You can run even further complexities, using if-then logic within your command</p>
+<h1 id="additional-commands-with-primehttpswwwyoutubecomwatchvn8somee2sdg">Additional Commands <a href="https://www.youtube.com/watch?v=n8sOmEe2SDg">with Prime</a></h1>
+<p><code>jq -c</code> - Will display your JSON in compact mode</p>
+<p><code>jq '{id: .id, logs: .logs}'</code> - Creates a smaller object from the large one, with the new one only including teh id and logs values</p>
+<p><code>jq 'select(has(&quot;logs&quot;))'</code> - Will only return the objects that do have a &ldquo;logs&rdquo; key</p>
+<p><code>jq 'select(.values.a + .values.b &gt; 0)'</code> - An example of adding logic to the select command</p>
+<p><code>jq 'select(.errors | length &gt; 0 and any(.[]; contains(&quot;target&quot;)))' -c</code> - Selects only errors with length greater than 0, AND has any of the keys within the errors key equal to &ldquo;target&rdquo;</p>
+<h2 id="utilizing-jq-within-neo-vim-using-">Utilizing jq Within Neo Vim using :!</h2>
+<p>Inside Neo Vim&hellip;
+<code>:!jq</code> - Will unpack the compacted line of JSON you were on inside of Neo Vim
+- <code>-c</code> to re-compact it</p>
+<p><code>%!jq</code> - Will unpack the entire file</p>
+<p>Any of the commands we ran previously, you can run in Neo Vim as long as you put <code>:%!</code> in front of it</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+

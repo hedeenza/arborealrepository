@@ -16,6 +16,13 @@
       <description>Challenge Author: Mubarak Mikail&#xA;Difficulty: Easy&#xA;Description How about some hide and seek?&#xA;Process / Notes wget the download zip file, unzip to reveal a jpg file and exiftool on it also show it&amp;rsquo;s a jpg display to view it through ImageMagick shows a dark, celestial room with shadowed figures Checked Hint 1 Tried to hexdump Checked hint 2 I&amp;rsquo;ve got a feeling it&amp;rsquo;s about using a tool or recognizing something I don&amp;rsquo;t know, checking a walk-through at 12:03 The &amp;ldquo;Attribution URL&amp;rdquo; seen in the meta-data is in base64!</description>
     </item>
     <item>
+      <title>jq Command Line Tool</title>
+      <link>https://hedeenza.github.io/arborealrepository/notes/jq-command-line-tool/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/jq-command-line-tool/</guid>
+      <description>Intro jq is a lightweight and flexible command-line JSON processor akin to sed,awk,grep, and friends for JSON data. It&amp;rsquo;s written in portable C and has zero runtime dependencies, allowing you to easily slice, filter, map, and transform structured data. knitr::tufte::quote_footer(&amp;ldquo;From The jq [github page](jq is a lightweight and flexible command-line JSON processor akin to sed,awk,grep, and friends for JSON data. It&amp;rsquo;s written in portable C and has zero runtime dependencies, allowing you to easily slice, filter, map, and transform structured data.</description>
+    </item>
+    <item>
       <title>Collaborative Development (picoCTF 7)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/collaborative-development-picoctf-7/</link>
       <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
@@ -202,7 +209,7 @@
       <link>https://hedeenza.github.io/arborealrepository/about/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/about/</guid>
-      <description>Recent Realizations At the time of writing I&amp;rsquo;m only a little more than 4 months into coding, but I&amp;rsquo;m learning a lot quickly. I started with a one-day, six-hour workshop with the University of Oregon data services department covering basic R in late March. The skills I learned in that workshop served as the foundation for data processing that amplified my primary career. From there I learned to make a basic website to showcase a resume and basic portfolio pieces.</description>
+      <description>Recent Realizations At the time of writing I&amp;rsquo;m only a little more than 4 months into my all-consuming focus on coding, but I&amp;rsquo;m learning a lot quickly. I started my learning acceleration with a one-day, six-hour workshop with the University of Oregon data services department covering basic R in late March. The skills I learned in that workshop served as the foundation for the more powerful data processing that further amplified my primary career.</description>
     </item>
     <item>
       <title>&#34;The Arboreal Repository&#34;</title>
