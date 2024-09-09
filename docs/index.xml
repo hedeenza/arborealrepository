@@ -174,7 +174,7 @@
       <link>https://hedeenza.github.io/arborealrepository/future/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/future/</guid>
-      <description>Future Projects Textual Analysis of a Novel Art generated from the word cloud Twitter Data Pipeline Creation SQLite, SQL and R, Creation Machine Learning in R Rower Hometown Interactive Map State Senator Hometown Map Future Posts Free CCNA Networking Course Notes Neovim Tutorial Notes Open Neovim, :Tutor ✔ Neovim customization notes ffmpeg Notes Learn C Learn Rust? (fast, secure) Learning Statistics with R notes R for Data Science 2e notes Tidy Modeling with R notes Text Mining with R notes Supervised Machine Learning for Text Analysis with R notes A Practical Approach for Predictive Models notes Coursera course notes picoCTF challenge walk-throughs </description>
+      <description>Future Projects Textual Analysis of a Novel Art generated from the word cloud Twitter Data Pipeline Creation SQLite, SQL and R, Creation Machine Learning in R Rower Hometown Interactive Map State Senator Hometown Map Future Posts Free CCNA Networking Course Notes ffmpeg Notes Learn C Learn Rust? (fast, secure) Learning Statistics with R notes R for Data Science 2e notes Tidy Modeling with R notes Text Mining with R notes Supervised Machine Learning for Text Analysis with R notes A Practical Approach for Predictive Models notes Coursera course notes </description>
     </item>
     <item>
       <title>Learning Neovim (pt. 1)</title>
@@ -195,7 +195,7 @@
       <link>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</guid>
-      <description>We made it! If you&amp;rsquo;re reading this, it means that the site is live. As a beginner, I ran into many challenges that will likely give my later self a good laugh. Adding the .nojekyll file and adding the &amp;ldquo;publishDir: docs&amp;rdquo; line to the config.yaml seem to have done the trick in getting this live.&#xA;Now that it&amp;rsquo;s live, I need to test updating the content. My first attempt will be the following steps:</description>
+      <description>We made it! If you&amp;rsquo;re reading this, it means that the site is live. As a beginner with {blogdown}, I ran into many challenges that will likely give my later self a good laugh. Adding the .nojekyll file and adding the &amp;ldquo;publishDir: docs&amp;rdquo; line to the config.yaml seem to have done the trick in getting this live.&#xA;Now that it&amp;rsquo;s live, I need to test updating the content. My first attempt will be the following steps:</description>
     </item>
     <item>
       <title>SQL: Zero to Advanced pt. 1</title>
@@ -226,46 +226,11 @@
       <description>Building a Blogdown Site Learning by Breaking </description>
     </item>
     <item>
-      <title>further test</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/further-test/</link>
-      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/further-test/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>project test </title>
       <link>https://hedeenza.github.io/arborealrepository/projects/project-test/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/projects/project-test/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>what will it take?</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/20/what-will-it-take/</link>
-      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/20/what-will-it-take/</guid>
-      <description>this is a new test of everything</description>
-    </item>
-    <item>
-      <title>Hello R Markdown</title>
-      <link>https://hedeenza.github.io/arborealrepository/2020/12/01/hello-r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2020/12/01/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.&#xA;You can embed an R code chunk like this:&#xA;summary(cars)&#xD;## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    <item>
-      <title>A Plain Markdown Post</title>
-      <link>https://hedeenza.github.io/arborealrepository/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&#xA;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc. There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>https://hedeenza.github.io/arborealrepository/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
   </channel>
 </rss>
