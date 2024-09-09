@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recipes on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/tags/recipes/</link>
+    <link>https://hedeenza.github.io/arborealrepository/tags/recipes/</link>
     <description>Recent content in Recipes on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/tags/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/recipes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fig Balsamic Dressing</title>
-      <link>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</link>
+      <link>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/recipes/fig-balsamic-dressing/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/</guid>
       <description>by Fresh Corner Market (University of Oregon)&#xA;Ingredients Yields 2 Cups&#xD;Ingredient Amount Soaked Black Mission Figs 10 Balsamic Vinegar 1/3 Cup Olive Oil 1 Cup Black Pepper 1/2 tsp Salt 1 tsp Lemon Juice 1 tsp Dijon Mustard 1 Tbsp Preparation Pre-soak Black Mission Figs in 1 cup of water for 2 hours, then reserve the water for later.&#xA;Blend all ingredients until smooth, starting slow and adding reserved water if necessary.</description>
     </item>
   </channel>

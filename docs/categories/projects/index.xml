@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/categories/projects/</link>
+    <link>https://hedeenza.github.io/arborealrepository/categories/projects/</link>
     <description>Recent content in Projects on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Civic Data Challenge (Open Data Syracuse pt. 1)</title>
-      <link>http://localhost:4321/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</guid>
       <description>The Syracuse Civic Data Challenge from https://data.syr.gov/pages/data-challenge&#xA;&amp;ldquo;Civic Data Challenge is a month-long contest where members of the community get the chance to use datasets from Open Data Syracuse to build an interesting data visualization, website application, data analysis, map, chatbot, or any other type of project that uses the featured dataset.&amp;rdquo;&#xA;Judging Criteria Judging Criteria&#xD;Category Weights Not Known Creativity Execution Wow factor Informational value Data Sources It sounds like we&amp;rsquo;ll need to use one data set from Open Data Syracuse, and any other additional data sets that will help strengthen the project.</description>
     </item>
     <item>
       <title>Critical Role: The Almost Impossible (Campaign 1 - Vox Machina)</title>
-      <link>http://localhost:4321/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</guid>
       <description>This is a repost of a previous project originally from 15 June 2024.&#xA;1. Introduction Critical Role is a series in which a star-studded cast of Hollywood voice actors play Dungeons &amp;amp; Dragons. It&amp;rsquo;s a story known for its length (and you thought catching up on the Marvel Cinematic Universe was bad):&#xA;Critical Role Run Time in Context&#xD;Campaign Start Date End Date Play Time # of 45&#39; Cable TV Episodes 1 - Vox Machina March 2015 October 2017 373 hours 23 minutes 497.</description>
     </item>
     <item>
       <title>Rower Hometown Map - pt.1</title>
-      <link>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
       <description>Introduction An important part of building a continually successful rowing team - or any team with turnover for that matter - is strategic recruitment. If you don&amp;rsquo;t have high quality people coming in as your previous high quality people leave, you&amp;rsquo;re going to be in a tough spot. Many Division 1 teams in the United States recruit from all across the country and internationally to find the talent that will help their team continue their storied legacy of excellence.</description>
     </item>
   </channel>
