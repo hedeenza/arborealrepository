@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>heap 0 (picoCTF 10) - The Arboreal Repository</title>
+<meta property="og:title" content="heap 0 (picoCTF 10) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">heap 0 (picoCTF 10)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author: ABRXS, PR10R1TYQ</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>Are overflows just a stack concern?</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li><code>wget</code> the files</li>
+<li>I don&rsquo;t know any C, so this is going to be challenging</li>
+<li>I checked the binary, but didn&rsquo;t find anything that seemed useful. I even tried a hex dump and nothing seemed useful.</li>
+<li>Played around with the challenge instance, initialized with the net cat command <code>nc</code>
+<ul>
+<li>Allowed us to see the status of the heap: by pressing 1</li>
+<li>Allowed us to write to the heap: by pressing 2</li>
+<li>Allowed us to see the &lsquo;safe variable&rsquo; which they gave to use as <code>safe_var = bico</code>: by pressing 3</li>
+<li>Allowed us to attempt to retrieve the flag: by pressing 4</li>
+<li>Exits: by pressing 5</li>
+</ul>
+</li>
+<li>After poking around a little, I opened up the source code</li>
+<li>I could see that there was a section at the top that defined the sizes for the flag, input data, and safe variable. In the check win section, it looks like it&rsquo;s saying that if the safe_var is not <code>bico</code>, then you win and the system will give you the flag when you press 4; but we don&rsquo;t have access to the safe_var directly</li>
+<li>The hint reads &ldquo;What part of the heap do you have control over and how far is it from the safe_var?&rdquo;</li>
+<li>We have control over the input. I tried entering something with 2, and it look like it replaced the variable that read <code>pico</code> with my input. Because I saw the &ldquo;INPUT_DATA_SIZE&rdquo; was set to 5, I decided to try and make something that was 5 characters long. Doing so pushed the input outside the bounds of the nice box they displayed when you tnered 1, but nothing else</li>
+<li>Then I looked at the hint again and saw that it said &ldquo;how far away is it from safe_var?&rdquo; Looking back at the source code I saw that in the <code>//PRINT FLAG</code> section there was a <code>char buf[FLAG_SIZE_MAX]</code>, which seemed to be the key.</li>
+<li>At the top, the <code>FLAG_SIZE_MAX</code> was set to 64. This made me think that there were 64 spaces between the input data and the safe_var, which the author was sure &ldquo;couldn&rsquo;t be changed.&rdquo;</li>
+<li>To solve, I entered more than 64 characters as the input, then viewed the heap status. This showed that the top variable, the input, extended way outside the display box and then actually started pushing down into the safe_var box, effectively changing the safe_var value to something other than &lsquo;bico&rsquo;</li>
+<li>Entering 4 now produced the win and the flag</li>
+</ol>
+<p><strong>17 minutes 0 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<p>&ldquo;What part of the heap do you have control over and how far is it from the safe_var?&rdquo;</p>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Understanding what the &lsquo;heap&rsquo; and &lsquo;stack&rsquo; are</li>
+<li>Understanding what the maximum allowable input length was</li>
+<li>Understanding how to push beyond that in order to change the next value</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+

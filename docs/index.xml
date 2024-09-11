@@ -6,8 +6,22 @@
     <description>Recent content on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>heap 0 (picoCTF 10)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/heap-0-picoctf-10/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/heap-0-picoctf-10/</guid>
+      <description>Challenge Author: ABRXS, PR10R1TYQ&#xA;Difficulty: Easy&#xA;Description Are overflows just a stack concern?&#xA;Process / Notes wget the files I don&amp;rsquo;t know any C, so this is going to be challenging I checked the binary, but didn&amp;rsquo;t find anything that seemed useful. I even tried a hex dump and nothing seemed useful. Played around with the challenge instance, initialized with the net cat command nc Allowed us to see the status of the heap: by pressing 1 Allowed us to write to the heap: by pressing 2 Allowed us to see the &amp;lsquo;safe variable&amp;rsquo; which they gave to use as safe_var = bico: by pressing 3 Allowed us to attempt to retrieve the flag: by pressing 4 Exits: by pressing 5 After poking around a little, I opened up the source code I could see that there was a section at the top that defined the sizes for the flag, input data, and safe variable.</description>
+    </item>
+    <item>
+      <title>Starting with tmux</title>
+      <link>https://hedeenza.github.io/arborealrepository/notes/starting-with-tmux/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/starting-with-tmux/</guid>
+      <description>What is tmux? Link tmux is a &amp;ldquo;terminal multiplexer&amp;rdquo;, allowing you to have multiple terminal log-ins controlled within one single terminal window. With tmux you don&amp;rsquo;t have to open additional windows or additional tabs to access something else with the terminal while keeping your existing session going.&#xA;Benefits Persistence (You can reconnect after you disconnect) Sharing (multiple people can use the same session) Multiple windows and panes General Commands tmux - Start a tmux session, will display the user, time, program, etc</description>
+    </item>
     <item>
       <title>Binary Search (picoCTF 9)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/binary-search-picoctf-9/</link>
