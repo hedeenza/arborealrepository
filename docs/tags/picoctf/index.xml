@@ -16,6 +16,13 @@
       <description>Challenge Author: CHENG ZHANG&#xA;Difficulty: Easy&#xA;Description Can you use your knowledge of format strings to make the customers happy?&#xA;Process / Notes In the source code file, I see that BUFFSIZE 32, FLAGSIZE 64 It looks like we&amp;rsquo;ll first be presented with a menu, then serving Patrick, then serving Sponge Bob With Patrick it looks like choosing the breakfast burger will result in the script returning that that item is unavailable If the item is greater than 2, maybe meaning the third option?</description>
     </item>
     <item>
+      <title>picoCTF Challenge Count</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/09/12/picoctf-challenge-count/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/09/12/picoctf-challenge-count/</guid>
+      <description>Challenge Count Even though they&amp;rsquo;ve just been the easy challenges so far, I feel like I&amp;rsquo;ve been learning a lot from the picoCTF challenges I&amp;rsquo;ve completed. In the practice section, they have many challenges graded easy, medium, and hard available to complete. At posting one challenge write up each day, getting through the easy challenges will take me to the beginning of November, the medium challenges will take me through mid-May, and the hard challenges will take me to almost the end of July.</description>
+    </item>
+    <item>
       <title>heap 0 (picoCTF 10)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/heap-0-picoctf-10/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
