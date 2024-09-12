@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>format string 0 (picoCTF 11) - The Arboreal Repository</title>
+<meta property="og:title" content="format string 0 (picoCTF 11) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">format string 0 (picoCTF 11)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author: CHENG ZHANG</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>Can you use your knowledge of format strings to make the customers happy?</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li>In the source code file, I see that <code>BUFFSIZE 32, FLAGSIZE 64</code></li>
+<li>It looks like we&rsquo;ll first be presented with a menu, then serving Patrick, then serving Sponge Bob</li>
+<li>With Patrick it looks like choosing the breakfast burger will result in the script returning that that item is unavailable</li>
+<li>If the item is greater than 2, maybe meaning the third option? No it&rsquo;s 2x the buffer size, then we&rsquo;ll go on to serving Sponge Bob, otherwise Patrick will still be hungry</li>
+<li>Neo Vim has syntax-highlighted the <code>%114d</code> in the second option - the Grilled Cheese. I think that that indicates the program will detect the format specifier (like the <code>%s</code> littered everywhere seem to be format specifiers) and that will affect the buffer size, exceed it, and allow us to move on to working with Sponge Bob.</li>
+<li>It says Sponge Bob is super hungry and wants something that will &ldquo;break the shop.&rdquo; In the third option, there are three <code>%s</code>, which may get the string read three times, but it doesn&rsquo;t seem large enough to exceed the buffer size</li>
+<li>The <code>%to</code> that&rsquo;s in the &ldquo;Pesto Portobello&rdquo; option may indicate that it will go to some undefined end</li>
+<li>Before actually running things, I believe the answer will be to get Patrick the &ldquo;Grilled Cheese&rsquo; option that contains the <code>%114d</code> format string, which will allow us to work with Sponge Bob, I believe getting Sponge Bob the &ldquo;Pesto Portobello&rdquo; option that contains the <code>%to</code> will be the option that &ldquo;breaks the shop&rdquo; and then get use the flag. We&rsquo;ll see in a moment!</li>
+<li>Use <code>nc</code> to start the challenge instance</li>
+<li>When entering the &ldquo;Grilled Cheese&rdquo; option, it displayed a huge number of blank spaces. This was likely due to the <code>%114d</code>. If the last challenge was about exceeding buffer size, and this is similar, then the huge amount of blank spaces would definitely exceed the buffer size of 32 (or the doubled size of 64)</li>
+<li>The Pesto Portobello option kicked me out of the challenge instance, so I think it&rsquo;s the last option</li>
+<li>After reconnecting, I chose the option with three <code>%s</code> for Sponge Bob</li>
+<li>I&rsquo;m not quite sure what that option did, but it returned the flag. Clearly there&rsquo;s more to learn!</li>
+</ol>
+<p><strong>36 minutes 20 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<ol>
+<li>This is an introduction of format string vulnerabilities. Look up &ldquo;format specifiers&rdquo; if you have never see them before</li>
+<li>Just try out the different options</li>
+</ol>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Understanding buffer size in the source code and what each &ldquo;success condition&rdquo; was</li>
+<li>Understanding what format string specifiers do and how they behave</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+
