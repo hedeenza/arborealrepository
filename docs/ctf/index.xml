@@ -6,8 +6,15 @@
     <description>Recent content in Ctfs on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>endianness (picoCTF 13)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/endianness-picoctf-13/</link>
+      <pubDate>Sat, 14 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/endianness-picoctf-13/</guid>
+      <description>Challenge Author: NANA AMA ATOMBO-SACKEY&#xA;Difficulty: Easy&#xA;Description Know of little and big endian?&#xA;Process / Notes netcat into the challenge Need to find the little and big endian representations of a word Looks like there&amp;rsquo;s a source file as well - wget that It looks like the program will produce a 5 character word and we&amp;rsquo;ll have to guess the little endian, and the big endian representations of that word in order to receive the flag I know I&amp;rsquo;ve read about endianness before but I can&amp;rsquo;t remember what it is.</description>
+    </item>
     <item>
       <title>WebDecode (picoCTF 12)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/webdecode-picoctf-12/</link>
