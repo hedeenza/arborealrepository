@@ -6,8 +6,15 @@
     <description>Recent content in Posts on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>picoCTF Timelines</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/09/16/picoctf-timelines/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/09/16/picoctf-timelines/</guid>
+      <description>Decisions After creating the timelines for pwn.college I became interested in what different completion rates would look like for picoCTF as well. For now I&amp;rsquo;ll continue to post 1 challenge per day, but it&amp;rsquo;s not often that I&amp;rsquo;ll only complete one per day. As with pwn.college, it&amp;rsquo;s very likely that &amp;gt; 5 completed per day will not be feasible, but it&amp;rsquo;s interesting to see what very accelerated timelines look like.</description>
+    </item>
     <item>
       <title>Enrolling at pwn.college</title>
       <link>https://hedeenza.github.io/arborealrepository/2024/09/15/enrolling-at-pwn-college/</link>
