@@ -16,6 +16,13 @@
       <description>pwn.college &amp;ldquo;pwn.college is an education platform for students (and other interested parties) to learn about, and practice, core cybersecurity concepts in a hands-on fashion. In martial arts terms, it is designed to take a “white belt” in cybersecurity through the journey to becoming a “blue belt”, able to approach (simple) cybersecurity competitions (CTFs) and wargames. Our philosophy is “practice makes perfect”.&#xA;The platform is maintained by an awesome team of hackers at Arizona State University.</description>
     </item>
     <item>
+      <title>pwn.college Timelines</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/09/15/pwn-college-timelines/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/09/15/pwn-college-timelines/</guid>
+      <description>&#xD;Contemplation Deciding a realistic - but somewhat accelerated - learning rate will be important. I&amp;rsquo;ll need to balance pwn.college learning with Data Camp courses and picoCTF challenges and figure out where my time will be best spent while still making progress on all parts. Creating these tables was great practice with {lubridate} and {dplyr}.&#xA;Level Completion Timeline at Different Learning Rates (Starting from 2024-09-16)&#xD;Level Challenges 1/Day 2/Day 3/Day 4/Day 5/Day White Belt 10 2024-09-26 2024-09-21 2024-09-20 2024-09-19 2024-09-18 Linux Luminarium 84 2024-12-19 2024-11-02 2024-10-18 2024-10-10 2024-10-05 Optional Refreshers 228 2025-08-04 2025-02-24 2025-01-02 2024-12-06 2024-11-20 Orange Belt 124 2025-12-06 2025-04-27 2025-02-13 2025-01-06 2024-12-15 Yellow Belt 110 2026-03-26 2025-06-21 2025-03-22 2025-02-03 2025-01-06 Green Belt 80 2026-06-14 2025-07-31 2025-04-18 2025-02-23 2025-01-22 Blue Belt 173 2026-12-04 2025-10-26 2025-06-15 2025-04-08 2025-02-26 Level Completion Timeline at Different Learning Rates (Starting from 2024-09-16)&#xD;Level Challenges 6/Day 7/Day 8/Day 9/Day 10/Day White Belt 10 2024-09-18 2024-09-18 2024-09-18 2024-09-18 2024-09-17 Linux Luminarium 84 2024-10-02 2024-09-30 2024-09-29 2024-09-28 2024-09-26 Optional Refreshers 228 2024-11-09 2024-11-02 2024-10-28 2024-10-24 2024-10-19 Orange Belt 124 2024-11-30 2024-11-20 2024-11-13 2024-11-07 2024-11-01 Yellow Belt 110 2024-12-19 2024-12-06 2024-11-27 2024-11-20 2024-11-12 Green Belt 80 2025-01-02 2024-12-18 2024-12-07 2024-11-29 2024-11-20 Blue Belt 173 2025-01-31 2025-01-12 2024-12-29 2024-12-19 2024-12-08 </description>
+    </item>
+    <item>
       <title>picoCTF Challenge Count</title>
       <link>https://hedeenza.github.io/arborealrepository/2024/09/12/picoctf-challenge-count/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>

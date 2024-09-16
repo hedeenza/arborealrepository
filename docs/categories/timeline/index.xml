@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pwn.college on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/tags/pwn.college/</link>
-    <description>Recent content in Pwn.college on The Arboreal Repository</description>
+    <title>Timeline on The Arboreal Repository</title>
+    <link>https://hedeenza.github.io/arborealrepository/categories/timeline/</link>
+    <description>Recent content in Timeline on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/pwn.college/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Enrolling at pwn.college</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/15/enrolling-at-pwn-college/</link>
-      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/15/enrolling-at-pwn-college/</guid>
-      <description>pwn.college &amp;ldquo;pwn.college is an education platform for students (and other interested parties) to learn about, and practice, core cybersecurity concepts in a hands-on fashion. In martial arts terms, it is designed to take a “white belt” in cybersecurity through the journey to becoming a “blue belt”, able to approach (simple) cybersecurity competitions (CTFs) and wargames. Our philosophy is “practice makes perfect”.&#xA;The platform is maintained by an awesome team of hackers at Arizona State University.</description>
-    </item>
+    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/timeline/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pwn.college Timelines</title>
       <link>https://hedeenza.github.io/arborealrepository/2024/09/15/pwn-college-timelines/</link>
