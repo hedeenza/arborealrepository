@@ -6,8 +6,15 @@
     <description>Recent content in CTF on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blame Game (picoCTF 15)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/blame-game-picoctf-15/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/blame-game-picoctf-15/</guid>
+      <description>Challenge Author: Jeffery John&#xA;Difficulty: Easy&#xA;Description Someone&amp;rsquo;s commits seem to be preventing the program from working. Who is it?&#xA;Process / Notes wget and unzip the files cat the message.py Looks like a half-done print statement git log to see the log It looks like one author is committing &amp;ldquo;important business work&amp;rdquo; an uncountable amount of times, at the same time git branch -a shows only the master branch is there cat a bunch of things - no clues cat HEAD gave a reference location, trying to cat refs/heads/master Got a git code, seems to point to the ee09 branch git checkout to that branch, seems the same.</description>
+    </item>
     <item>
       <title>Bookmarklet (picoCTF 14)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/bookmarklet/</link>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Blame Game (picoCTF 15) - The Arboreal Repository</title>
+<meta property="og:title" content="Blame Game (picoCTF 15) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Blame Game (picoCTF 15)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author: Jeffery John</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>Someone&rsquo;s commits seem to be preventing the program from working. Who is it?</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li><code>wget</code> and <code>unzip</code> the files</li>
+<li><code>cat</code> the message.py</li>
+<li>Looks like a half-done print statement</li>
+<li><code>git log</code> to see the log</li>
+<li>It looks like one author is committing &ldquo;important business work&rdquo; an uncountable amount of times, at the same time</li>
+<li><code>git branch -a</code> shows only the master branch is there</li>
+<li><code>cat</code> a bunch of things - no clues</li>
+<li><code>cat HEAD</code> gave a reference location, trying to <code>cat refs/heads/master</code></li>
+<li>Got a git code, seems to point to the ee09 branch</li>
+<li><code>git checkout</code> to that branch, seems the same. That might be the most recent one?</li>
+<li>Going to pipe the git log into a text file and go to the bottom with Neo Vim</li>
+<li>THe author for the second commit looks to be the flag!</li>
+<li>I&rsquo;m curious what these first two commits looked like</li>
+<li>It&rsquo;s just the full code adn the edit where someone removed the last parenthesis</li>
+</ol>
+<p><strong>11 minutes 43 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<ol>
+<li>In collaborative projects, many users can make changes</li>
+<li>Read the chapter on Git from the picoPrimer here</li>
+<li>You can use the python3 <file>.py to try running the code, though you won&rsquo;t nee to for this challenge</li>
+</ol>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Understanding how to use <code>git log</code> to see the history of changes and commits in a git project</li>
+<li>Understanding how to navigate a large git log to find where the breaks occured and who made those changes</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+
