@@ -6,8 +6,15 @@
     <description>Recent content in Ctfs on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unminify (picoCTF 16)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/unminify-picoctf-16/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/unminify-picoctf-16/</guid>
+      <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description I don&amp;rsquo;t like scrolling down to read the code of my website, so I&amp;rsquo;ve squished it. As a bonus, my pages load faster!&#xA;Process / Notes Go to the listed site It&amp;rsquo;s telling us we have the flag, but they just deliver them , they don&amp;rsquo;t know how to read them &amp;lt;C-u&amp;gt; to see what&amp;rsquo;s going on It&amp;rsquo;s all in one line. Is this the minification?</description>
+    </item>
     <item>
       <title>Blame Game (picoCTF 15)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/blame-game-picoctf-15/</link>

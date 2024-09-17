@@ -2,34 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hedeenza.github.io/arborealrepository/categories/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/ctf/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/ctf/unminify-picoctf-16/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/web-exploitation/</loc>
+    <lastmod>2024-09-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/blame-game-picoctf-15/</loc>
     <lastmod>2024-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/categories/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/ctf/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/general-skills/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
     <lastmod>2024-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/2024/09/16/picoctf-timelines/</loc>
     <lastmod>2024-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/post/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
-    <lastmod>2024-09-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/</loc>
     <lastmod>2024-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/timeline/</loc>
@@ -54,9 +60,6 @@
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/2024/09/15/pwn-college-timelines/</loc>
-    <lastmod>2024-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/web-exploitation/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/endianness-picoctf-13/</loc>

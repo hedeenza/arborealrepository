@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.129.0">
 
 
-<title>Blame Game (picoCTF 15) - The Arboreal Repository</title>
-<meta property="og:title" content="Blame Game (picoCTF 15) - The Arboreal Repository">
+<title>Unminify (picoCTF 16) - The Arboreal Repository</title>
+<meta property="og:title" content="Unminify (picoCTF 16) - The Arboreal Repository">
 
 
   <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
@@ -70,44 +70,42 @@
   <article class="article">
     
 
-    <h1 class="article-title">Blame Game (picoCTF 15)</h1>
+    <h1 class="article-title">Unminify (picoCTF 16)</h1>
 
     
 
     <div class="article-content">
       
-      <p>Challenge Author: Jeffery John</p>
+      <p>Challenge Author:</p>
 <p>Difficulty: Easy</p>
 <h1 id="description">Description</h1>
-<p>Someone&rsquo;s commits seem to be preventing the program from working. Who is it?</p>
+<p>I don&rsquo;t like scrolling down to read the code of my website, so I&rsquo;ve squished it. As a bonus, my pages load faster!</p>
 <h1 id="process--notes">Process / Notes</h1>
 <ol>
-<li><code>wget</code> and <code>unzip</code> the files</li>
-<li><code>cat</code> the message.py</li>
-<li>Looks like a half-done print statement</li>
-<li><code>git log</code> to see the log</li>
-<li>It looks like one author is committing &ldquo;important business work&rdquo; an uncountable amount of times, at the same time</li>
-<li><code>git branch -a</code> shows only the master branch is there</li>
-<li><code>cat</code> a bunch of things - no clues</li>
-<li><code>cat HEAD</code> gave a reference location, trying to <code>cat refs/heads/master</code></li>
-<li>Got a git code, seems to point to the ee09 branch</li>
-<li><code>git checkout</code> to that branch, seems the same. That might be the most recent one?</li>
-<li>Going to pipe the git log into a text file and go to the bottom with Neo Vim</li>
-<li>The author for the second commit looks to be the flag!</li>
-<li>I&rsquo;m curious what these first two commits looked like</li>
-<li>It&rsquo;s just the full code and the edit where someone removed the last parenthesis</li>
+<li>Go to the listed site</li>
+<li>It&rsquo;s telling us we have the flag, but they just deliver them , they don&rsquo;t know how to read them</li>
+<li><code>&lt;C-u&gt;</code> to see what&rsquo;s going on</li>
+<li>It&rsquo;s all in one line. Is this the minification?</li>
+<li>Hard to read, so putting it into Neo Vim. With the html ending for syntax highlighting and such</li>
+<li>In Neo Vim, I could separate everything one at a time, or I could try to use a macro</li>
+<li>Ended up separating everything our manually, but really want to learn how to do that with a macro</li>
+<li>Found under the &ldquo;If you&rsquo;re reading this, your browser has successfully found the flag.&rdquo;</li>
+<li>Figured I could just search <code>/{</code> but that returned a lot of decoy flags in the page source.</li>
+<li>Used regex expression to find a letter after the <code>{</code> instead of a matching <code>}</code></li>
+<li><code>/{[:alpha]</code> brought me straight to the flag</li>
 </ol>
 <p><strong>11 minutes 43 seconds to complete</strong></p>
 <h1 id="hints">Hints</h1>
 <ol>
-<li>In collaborative projects, many users can make changes</li>
-<li>Read the chapter on Git from the picoPrimer here</li>
-<li>You can use the python3 <file>.py to try running the code, though you won&rsquo;t nee to for this challenge</li>
+<li>Try CTLR+U in your browser to view the page source. You can also add &lsquo;view-source:&rsquo; before the URL, or try curl<url> in your shell</li>
+<li>Minification reduces the size of code, but does not change its functionality</li>
+<li>What tools do developers use when working on a website? Many text editors and browsers include formatting</li>
 </ol>
 <h1 id="core-lessons">Core Lessons</h1>
 <ol>
-<li>Understanding how to use <code>git log</code> to see the history of changes and commits in a git project</li>
-<li>Understanding how to navigate a large git log to find where the breaks occured and who made those changes</li>
+<li>Understand minification</li>
+<li>Understand how to search through mini-fied source code and find your target</li>
+<li>Understand how to un-minify source code if necessary</li>
 </ol>
 
     </div>
