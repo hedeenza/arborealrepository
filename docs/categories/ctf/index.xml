@@ -6,8 +6,15 @@
     <description>Recent content in CTF on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 17 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Time Machine (picoCTF 17)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/time-machine-picoctf-17/</link>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/time-machine-picoctf-17/</guid>
+      <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description What was I last working on? I remember writing a note to help me remember&amp;hellip;&#xA;Process / Notes wget and unzip the challenge folder - a lot of files got unzipped from a .git directory cat message.txt - &amp;ldquo;This is what I was working on, but I&amp;rsquo;d need to look at my commit history to know why&amp;hellip;&amp;rdquo; Checking the tree inside the .git directory There&amp;rsquo;s a COMMIT_MSG cat COMMIT_MSG revealed the flag!</description>
+    </item>
     <item>
       <title>Unminify (picoCTF 16)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/unminify-picoctf-16/</link>
