@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>binhexa (picoCTF 18) - The Arboreal Repository</title>
+<meta property="og:title" content="binhexa (picoCTF 18) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">binhexa (picoCTF 18)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author: NANA ATOMBO-SACKEY</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>How well can you perform basic binary operations?</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li><code>nc</code> into the challenge</li>
+<li>Perform math on binary numbers</li>
+<li>Binary Number 1 = 10010111</li>
+<li>Binary Number 2 = 11100000</li>
+<li>Operation = +</li>
+<li>Add right to left, anything that adds to 2 gets carried over as a 1 to the left &gt; 101110111</li>
+<li>Operation = &laquo; on BN1</li>
+<li>Shifting everything to the left by 1 &gt; 1011101110 (added a 0 to the end)</li>
+<li>Operation = &raquo;  on BN2</li>
+<li>Shift everything to the right by 1 bit &gt; 011100000 was incorrect &gt; 11000 was correct!</li>
+<li>Operation = |
+12 Stitch them together? Wasn&rsquo;t that&hellip;</li>
+<li>The operation &lsquo;OR&rsquo;? &gt; 11110111 was correct! (If there was a 1 in either position, it was a 1)</li>
+<li>Operation = *</li>
+<li>Multiply each position? &gt; 10000000? Wasn&rsquo;t that&hellip;</li>
+<li>Struggled here for a while. Made an attempt but was going at it with entirely the wrong outlook. Looked up how to do binary multiplication by hand, and had a better result with 1000010000100000</li>
+<li>Operation = &amp;</li>
+<li>AND? Need both 1&rsquo;s there to be a 1? &gt; 10000000 was correct!</li>
+<li>It says this last answer in hex was the last answer.</li>
+<li>I kept trying to hex dump it, but it was really looking for that number to be <strong>converted into base 16</strong>. Discovered what the final number answer through an online calculator performing the operation for me.</li>
+</ol>
+<p><strong>42 minutes 37 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<p>NONE</p>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Understand how binary numbers / binary counting works</li>
+<li>Understand what each of the operations were asking for - I got lucky with my guesses on a lot of them</li>
+<li>Understand that hexadecimal means &ldquo;base 16 counting&rdquo; as well as the normal 0-9 and a-f form I&rsquo;m used to associating with it.</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+

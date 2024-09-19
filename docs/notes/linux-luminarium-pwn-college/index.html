@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Linux Luminarium (pwn.college) - The Arboreal Repository</title>
+<meta property="og:title" content="Linux Luminarium (pwn.college) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Linux Luminarium (pwn.college)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <h1 id="linux-luminarium">Linux Luminarium</h1>
+<p>  As agreed, I would not be doing any write-ups for <a href="https://pwn.college/">pwn.college</a> because that&rsquo;s against the ground rules for their generously offered <em>free</em> educational material. That being said, I do want to keep record of the core skills I&rsquo;ve gained through each section of their course in such a way that the notes won&rsquo;t take away from the challenges - because it&rsquo;s in the struggling that learning really happens.</p>
+<h1 id="earning-my--2024-september-19">Earning my 🐧 (2024 September 19)</h1>
+<p>  Having only completed the white belt and Linux Luminarium so far, I can already say that if the rest of the material is this good, then this content is a <em>steal</em>. If you&rsquo;re interested in learning this kind of material at all and it&rsquo;s still available by the time you read this, sign up and start as soon as you can. Though it is but a small thing, I was absolutely delighted to see the little penguin emoji badge pop up next to my user name when I completed this section. I hope you feel the same way as your skills grow and you receive marks of your progress.</p>
+<h1 id="notes-from-the-linux-luminarium">Notes from the Linux Luminarium</h1>
+<h2 id="a-hello-hackers">A. Hello Hackers</h2>
+<ol>
+<li>What the &lsquo;shell prompt&rsquo; is</li>
+<li>user ($) vs root (#) privilege indication</li>
+<li><code>$ whoami</code> command to print the indication</li>
+<li>How to invoke commands in the shell</li>
+<li><code>echo</code> to print desired text in the terminal</li>
+</ol>
+<h2 id="b-pondering-paths">B. Pondering Paths</h2>
+<ol start="6">
+<li>Understanding file paths</li>
+<li>The root directory (/)</li>
+<li>Invoking a program by providing its path to the CLI</li>
+<li>Absolute vs Relative file paths - and invoking commands/programs from these paths</li>
+<li><code>pwd</code> to print the working directory in the terminal - the concept of cwd as &lsquo;current working directory&rsquo;</li>
+<li><code>..</code> as the parent directory - one directory level up from the current working directory</li>
+<li><code>.</code> as the current directory</li>
+<li><code>~</code> is the &lsquo;/home/user` directory</li>
+</ol>
+<h2 id="c-comprehending-commands">C. Comprehending Commands</h2>
+<ol start="14">
+<li><code>cat</code> to read out files (even multiples files with <code>$ cat first second</code>)</li>
+<li><code>cat</code> a file using an absolute path from a different cwd</li>
+<li><code>grep SEARCH_STRING /path/to/file</code> to find specific file contents</li>
+<li><code>ls</code> to list the contents of a directory</li>
+<li><code>touch</code> to create files</li>
+<li><code>rm</code> to remove files</li>
+<li><code>ls -a</code> to list hidden files as well</li>
+<li><code>mkdir</code> to create a directory in the cwd</li>
+<li><code>find</code> to find files - no criteria = find every file in the cwd
+<ul>
+<li><code>$ find -name &lt;file-name&gt;</code> to find a specific file</li>
+<li><code>$ find / -name &lt;file-name&gt;</code> to search the whole system for the file name</li>
+</ul>
+</li>
+<li>Symbolic links (hard links and soft links)
+<ul>
+<li><code>ln -s &lt;base/file/path&gt; &lt;new/target/file/path&gt;</code> to create a symbolic link</li>
+<li>Now when you interact with the target file, it&rsquo;s like you&rsquo;re interacting with the original file</li>
+<li><code>file &lt;new/target/file/path&gt;</code> will tell you whether it&rsquo;s a symbolic link and where the file it links to is located</li>
+</ul>
+</li>
+<li>Creating a symbolic link to a file and interacting with that symbolic link to access a file you may not have permissions for</li>
+</ol>
+<h2 id="d-digesting-documentation">D. Digesting Documentation</h2>
+<ol start="25">
+<li>How to add arguments like <code>-a</code> to linux commands</li>
+<li>Adding arguments to further specify what an option (like -f) should do</li>
+<li>Using <code>man</code> to access a command&rsquo;s manual page, containing its Name, Synopsis, Description, etc.</li>
+<li>Searching <code>man</code> with <code>/</code> or searching backwards with <code>?</code> - and navigating forward and backward through matches with <code>n</code> and <code>N</code></li>
+<li>Searching through available man pages with <code>man -k &lt;key-word&gt;</code> and printing matching man pages</li>
+<li>Using the <code>-h</code> / <code>--help</code> option</li>
+<li>List shell builtins (commands built into the shell itself) with <code>$ help</code> and <code>$ help &lt;builtin-name&gt;</code></li>
+</ol>
+<h2 id="e-file-globbing">E. File Globbing</h2>
+<ol start="32">
+<li>Use globbing when you&rsquo;re tired of fully typing out file paths</li>
+<li><code>*</code> as the &ldquo;anything that matches what came before or after&rdquo; wildcard</li>
+<li><code>?</code> as the &ldquo;single character&rdquo; wildcard (only fills as many characters as there are ?&rsquo;s)</li>
+<li>Characters within <code>[]</code> as &ldquo;any ONE of ONLY these characters&rdquo; (for individual files AND paths)</li>
+<li>Exclusion of characters with <code>[!...]</code> or <code>[^...]</code></li>
+</ol>
+<h2 id="f-practice-piping">F. Practice Piping</h2>
+<ol start="37">
+<li>Redirecting output with <code>&gt;</code> to overwrite file contents</li>
+<li>Redirecting output with <code>&gt;&gt;</code> to append standard output to a destination</li>
+<li>File Descriptor (FD) numbers - 0 = Std Input, 1 = Std Output, 2 = Std Error</li>
+<li>Redirecting stdout with <code>1&gt;</code> and stderr with <code>2&gt;</code></li>
+<li>Redirecting different outputs to different files from the same command
+<ul>
+<li>e.g. <code>$ a_command &gt; stdout.log 2&gt; stderr.log</code></li>
+</ul>
+</li>
+<li>Redirecting output to programs using <code>&lt;</code>
+<ul>
+<li>e.g. <code>$ echo yo &gt; message</code> then</li>
+<li>e.g. <code>$ rev &lt; message</code> - the stdout of message is directed to the rev command</li>
+</ul>
+</li>
+<li><code>|</code> pipe operator to take stdout from the first command and pass it to the stdin of the next command</li>
+<li><code>&gt;&amp;</code> to redirect a FD to another FD, and using it to redirect stderr to the stdout
+<ul>
+<li>e.g. <code>$ 2&gt;% 1</code> &ndash;&gt; <code>$ command 2&gt;&amp; 1 | grep 'target'</code> to take the stderror from the command, change it to stdout, which only then can we grep through the contents for what we&rsquo;re looking for</li>
+</ul>
+</li>
+<li><code>$ tee</code> to duplicate piped data
+<ul>
+<li>e.g. <code>$ echo hi | teel pwn college</code> so now both pwn and college contain &lsquo;hi&rsquo;</li>
+</ul>
+</li>
+<li><code>$ tee</code> inline to debug
+<ul>
+<li>e.g. <code>$ command_1 | tee cmd1_output | command_2</code> to not only pass the command_1 stdout to command_2, but also to a file so we can see what&rsquo;s going on in case there are errors</li>
+</ul>
+</li>
+<li>&ldquo;Everything is a file&rdquo; - linux gives file-like access to most resources</li>
+<li>Process substitution with <code>&gt;(command)</code></li>
+<li><code>$ rev</code> takes stdin and writes the reverse as stdout</li>
+</ol>
+<h2 id="g-shell-var">G. Shell Var</h2>
+<ol start="50">
+<li>By default, variables that you set in the shell session ar local to that shell process - other commands won&rsquo;t inherit them</li>
+<li>Call shell variables with <code>$VARNAME</code></li>
+<li>Print in the shell with <code>$ echo</code></li>
+<li>Assigning variables with <code>=</code> (no spaces around the =)</li>
+<li>Using &quot; around multi-word variable assignments</li>
+<li><code>sh</code> to invoke a child shell process</li>
+<li><code>export VAR</code> to export the VAR to the environment</li>
+<li><code>env</code> to print every <em>exported</em> variable in the shell</li>
+<li>Command substitution with <code>$()</code> - the output of the command is stored as a variable!!
+<ul>
+<li>e.g. <code>$ echo $(pwd)</code></li>
+</ul>
+</li>
+<li><code>read</code> to read user input; the <code>-p</code> option allows us to specify a prompt
+<ul>
+<li>e.g. <code>$ read -p &quot;INPUT: &quot; MY_VARIABLE</code></li>
+<li>e.g. <code>INPUT: your-input</code></li>
+<li>e.g. <code>$ echo &quot;You entered: $MY_VARIABLE</code></li>
+<li>e.g. <code>You entered: your-input</code></li>
+</ul>
+</li>
+<li>Reading files with :
+<ul>
+<li><code>$ echo 'test' &gt; file</code></li>
+<li><code>$ read VAR &lt; file</code> - this reads the contents of &lsquo;file&rsquo; INTO the VAR variable!</li>
+<li><code>$ echo $VAR</code></li>
+<li><code>test</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="h-processes-and-jobs">H. Processes and Jobs</h2>
+<ol start="61">
+<li>List processes with <code>$ ps</code>
+<ul>
+<li>PID = Unique process identification number</li>
+<li>TTY = The terminal the process is running on</li>
+<li>CPU TIME = The CPU time the process is using</li>
+<li><code>-ef</code> to list EVERY process in the FULL FORMAT</li>
+<li><code>-a</code> to list processes for all users</li>
+<li><code>-u</code> to list processes in a user-readable format</li>
+<li><code>-x</code> to list processes not running in the terminal</li>
+<li><code>-aux</code> for all three options combined</li>
+</ul>
+</li>
+<li><code>$ kill &lt;PID&gt;</code> to terminate the program in a manner that allows it to get its affairs in order</li>
+<li>Interrupt terminal processes with <C-c> aka CTRL + c</li>
+<li>Suspend processes to the background with <C-z></li>
+<li>Resume the suspended process with <code>$ fg</code></li>
+<li>Resume processes and put it in the background with <code>$ bg</code>
+<ul>
+<li>Viewing processes with <code>$ ps -o</code></li>
+<li>STAT</li>
+<li>S = sleeping, waiting for input</li>
+<li>T = suspended by <C-z></li>
+<li>R = running</li>
+<li>R+ = running in the foreground</li>
+</ul>
+</li>
+<li>Bringing a bg process to the fg with <code>$ fg</code></li>
+<li>Starting a process straight into the background with <code>&amp;</code> at the end of the command
+<ul>
+<li>e.g. <code>$ sleep 256 &amp;</code></li>
+</ul>
+</li>
+<li>Exit codes rn when a code finishes running and terminates
+<ul>
+<li>Access the exit code of the most-recently terminated command using <code>$ echo $?</code></li>
+<li>Success = 0</li>
+<li>Failure = 1</li>
+</ul>
+</li>
+</ol>
+<h2 id="i-perceiving-permissions">I. Perceiving Permissions</h2>
+<ol start="70">
+<li>Seeing more details about a directory&rsquo;s contents with <code>$ ls -l</code> including what the listed item is, permissions, owner, group,</li>
+<li><code>-</code> a normal file, <code>d</code> = a directory</li>
+<li>Permissions: 3 for the user, 3 for the group, 3 for others</li>
+<li>Ownership user and ownership group</li>
+<li>Permissions User-Group-Public &ndash;&gt; READ = 4, WRITE = 2, EXECUTE = 1
+<ul>
+<li>e.g. 777 = User, Group, and Others can read, write and execute the file</li>
+<li>e.g. 700 = User can read, write and execute the file, but no one else can</li>
+<li>e.g. 544 = User can read and execute, group and others can read</li>
+</ul>
+</li>
+<li><code>$ chown</code> to change ownership of the files - <code>$ chown &lt;username&gt; &lt;file&gt;</code></li>
+<li>Check which groups you&rsquo;re in wiht <code>$ id</code></li>
+<li>Change group access to a file with <code>$ chgrp &lt;group&gt; &lt;file&gt;</code></li>
+<li>Changing permissions with <code>$ chmod (options) &lt;file&gt;</code>
+<ul>
+<li>who+/-what  e.g. r+x,g+wx OR o-rwx OR a+r or something like that</li>
+<li>NOTE: <em>You usually need write permissions in order to change its permissions</em></li>
+</ul>
+</li>
+<li>Setting permissions with <code>$ chmod u=rwx,g=r &lt;file&gt;</code>
+<ul>
+<li>zero out permissions with <code>=-</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="j-untangling-users">J. Untangling Users</h2>
+<ol start="80">
+<li>&rsquo;s&rsquo; in a permission means it is executable as though you were the owner by using the <code>$ sudo</code> command
+<ul>
+<li>NOTE: <em>Setting s to a root-owned file can give attackers a vector to BECOMING THE ROOT</em> (this is dangerous)</li>
+</ul>
+</li>
+<li>Elevate to root privileges with the <code>$ su</code> command and the root password</li>
+<li>Switch the user with the <code>$ su &lt;user-name&gt;</code> command and that user password</li>
+<li>Passwords used to be in the /etc/passwd, but they&rsquo;re now in /etc/shadow, which is not globally readable
+<ul>
+<li>
+<ul>
+<li>or ! means that password login for the account is disabled</li>
+</ul>
+</li>
+<li>Blank means there is no password - NOTE: *This allows some password-less <code>su</code>, leading to huge security issues~</li>
+<li>Listed passwords may be hashed (unreadable the way they are displayed)
+<ul>
+<li>Password checks happen as the system taking your input, one-way hashing it, and comparing that to the stored hash value</li>
+</ul>
+</li>
+<li>Often times backups of systems are stored in under-secured servers
+<ul>
+<li>Leaked /etc/shadow file can be used as a vector to crack passwords</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>$ sudo</code> to run commands as root, but not actually change to root
+<ul>
+<li>The system checks whether the user is in the /etc/sudoers group</li>
+</ul>
+</li>
+</ol>
+<h2 id="k-chaining-commands">K. Chaining Commands</h2>
+<ol start="85">
+<li>Separating commands with <code>;</code>
+<ul>
+<li>This is like entering both commands before anything is executed</li>
+<li>e.g. <code>$ echo COLLEGE &gt; pwn; cat pwn</code></li>
+<li><code>COLLEGE</code></li>
+</ul>
+</li>
+<li>Shell scripts (.sh files) - function as a list of commands to run in the shell
+<ul>
+<li>Run with <code>$ bash x.sh</code></li>
+</ul>
+</li>
+<li>Redirecting your script output to another command
+<ul>
+<li><code>&gt;</code> for stdout, <code>&gt;&gt;</code> to append stdout</li>
+<li><code>2&gt;</code> for stderr, <code>2&gt;&gt;</code> to append stderr</li>
+<li><code>&lt;</code> for stdin</li>
+<li><code>&gt;&amp;</code> for redirecting to other File Descriptors</li>
+<li><code>|</code> for piping the output to another command&rsquo;s input</li>
+</ul>
+</li>
+<li><code>$ bash</code> tells the shell to read the commands from your .sh script as shell commands</li>
+<li>You can make your shell scripts executable and then invoke them with the file&rsquo;s path</li>
+</ol>
+<h2 id="l-pondering-path">L. Pondering PATH</h2>
+<ol start="90">
+<li>PATH is a special variable that stores a bunch of directory paths, in which the shell will search for programs&rsquo; corresponding commands. Without PATH, bash cannot find any of your commands. Be careful.</li>
+<li>Changing the PATH to include another directory
+<ul>
+<li>`$ PATH=&rsquo;/home/my_commands&rsquo;</li>
+</ul>
+</li>
+<li>Setting the path to only search a desired directory for bare bones script execution</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+

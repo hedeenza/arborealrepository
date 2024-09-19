@@ -6,8 +6,15 @@
     <description>Recent content in PicoCTF on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/picoctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>binhexa (picoCTF 18)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/binhexa-picoctf-18/</link>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/binhexa-picoctf-18/</guid>
+      <description>Challenge Author: NANA ATOMBO-SACKEY&#xA;Difficulty: Easy&#xA;Description How well can you perform basic binary operations?&#xA;Process / Notes nc into the challenge Perform math on binary numbers Binary Number 1 = 10010111 Binary Number 2 = 11100000 Operation = + Add right to left, anything that adds to 2 gets carried over as a 1 to the left &amp;gt; 101110111 Operation = &amp;laquo; on BN1 Shifting everything to the left by 1 &amp;gt; 1011101110 (added a 0 to the end) Operation = &amp;raquo; on BN2 Shift everything to the right by 1 bit &amp;gt; 011100000 was incorrect &amp;gt; 11000 was correct!</description>
+    </item>
     <item>
       <title>Time Machine (picoCTF 17)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/time-machine-picoctf-17/</link>

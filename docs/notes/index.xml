@@ -6,8 +6,15 @@
     <description>Recent content in Notes on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Luminarium (pwn.college)</title>
+      <link>https://hedeenza.github.io/arborealrepository/notes/linux-luminarium-pwn-college/</link>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/linux-luminarium-pwn-college/</guid>
+      <description>Linux Luminarium As agreed, I would not be doing any write-ups for pwn.college because that&amp;rsquo;s against the ground rules for their generously offered free educational material. That being said, I do want to keep record of the core skills I&amp;rsquo;ve gained through each section of their course in such a way that the notes won&amp;rsquo;t take away from the challenges - because it&amp;rsquo;s in the struggling that learning really happens.</description>
+    </item>
     <item>
       <title>Starting with tmux</title>
       <link>https://hedeenza.github.io/arborealrepository/notes/starting-with-tmux/</link>
