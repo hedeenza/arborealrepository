@@ -6,10 +6,17 @@
     <description>Recent content in General Skills on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/general-skills/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>repetitions (picoCTF19)</title>
+      <title>Big Zip (picoCTF 20)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/big-zip-picoctf-20/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/big-zip-picoctf-20/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Unzip this archive and find the flag&#xA;Process / Notes wget and unzip TONS of folders and sub-folders - a big zip indeed Looks like a recursive grep is the solution! grep -r &#39;pico&#39; Returned a long, very buried file, a brief message, and the flag 3 minutes 27 seconds to complete&#xA;Hints Can grep be instructed to look at every file in the directory and its subdirectories?</description>
+    </item>
+    <item>
+      <title>repetitions (picoCTF 19)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/repetitions-picoctf19/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/ctf/repetitions-picoctf19/</guid>

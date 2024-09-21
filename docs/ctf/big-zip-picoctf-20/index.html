@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.129.0">
 
 
-<title>repetitions (picoCTF 19) - The Arboreal Repository</title>
-<meta property="og:title" content="repetitions (picoCTF 19) - The Arboreal Repository">
+<title>Big Zip (picoCTF 20) - The Arboreal Repository</title>
+<meta property="og:title" content="Big Zip (picoCTF 20) - The Arboreal Repository">
 
 
   <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
@@ -70,37 +70,33 @@
   <article class="article">
     
 
-    <h1 class="article-title">repetitions (picoCTF 19)</h1>
+    <h1 class="article-title">Big Zip (picoCTF 20)</h1>
 
     
 
     <div class="article-content">
       
-      <p>Challenge Author: THEONESTE BYAGUTANGAZA</p>
+      <p>Challenge Author: LT &lsquo;SYREAL&rsquo; JONES</p>
 <p>Category: General Skills</p>
 <p>Difficulty: Easy</p>
 <h1 id="description">Description</h1>
-<p>Can you make sense of this file?</p>
+<p>Unzip this archive and find the flag</p>
 <h1 id="process--notes">Process / Notes</h1>
 <ol>
-<li><code>wget</code> the file</li>
-<li><code>file enc_flag</code> - ASCII text</li>
-<li><code>strings enc_flag</code> - almost looks like an ssh key</li>
-<li>One of the tags is &lsquo;base64&rsquo;, pipe this into <code>base64 -d</code></li>
-<li>Twice?</li>
-<li>Let&rsquo;s skip to 4 times</li>
-<li>6 Times!!!</li>
-<li>Got the flag</li>
+<li><code>wget</code> and <code>unzip</code></li>
+<li>TONS of folders and sub-folders - a big zip indeed</li>
+<li>Looks like a recursive grep is the solution!</li>
+<li><code>grep -r 'pico'</code></li>
+<li>Returned a long, very buried file, a brief message, and the flag</li>
 </ol>
-<p><strong>4 minutes 27 seconds to complete</strong></p>
+<p><strong>3 minutes 27 seconds to complete</strong></p>
 <h1 id="hints">Hints</h1>
 <ol>
-<li>Multiple decoding is always good</li>
+<li>Can grep be instructed to look at every file in the directory and its subdirectories?</li>
 </ol>
 <h1 id="core-lessons">Core Lessons</h1>
 <ol>
-<li>Recognizing base64 text</li>
-<li>Understanding the need to repeat decoding processes multiple times if it seems appropriate</li>
+<li>Understand how to use grep&rsquo;s recursive option to find your target in a large number of files</li>
 </ol>
 
     </div>
