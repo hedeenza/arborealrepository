@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>ASCII Conversion Tool - The Arboreal Repository</title>
+<meta property="og:title" content="ASCII Conversion Tool - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">ASCII Conversion Tool</h1>
+
+    
+
+    <div class="article-content">
+      
+      <h1 id="nicety-over-necessity">Nicety Over Necessity</h1>
+<p>  Many of the CTF challenges have required some sort of conversion of Ordinal Position, Decimal, Octal, Hexadecimal, or Binary into regular characters to either submit as a final result or be used to determine what to do next. There are online tools to do this type of thing, but I wanted to have the ability to do this offline too. With this Python tool, I can now select a translation method by typing the three letters within the parentheses - e.g. &lsquo;dec&rsquo; for &lsquo;Decimal&quot; - and then entering the values to be converted separated by spaces - e.g. &lsquo;72 101 108 108 111 32 87 111 114 108 100 33&rsquo;</p>
+<h1 id="creating-the-dictionaries">Creating the Dictionaries</h1>
+<p>  I decided that the dictionaries functionality would be very useful for this project. Each input would exist as a key and each output would exist as the value associated with that key. There were examples online of dictionaries within dictionaries that may have made some of the manipulation later a little more elegant, but this was functional for now.</p>
+<h2 id="editing-with-neo-vim">Editing with Neo Vim</h2>
+<p>  The editing was done with the</p>
+<p>  First was creating a a dictionary for the ordinal position of each letter in the alphabet.</p>
+<pre><code># For converting Ordinal Letter Position to Character
+ord_chr = {
+        '1':'a', '2':'b', '3':'c', '4':'d', '5':'e',
+        '6':'f', '7':'g', '8':'h', '9':'i', '10':'j',
+        '11':'k', '12':'l', '13':'m', '14':'n', '15':'o',
+        '16':'p', '17':'q', '18':'r', '19':'s', '20':'t',
+        '21':'u', '22':'v', '23':'w', '24':'x', '25':'y',
+        '26':'z'}
+</code></pre>
+<p>  Next was creating a dictionary for the Decimal representation.</p>
+<pre><code># For converting Decimal to Character
+dec_chr = {
+        '0':'NUL', '1':'SOH', '2':'STX', '3':'ETX', '4':'EOT', '5':'ENQ', '6':'ACK', '7':'BEL', '8':'BS', '9':'HT', '10':'LF', '11':'VT', '12':'FF', '13':'CR', '14':'SO', '15':'SI', '16':'DLE',
+        '17':'DC1', '18':'DC2', '19':'DC3', '20':'DC4', '21':'NAK', '22':'SYN', '23':'ETB', '24':'CAN', '25':'EM', '26':'SUB', '27':'ESC', '28':'FS', '29':'GS', '30':'RS', '31':'US', '32':'SP', '33':'!',
+        '34':'&quot;', '35':'#', '36':'$', '37':'%', '38':'&amp;', '39':&quot;'&quot;, '40':'(', '41':')', '42':'*', '43':'+', '44':',', '45':'-', '46':'.', '47':'/', '48':'0', '49':'1', '50':'2',
+        '51':'3', '52':'4', '53':'5', '54':'6', '55':'7', '56':'8', '57':'9', '58':':', '59':';', '60':'&lt;', '61':'=', '62':'&gt;', '63':'?', '64':'@', '65':'A', '66':'B', '67':'C',
+        '68':'D', '69':'E', '70':'F', '71':'G', '72':'H', '73':'I', '74':'J', '75':'K', '76':'L', '77':'M', '78':'N', '79':'O', '80':'P', '81':'Q', '82':'R', '83':'S', '84':'T',
+        '85':'U', '86':'V', '87':'W', '88':'X', '89':'Y', '90':'Z', '91':'[', '92':'\\', '93':']', '94':'^', '95':'_', '96':'`', '97':'a', '98':'b', '99':'c', '100':'d', '101':'e',
+        '102':'f', '103':'g', '104':'h', '105':'i', '106':'j', '107':'k', '108':'l', '109':'m', '110':'n', '111':'o', '112':'p', '113':'q', '114':'r', '115':'s', '116':'t', '117':'u', '118':'v',
+        '119':'w', '120':'x', '121':'y', '122':'z', '123':'{', '124':'|', '125':'}', '126':'~', '127':'DEL', '128':'€', '129':'Unused', '130':'‚', '131':'ƒ', '132':'„', '133':'…', '134':'†', '135':'‡',
+        '136':'ˆ', '137':'‰', '138':'Š', '139':'‹', '140':'Œ', '141':'Unused', '142':'Ž', '143':'Unused', '144':'Unused', '145':'‘', '146':'’', '147':'“', '148':'”', '149':'•', '150':'–', '151':'—', '152':'˜',
+        '153':'™', '154':'š', '155':'›', '156':'œ', '157':'Unused', '158':'ž', '159':'Ÿ', '160':'NBSP', '161':'¡', '162':'¢', '163':'£', '164':'¤', '165':'¥', '166':'¦', '167':'§', '168':'¨', '169':'©',
+        '170':'ª', '171':'«', '172':'¬', '173':'­', '174':'®', '175':'¯', '176':'°', '177':'±', '178':'²', '179':'³', '180':'´', '181':'µ', '182':'¶', '183':'·', '184':'¸', '185':'¹', '186':'º',
+        '187':'»', '188':'¼', '189':'½', '190':'¾', '191':'¿', '192':'À', '193':'Á', '194':'Â', '195':'Ã', '196':'Ä', '197':'Å', '198':'Æ', '199':'Ç', '200':'È', '201':'É', '202':'Ê', '203':'Ë',
+        '204':'Ì', '205':'Í', '206':'Î', '207':'Ï', '208':'Ð', '209':'Ñ', '210':'Ò', '211':'Ó', '212':'Ô', '213':'Õ', '214':'Ö', '215':'×', '216':'Ø', '217':'Ù', '218':'Ú', '219':'Û', '220':'Ü',
+        '221':'Ý', '222':'Þ', '223':'ß', '224':'à', '225':'á', '226':'â', '227':'ã', '228':'ä', '229':'å', '230':'æ', '231':'ç', '232':'è', '233':'é', '234':'ê', '235':'ë', '236':'ì', '237':'í',
+        '238':'î', '239':'ï', '240':'ð', '241':'ñ', '242':'ò', '243':'ó', '244':'ô', '245':'õ', '246':'ö', '247':'÷', '248':'ø', '249':'ù', '250':'ú', '251':'û', '252':'ü', '253':'ý', '254':'þ',
+        '255':'ÿ'}
+</code></pre>
+<p>  Next was creating a dictionary for the Octal representation.</p>
+<pre><code># For converting Octal to Character
+oct_chr = {
+        '000':'NUL', '001':'SOH', '002':'STX', '003':'ETX', '004':'EOT', '005':'ENQ', '006':'ACK', '007':'BEL', '010':'BS', '011':'HT', '012':'LF', '013':'VT', '014':'FF', '015':'CR', '016':'SO', '017':'SI', '020':'DLE',
+        '021':'DC1', '022':'DC2', '023':'DC3', '024':'DC4', '025':'NAK', '026':'SYN', '027':'ETB', '030':'CAN', '031':'EM', '032':'SUB', '033':'ESC', '034':'FS', '035':'GS', '036':'RS', '037':'US', '040':'SP', '041':'!',
+        '042':'&quot;', '043':'#', '044':'$', '045':'%', '046':'&amp;', '047':&quot;'&quot;, '050':'(', '051':')', '052':'*', '053':'+', '054':',', '055':'-', '056':'.', '057':'/', '060':'0', '061':'1', '062':'2',
+        '063':'3', '064':'4', '065':'5', '066':'6', '067':'7', '070':'8', '071':'9', '072':':', '073':';', '074':'&lt;', '075':'=', '076':'&gt;', '077':'?', '100':'@', '101':'A', '102':'B', '103':'C',
+        '104':'D', '105':'E', '106':'F', '107':'G', '110':'H', '111':'I', '112':'J', '113':'K', '114':'L', '115':'M', '116':'N', '117':'O', '120':'P', '121':'Q', '122':'R', '123':'S', '124':'T',
+        '125':'U', '126':'V', '127':'W', '130':'X', '131':'Y', '132':'Z', '133':'[', '134':'\\', '135':']', '136':'^', '137':'_', '140':'`', '141':'a', '142':'b', '143':'c', '144':'d', '145':'e',
+        '146':'f', '147':'g', '150':'h', '151':'i', '152':'j', '153':'k', '154':'l', '155':'m', '156':'n', '157':'o', '160':'p', '161':'q', '162':'r', '163':'s', '164':'t', '165':'u', '166':'v',
+        '167':'w', '170':'x', '171':'y', '172':'z', '173':'{', '174':'|', '175':'}', '176':'~', '177':'DEL', '200':'€', '201':'Unused', '202':'‚', '203':'ƒ', '204':'„', '205':'…', '206':'†', '207':'‡',
+        '210':'ˆ', '211':'‰', '212':'Š', '213':'‹', '214':'Œ', '215':'Unused', '216':'Ž', '217':'Unused', '220':'Unused', '221':'‘', '222':'’', '223':'“', '224':'”', '225':'•', '226':'–', '227':'—', '230':'˜',
+        '231':'™', '232':'š', '233':'›', '234':'œ', '235':'Unused', '236':'ž', '237':'Ÿ', '240':'NBSP', '241':'¡', '242':'¢', '243':'£', '244':'¤', '245':'¥', '246':'¦', '247':'§', '250':'¨', '251':'©',
+        '252':'ª', '253':'«', '254':'¬', '255':'­', '256':'®', '257':'¯', '260':'°', '261':'±', '262':'²', '263':'³', '264':'´', '265':'µ', '266':'¶', '267':'·', '270':'¸', '271':'¹', '272':'º',
+        '273':'»', '274':'¼', '275':'½', '276':'¾', '277':'¿', '300':'À', '301':'Á', '302':'Â', '303':'Ã', '304':'Ä', '305':'Å', '306':'Æ', '307':'Ç', '310':'È', '311':'É', '312':'Ê', '313':'Ë',
+        '314':'Ì', '315':'Í', '316':'Î', '317':'Ï', '320':'Ð', '321':'Ñ', '322':'Ò', '323':'Ó', '324':'Ô', '325':'Õ', '326':'Ö', '327':'×', '330':'Ø', '331':'Ù', '332':'Ú', '333':'Û', '334':'Ü',
+        '335':'Ý', '336':'Þ', '337':'ß', '340':'à', '341':'á', '342':'â', '343':'ã', '344':'ä', '345':'å', '346':'æ', '347':'ç', '350':'è', '351':'é', '352':'ê', '353':'ë', '354':'ì', '355':'í',
+        '356':'î', '357':'ï', '360':'ð', '361':'ñ', '362':'ò', '363':'ó', '364':'ô', '365':'õ', '366':'ö', '367':'÷', '370':'ø', '371':'ù', '372':'ú', '373':'û', '374':'ü', '375':'ý', '376':'þ',
+        '377':'ÿ'}
+</code></pre>
+<p>  Next was creating a dictionary for the Hexadecimal representation.</p>
+<pre><code># For converting Hexadecimal to Character
+hex_chr = {
+        '00':'NUL', '01':'SOH', '02':'STX', '03':'ETX', '04':'EOT', '05':'ENQ', '06':'ACK', '07':'BEL', '08':'BS', '09':'HT', '0A':'LF', '0B':'VT', '0C':'FF', '0D':'CR', '0E':'SO', '0F':'SI', '10':'DLE',
+        '11':'DC1', '12':'DC2', '13':'DC3', '14':'DC4', '15':'NAK', '16':'SYN', '17':'ETB', '18':'CAN', '19':'EM', '1A':'SUB', '1B':'ESC', '1C':'FS', '1D':'GS', '1E':'RS', '1F':'US', '20':'SP', '21':'!',
+        '22':'&quot;', '23':'#', '24':'$', '25':'%', '26':'&amp;', '27':&quot;'&quot;, '28':'(', '29':')', '2A':'*', '2B':'+', '2C':',', '2D':'-', '2E':'.', '2F':'/', '30':'0', '31':'1', '32':'2',
+        '33':'3', '34':'4', '35':'5', '36':'6', '37':'7', '38':'8', '39':'9', '3A':':', '3B':';', '3C':'&lt;', '3D':'=', '3E':'&gt;', '3F':'?', '40':'@', '41':'A', '42':'B', '43':'C',
+        '44':'D', '45':'E', '46':'F', '47':'G', '48':'H', '49':'I', '4A':'J', '4B':'K', '4C':'L', '4D':'M', '4E':'N', '4F':'O', '50':'P', '51':'Q', '52':'R', '53':'S', '54':'T',
+        '55':'U', '56':'V', '57':'W', '58':'X', '59':'Y', '5A':'Z', '5B':'[', '5C':'\\', '5D':']', '5E':'^', '5F':'_', '60':'`', '61':'a', '62':'b', '63':'c', '64':'d', '65':'e',
+        '66':'f', '67':'g', '68':'h', '69':'i', '6A':'j', '6B':'k', '6C':'l', '6D':'m', '6E':'n', '6F':'o', '70':'p', '71':'q', '72':'r', '73':'s', '74':'t', '75':'u', '76':'v',
+        '77':'w', '78':'x', '79':'y', '7A':'z', '7B':'{', '7C':'|', '7D':'}', '7E':'~', '7F':'DEL', '80':'€', '81':'Unused', '82':'‚', '83':'ƒ', '84':'„', '85':'…', '86':'†', '87':'‡',
+        '88':'ˆ', '89':'‰', '8A':'Š', '8B':'‹', '8C':'Œ', '8D':'Unused', '8E':'Ž', '8F':'Unused', '90':'Unused', '91':'‘', '92':'’', '93':'“', '94':'”', '95':'•', '96':'–', '97':'—', '98':'˜',
+        '99':'™', '9A':'š', '9B':'›', '9C':'œ', '9D':'Unused', '9E':'ž', '9F':'Ÿ', 'A0':'NBSP', 'A1':'¡', 'A2':'¢', 'A3':'£', 'A4':'¤', 'A5':'¥', 'A6':'¦', 'A7':'§', 'A8':'¨', 'A9':'©',
+        'AA':'ª', 'AB':'«', 'AC':'¬', 'AD':'­', 'AE':'®', 'AF':'¯', 'B0':'°', 'B1':'±', 'B2':'²', 'B3':'³', 'B4':'´', 'B5':'µ', 'B6':'¶', 'B7':'·', 'B8':'¸', 'B9':'¹', 'BA':'º',
+        'BB':'»', 'BC':'¼', 'BD':'½', 'BE':'¾', 'BF':'¿', 'C0':'À', 'C1':'Á', 'C2':'Â', 'C3':'Ã', 'C4':'Ä', 'C5':'Å', 'C6':'Æ', 'C7':'Ç', 'C8':'È', 'C9':'É', 'CA':'Ê', 'CB':'Ë',
+        'CC':'Ì', 'CD':'Í', 'CE':'Î', 'CF':'Ï', 'D0':'Ð', 'D1':'Ñ', 'D2':'Ò', 'D3':'Ó', 'D4':'Ô', 'D5':'Õ', 'D6':'Ö', 'D7':'×', 'D8':'Ø', 'D9':'Ù', 'DA':'Ú', 'DB':'Û', 'DC':'Ü',
+        'DD':'Ý', 'DE':'Þ', 'DF':'ß', 'E0':'à', 'E1':'á', 'E2':'â', 'E3':'ã', 'E4':'ä', 'E5':'å', 'E6':'æ', 'E7':'ç', 'E8':'è', 'E9':'é', 'EA':'ê', 'EB':'ë', 'EC':'ì', 'ED':'í',
+        'EE':'î', 'EF':'ï', 'F0':'ð', 'F1':'ñ', 'F2':'ò', 'F3':'ó', 'F4':'ô', 'F5':'õ', 'F6':'ö', 'F7':'÷', 'F8':'ø', 'F9':'ù', 'FA':'ú', 'FB':'û', 'FC':'ü', 'FD':'ý', 'FE':'þ',
+        'FF':'ÿ'}
+</code></pre>
+<p>  Next was creating a dictionary for the Binary representation.</p>
+<pre><code># For converting Binary to Character
+bin_chr = {
+        '00000000':'NUL', '00000001':'SOH', '00000010':'STX', '00000011':'ETX', '00000100':'EOT', '00000101':'ENQ', '00000110':'ACK', '00000111':'BEL', '00001000':'BS', '00001001':'HT', '00001010':'LF', '00001011':'VT', '00001100':'FF', '00001101':'CR', '00001110':'SO', '00001111':'SI', '00010000':'DLE',
+        '00010001':'DC1', '00010010':'DC2', '00010011':'DC3', '00010100':'DC4', '00010101':'NAK', '00010110':'SYN', '00010111':'ETB', '00011000':'CAN', '00011001':'EM', '00011010':'SUB', '00011011':'ESC', '00011100':'FS', '00011101':'GS', '00011110':'RS', '00011111':'US', '00100000':'SP', '00100001':'!',
+        '00100010':'&quot;', '00100011':'#', '00100100':'$', '00100101':'%', '00100110':'&amp;', '00100111':&quot;'&quot;, '00101000':'(', '00101001':')', '00101010':'*', '00101011':'+', '00101100':',', '00101101':'-', '00101110':'.', '00101111':'/', '00110000':'0', '00110001':'1', '00110010':'2',
+        '00110011':'3', '00110100':'4', '00110101':'5', '00110110':'6', '00110111':'7', '00111000':'8', '00111001':'9', '00111010':':', '00111011':';', '00111100':'&lt;', '00111101':'=', '00111110':'&gt;', '00111111':'?', '01000000':'@', '01000001':'A', '01000010':'B', '01000011':'C',
+        '01000100':'D', '01000101':'E', '01000110':'F', '01000111':'G', '01001000':'H', '01001001':'I', '01001010':'J', '01001011':'K', '01001100':'L', '01001101':'M', '01001110':'N', '01001111':'O', '01010000':'P', '01010001':'Q', '01010010':'R', '01010011':'S', '01010100':'T',
+        '01010101':'U', '01010110':'V', '01010111':'W', '01011000':'X', '01011001':'Y', '01011010':'Z', '01011011':'[', '01011100':'\\', '01011101':']', '01011110':'^', '01011111':'_', '01100000':'`', '01100001':'a', '01100010':'b', '01100011':'c', '01100100':'d', '01100101':'e',
+        '01100110':'f', '01100111':'g', '01101000':'h', '01101001':'i', '01101010':'j', '01101011':'k', '01101100':'l', '01101101':'m', '01101110':'n', '01101111':'o', '01110000':'p', '01110001':'q', '01110010':'r', '01110011':'s', '01110100':'t', '01110101':'u', '01110110':'v',
+        '01110111':'w', '01111000':'x', '01111001':'y', '01111010':'z', '01111011':'{', '01111100':'|', '01111101':'}', '01111110':'~', '01111111':'DEL', '10000000':'€', '10000001':'Unused', '10000010':'‚', '10000011':'ƒ', '10000100':'„', '10000101':'…', '10000110':'†', '10000111':'‡',
+        '10001000':'ˆ', '10001001':'‰', '10001010':'Š', '10001011':'‹', '10001100':'Œ', '10001101':'Unused', '10001110':'Ž', '10001111':'Unused', '10010000':'Unused', '10010001':'‘', '10010010':'’', '10010011':'“', '10010100':'”', '10010101':'•', '10010110':'–', '10010111':'—', '10011000':'˜',
+        '10011001':'™', '10011010':'š', '10011011':'›', '10011100':'œ', '10011101':'Unused', '10011110':'ž', '10011111':'Ÿ', '10100000':'NBSP', '10100001':'¡', '10100010':'¢', '10100011':'£', '10100100':'¤', '10100101':'¥', '10100110':'¦', '10100111':'§', '10101000':'¨', '10101001':'©',
+        '10101010':'ª', '10101011':'«', '10101100':'¬', '10101101':'­', '10101110':'®', '10101111':'¯', '10110000':'°', '10110001':'±', '10110010':'²', '10110011':'³', '10110100':'´', '10110101':'µ', '10110110':'¶', '10110111':'·', '10111000':'¸', '10111001':'¹', '10111010':'º',
+        '10111011':'»', '10111100':'¼', '10111101':'½', '10111110':'¾', '10111111':'¿', '11000000':'À', '11000001':'Á', '11000010':'Â', '11000011':'Ã', '11000100':'Ä', '11000101':'Å', '11000110':'Æ', '11000111':'Ç', '11001000':'È', '11001001':'É', '11001010':'Ê', '11001011':'Ë',
+        '11001100':'Ì', '11001101':'Í', '11001110':'Î', '11001111':'Ï', '11010000':'Ð', '11010001':'Ñ', '11010010':'Ò', '11010011':'Ó', '11010100':'Ô', '11010101':'Õ', '11010110':'Ö', '11010111':'×', '11011000':'Ø', '11011001':'Ù', '11011010':'Ú', '11011011':'Û', '11011100':'Ü',
+        '11011101':'Ý', '11011110':'Þ', '11011111':'ß', '11100000':'à', '11100001':'á', '11100010':'â', '11100011':'ã', '11100100':'ä', '11100101':'å', '11100110':'æ', '11100111':'ç', '11101000':'è', '11101001':'é', '11101010':'ê', '11101011':'ë', '11101100':'ì', '11101101':'í',
+        '11101110':'î', '11101111':'ï', '11110000':'ð', '11110001':'ñ', '11110010':'ò', '11110011':'ó', '11110100':'ô', '11110101':'õ', '11110110':'ö', '11110111':'÷', '11111000':'ø', '11111001':'ù', '11111010':'ú', '11111011':'û', '11111100':'ü', '11111101':'ý', '11111110':'þ',
+        '11111111':'ÿ'}
+</code></pre>
+<h1 id="asking-for-user-input">Asking for User Input</h1>
+<p>  Now that the dictionaries were created, a user-prompt was needed. The prompt keys the user into what to enter. This input will determine which dictionary is accessed later.</p>
+<pre><code># Prompt for user input 
+selection = input('\nWhich Dictionary?\nOptions: (ord)inal, (dec)imal, (oct)al, (hex)adecimal, (bin)ary\nValues separated by spaces (e.g. 00 01 02):\n')
+</code></pre>
+<p>  The next segment prompts the user to input the space-separated values. The values will be split by those spaces, the list will be displayed, along with the length of the list.</p>
+<pre><code># Split the input by space
+value = input('\nValue: ').split()
+# Print the list of inputs as the list so the user can see it
+print(f'This is the list {value}')
+
+# Print the length of the list:
+length = len(value)
+print(f'The list is {length} long\n')
+</code></pre>
+<h1 id="the-translation-section">The Translation Section</h1>
+<p>  Now that most of the groundwork was done, it was finally time to translate. The input regarding how to translate determines which block gets run. The for loop reads the length of the list that gets created, and for the range of interval values between 0 and the length of the list, each integer will be used as an index for the input values, and those input values will in turn be used to reference the keys in the specified dictionary, resulting in the value at that key being printed to the terminal on its own line. If invalid input is detected at either the dictionary specification or the values, &ldquo;Invalid Input&rdquo; will be printed to the terminal.</p>
+<pre><code># Convert the input to the character value using the appropriate dictionary
+try: 
+    if selection == 'ord':
+        # assign the appropriate dictionary
+        dictionary = ord_chr
+        for unit in range(0, len(value)):
+            # print the dictionary value for each key passed from the input
+            print(dictionary[value[unit]], end='')
+
+    elif selection == 'dec':
+        # assign the appropriate dictionary
+        dictionary = dec_chr
+        for unit in range(0, len(value)):
+            # print the dictionary value for each key passed from the input
+            print(dictionary[value[unit]], end='')
+
+    elif selection == 'oct':
+        # assign the appropriate dictionary
+        dictionary = oct_chr
+        for unit in range(0, len(value)):
+            # prin the dictionary value for each key passed from the input
+            print(dictionary[value[unit]], end='')
+
+    elif selection == 'hex':
+        # assign the appropriate dictionary
+        dictionary = hex_chr
+        for unit in range(0, len(value)):
+            # print the dictionary value for each key passed from the input
+            print(dictionary[value[unit]], end='')
+
+    else:
+        # assign the appropriate dictionary
+        dictionary = bin_chr
+        for unit in range(0, len(value)):
+            # print the dictionary value for each key passed from the input
+            print(dictionary[value[unit]], end='')
+
+except:
+    print(&quot;Invalid Input&quot;)
+
+</code></pre>
+<h1 id="conclusion">Conclusion</h1>
+<p>  There are probably a couple ways to make this more elegant, but this functions really well for what I wanted it to do. Because of some kind folks on stackoverflow, I was able to merge the output of the for loop onto one line with no spaces rather than each character being printed on their own line. If you want a different delimiter between each printed character, change the value inside <code>end=''</code>.</p>
+<p>  Feel free to use this code in your own projects or for your own use, but please give me credit if you use this in a published project or anything like that. I hope this can be helpful to you in some capacity at some point.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+
