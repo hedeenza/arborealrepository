@@ -6,8 +6,15 @@
     <description>Recent content in Easy on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local Authority (picoCTF 22)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/local-authority-picoctf-22/</link>
+      <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/local-authority-picoctf-22/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: Web Exploitation&#xA;Difficulty: Easy&#xA;Description Can you get the flag? Go to this website and see what you discover.&#xA;Process / Notes Open the website Looks like a log-in screen &amp;ldquo;Only letters and numbers allowed for username and password&amp;rdquo; Viewing source &amp;ndash;&amp;gt; name = unsername&amp;hellip; name = password Trying that first, but it might be an SQL injection? &amp;rsquo; | 1=1 Detected the &amp;ldquo;illegal character&amp;rdquo; Checked the hint Checked the source code after the failed log in, there&amp;rsquo;s an if statement saying if usernameFilterPassed &amp;amp;&amp;amp; passwordFilterPassed, then it will log you in Maybe try those as the passwords to try to get it to pass that as boolean?</description>
+    </item>
     <item>
       <title>First Find (picoCTF 21)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/first-find-picoctf-21/</link>
