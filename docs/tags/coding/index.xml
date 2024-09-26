@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/tags/coding/</link>
+    <link>https://hedeenza.github.io/arborealrepository/tags/coding/</link>
     <description>Recent content in Coding on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rower Hometown Map - pt.1</title>
-      <link>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
       <description>Introduction An important part of building a continually successful rowing team - or any team with turnover for that matter - is strategic recruitment. If you don&amp;rsquo;t have high quality people coming in as your previous high quality people leave, you&amp;rsquo;re going to be in a tough spot. Many Division 1 teams in the United States recruit from all across the country and internationally to find the talent that will help their team continue their storied legacy of excellence.</description>
     </item>
     <item>
       <title>Learning Neovim (pt. 1)</title>
-      <link>http://localhost:4321/arborealrepository/notes/learning-neovim/</link>
+      <link>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/notes/learning-neovim/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/learning-neovim/</guid>
       <description>Sidestepping the Roadblock&amp;hellip; While attempting to work through Git BASH yesterday to get this site set up, I got Trapped in Vim™, which is apparently a very normal experience for beginners:&#xA;After trying what felt like everything that made sense and caving in to my impatience in the moment, I closed the window and learned how to change the default editor in Git Bash and set it to nano:&#xA;git config --global core.</description>
     </item>
     <item>
       <title>SQL: Zero to Advanced pt. 1</title>
-      <link>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/sql-zero-to-advanced-pt-1/</guid>
       <description>materials by Bosscoder Academy, found on LinkedIn&#xA;Format The materials are sorted into 24 &amp;ldquo;days&amp;rdquo; of learning, each with a central theme. My goal is to break them into 3 posts, 8 &amp;ldquo;days&amp;rdquo; each, with a distillation of the already brief material in each section as a review of SQL.&#xA;1. Introduction to SQL and Relational Databases 1.1 Content SELECT -&#xA;INSERT -&#xA;UPDATE -&#xA;DELETE -&#xA;1.2 Practice Questions Question Answer Write a SQL query to insert a new record into the &#34;</description>
     </item>
     <item>
       <title>&#34;The Arboreal Repository&#34;</title>
-      <link>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</link>
+      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
       <description>Recent Realizations At the time of writing I&amp;rsquo;m only a little more than 4 months into my all-consuming focus on coding, but I&amp;rsquo;m learning a lot quickly. I started my learning acceleration with a one-day, six-hour workshop with the University of Oregon data services department covering basic R in late March. The skills I learned in that workshop served as the foundation for the more powerful data processing that further amplified my primary career.</description>
     </item>
   </channel>

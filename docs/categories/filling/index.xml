@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Filling on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/categories/filling/</link>
+    <link>https://hedeenza.github.io/arborealrepository/categories/filling/</link>
     <description>Recent content in Filling on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/categories/filling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/filling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Korean Ground Beef</title>
-      <link>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</link>
+      <link>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/recipes/korean-ground-beef/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/recipes/korean-ground-beef/</guid>
       <description>by Unknown&#xA;Ingredients Yields ~4 servings (or 1 very hungry person)&#xD;Ingredient Amount Lean Ground Beef 1 lb / 454 g Brown Sugar 1/2 Cup Sesame Oil 1 tsp Soy Sauce 1/2 Cup Minced Garlic 3 cloves Sriracha 1 tsp Fresh, Minced Ginger 1 tsp Green Onions 2 Preparation ~20 minutes&#xA;Heat a large pan over medium - high heat.&#xA;Brown meat with sesame oil, garlic, and ginger.&#xA;Drain 75% of the fat, add in the brown sugar, soy sauce, and sriracha.</description>
     </item>
   </channel>

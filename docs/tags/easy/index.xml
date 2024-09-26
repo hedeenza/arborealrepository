@@ -2,52 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Easy on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/tags/easy/</link>
+    <link>https://hedeenza.github.io/arborealrepository/tags/easy/</link>
     <description>Recent content in Easy on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Includes (picoCTF 24)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/includes-picoctf-24/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/includes-picoctf-24/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: Web Exploitation&#xA;Difficulty: Easy&#xA;Description Can you get the flag?&#xA;Process / Notes Start the challenge instance Details on the &amp;ldquo;include/copy/import&amp;rdquo; directive that contains a second file inserted into the first file Check the source There&amp;rsquo;s a button to say hello at the bottom Knowing to check the linked files in the source this time, checking the style.css&amp;hellip; That contained half the flag! The script that looks like it gets run when you press the button had a comment containing the other half of the flag.</description>
+    </item>
     <item>
       <title>Inspect HTML (picoCTF 23)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/inspect-html-picoctf-23/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/inspect-html-picoctf-23/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/inspect-html-picoctf-23/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/inspect-html-picoctf-23/</guid>
       <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: Web Exploitation&#xA;Difficulty: Easy&#xA;Description Can you get the flag?&#xA;Process / Notes Launching the web instance &amp;ldquo;On Histiaeus&amp;rdquo; text from Wikipedia Upon inspecting the page source, it&amp;rsquo;s in an HTML comment 2 minutes 44 seconds to complete&#xA;Hints What is the web inspector in web browsers? Core Lessons Understand how to use the web inspector </description>
     </item>
     <item>
       <title>Local Authority (picoCTF 22)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/local-authority-picoctf-22/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/local-authority-picoctf-22/</link>
       <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/local-authority-picoctf-22/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/local-authority-picoctf-22/</guid>
       <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: Web Exploitation&#xA;Difficulty: Easy&#xA;Description Can you get the flag? Go to this website and see what you discover.&#xA;Process / Notes Open the website Looks like a log-in screen &amp;ldquo;Only letters and numbers allowed for username and password&amp;rdquo; Viewing source &amp;ndash;&amp;gt; name = unsername&amp;hellip; name = password Trying that first, but it might be an SQL injection? &amp;rsquo; | 1=1 Detected the &amp;ldquo;illegal character&amp;rdquo; Checked the hint Checked the source code after the failed log in, there&amp;rsquo;s an if statement saying if usernameFilterPassed &amp;amp;&amp;amp; passwordFilterPassed, then it will log you in Maybe try those as the passwords to try to get it to pass that as boolean?</description>
     </item>
     <item>
       <title>First Find (picoCTF 21)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/first-find-picoctf-21/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/first-find-picoctf-21/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/first-find-picoctf-21/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/first-find-picoctf-21/</guid>
       <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Unzip this archive and find the file names &amp;lsquo;uber-secret.txt&amp;rsquo;&#xA;Process / Notes wget and unzip Saw the file briefly in the unzip Tried to grep it, but wasn&amp;rsquo;t successful even with a recursive grep Sounds like the find command is the way to go find &#39;uber-secret.txt&#39; Wait! I need to add the -name option &amp;ndash;&amp;gt; find -name &#39;uber-secret.txt&#39; Got the file path to the file cat &amp;lt;file/path/uber-secret.</description>
     </item>
     <item>
       <title>Big Zip (picoCTF 20)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/big-zip-picoctf-20/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/big-zip-picoctf-20/</link>
       <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/big-zip-picoctf-20/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/big-zip-picoctf-20/</guid>
       <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Unzip this archive and find the flag&#xA;Process / Notes wget and unzip TONS of folders and sub-folders - a big zip indeed Looks like a recursive grep is the solution! grep -r &#39;pico&#39; Returned a long, very buried file, a brief message, and the flag 3 minutes 27 seconds to complete&#xA;Hints Can grep be instructed to look at every file in the directory and its subdirectories?</description>
     </item>
     <item>
       <title>picoCTF Easy Challenges Complete</title>
-      <link>http://localhost:4321/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</link>
+      <link>https://hedeenza.github.io/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</guid>
       <description>Easy Challenges I&amp;rsquo;ve just completed the last of the &amp;rsquo;easy&amp;rsquo; challenges in the picoCTF practice gym. It&amp;rsquo;s been a very educational and fun experience so far. While it&amp;rsquo;s unclear how much more difficult the &amp;lsquo;medium&amp;rsquo; challenges will be, the skills I&amp;rsquo;ve learned so far in the easy challenges should serve as a good foundation for how they think and structure the solutions. Web Exploitation and Reverse Engineering seem to be the most challenging right now.</description>
     </item>
     <item>
       <title>Bookmarklet (picoCTF 14)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/bookmarklet/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/bookmarklet/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/bookmarklet/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/bookmarklet/</guid>
       <description>Challenge Author: Jeffery John&#xA;Difficulty: Easy&#xA;Description Why search for the flag when I can make a bookmarklet to print it for me?&#xA;Process / Notes Follow the link to the http site There&amp;rsquo;s a JavaScript function with an encrypted flag Viewing the page source There&amp;rsquo;s a line that looks like it responds to copying the code to one&amp;rsquo;s clipboard Tried moving the JavaScript line into the &amp;lt;scirpt&amp;gt;&amp;lt;/scirpt&amp;gt; section and that didn&amp;rsquo;t seem to work At 15 minutes, checking how to do this It looks like you paste the JavaScript into the &amp;ldquo;console&amp;rdquo; part of the Inspector!</description>
     </item>
   </channel>

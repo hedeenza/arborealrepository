@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General Skills on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/tags/general-skills/</link>
+    <link>https://hedeenza.github.io/arborealrepository/tags/general-skills/</link>
     <description>Recent content in General Skills on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/tags/general-skills/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/general-skills/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Find (picoCTF 21)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/first-find-picoctf-21/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/first-find-picoctf-21/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/first-find-picoctf-21/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/first-find-picoctf-21/</guid>
       <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Unzip this archive and find the file names &amp;lsquo;uber-secret.txt&amp;rsquo;&#xA;Process / Notes wget and unzip Saw the file briefly in the unzip Tried to grep it, but wasn&amp;rsquo;t successful even with a recursive grep Sounds like the find command is the way to go find &#39;uber-secret.txt&#39; Wait! I need to add the -name option &amp;ndash;&amp;gt; find -name &#39;uber-secret.txt&#39; Got the file path to the file cat &amp;lt;file/path/uber-secret.</description>
     </item>
     <item>
       <title>Big Zip (picoCTF 20)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/big-zip-picoctf-20/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/big-zip-picoctf-20/</link>
       <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/big-zip-picoctf-20/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/big-zip-picoctf-20/</guid>
       <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Unzip this archive and find the flag&#xA;Process / Notes wget and unzip TONS of folders and sub-folders - a big zip indeed Looks like a recursive grep is the solution! grep -r &#39;pico&#39; Returned a long, very buried file, a brief message, and the flag 3 minutes 27 seconds to complete&#xA;Hints Can grep be instructed to look at every file in the directory and its subdirectories?</description>
     </item>
     <item>
       <title>repetitions (picoCTF 19)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/repetitions-picoctf19/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/repetitions-picoctf19/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/repetitions-picoctf19/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/repetitions-picoctf19/</guid>
       <description>Challenge Author: THEONESTE BYAGUTANGAZA&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Can you make sense of this file?&#xA;Process / Notes wget the file file enc_flag - ASCII text strings enc_flag - almost looks like an ssh key One of the tags is &amp;lsquo;base64&amp;rsquo;, pipe this into base64 -d Twice? Let&amp;rsquo;s skip to 4 times 6 Times!!! Got the flag 4 minutes 27 seconds to complete&#xA;Hints Multiple decoding is always good Core Lessons Recognizing base64 text Understanding the need to repeat decoding processes multiple times if it seems appropriate </description>
     </item>
     <item>
       <title>binhexa (picoCTF 18)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/binhexa-picoctf-18/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/binhexa-picoctf-18/</link>
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/binhexa-picoctf-18/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/binhexa-picoctf-18/</guid>
       <description>Challenge Author: NANA ATOMBO-SACKEY&#xA;Difficulty: Easy&#xA;Description How well can you perform basic binary operations?&#xA;Process / Notes nc into the challenge Perform math on binary numbers Binary Number 1 = 10010111 Binary Number 2 = 11100000 Operation = + Add right to left, anything that adds to 2 gets carried over as a 1 to the left &amp;gt; 101110111 Operation = &amp;laquo; on BN1 Shifting everything to the left by 1 &amp;gt; 1011101110 (added a 0 to the end) Operation = &amp;raquo; on BN2 Shift everything to the right by 1 bit &amp;gt; 011100000 was incorrect &amp;gt; 11000 was correct!</description>
     </item>
     <item>
       <title>Linux Luminarium (pwn.college)</title>
-      <link>http://localhost:4321/arborealrepository/notes/linux-luminarium-pwn-college/</link>
+      <link>https://hedeenza.github.io/arborealrepository/notes/linux-luminarium-pwn-college/</link>
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/notes/linux-luminarium-pwn-college/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/notes/linux-luminarium-pwn-college/</guid>
       <description>Linux Luminarium As agreed, I would not be doing any write-ups for pwn.college because that&amp;rsquo;s against the ground rules for their generously offered free educational material. That being said, I do want to keep record of the core skills I&amp;rsquo;ve gained through each section of their course in such a way that the notes won&amp;rsquo;t take away from the challenges - because it&amp;rsquo;s in the struggling that learning really happens.</description>
     </item>
     <item>
       <title>Time Machine (picoCTF 17)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/time-machine-picoctf-17/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/time-machine-picoctf-17/</link>
       <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/time-machine-picoctf-17/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/time-machine-picoctf-17/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description What was I last working on? I remember writing a note to help me remember&amp;hellip;&#xA;Process / Notes wget and unzip the challenge folder - a lot of files got unzipped from a .git directory cat message.txt - &amp;ldquo;This is what I was working on, but I&amp;rsquo;d need to look at my commit history to know why&amp;hellip;&amp;rdquo; Checking the tree inside the .git directory There&amp;rsquo;s a COMMIT_MSG cat COMMIT_MSG revealed the flag!</description>
     </item>
     <item>
       <title>Blame Game (picoCTF 15)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/blame-game-picoctf-15/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/blame-game-picoctf-15/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/blame-game-picoctf-15/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/blame-game-picoctf-15/</guid>
       <description>Challenge Author: Jeffery John&#xA;Difficulty: Easy&#xA;Description Someone&amp;rsquo;s commits seem to be preventing the program from working. Who is it?&#xA;Process / Notes wget and unzip the files cat the message.py Looks like a half-done print statement git log to see the log It looks like one author is committing &amp;ldquo;important business work&amp;rdquo; an uncountable amount of times, at the same time git branch -a shows only the master branch is there cat a bunch of things - no clues cat HEAD gave a reference location, trying to cat refs/heads/master Got a git code, seems to point to the ee09 branch git checkout to that branch, seems the same.</description>
     </item>
     <item>
       <title>endianness (picoCTF 13)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/endianness-picoctf-13/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/endianness-picoctf-13/</link>
       <pubDate>Sat, 14 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/endianness-picoctf-13/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/endianness-picoctf-13/</guid>
       <description>Challenge Author: NANA AMA ATOMBO-SACKEY&#xA;Difficulty: Easy&#xA;Description Know of little and big endian?&#xA;Process / Notes netcat into the challenge Need to find the little and big endian representations of a word Looks like there&amp;rsquo;s a source file as well - wget that It looks like the program will produce a 5 character word and we&amp;rsquo;ll have to guess the little endian, and the big endian representations of that word in order to receive the flag I know I&amp;rsquo;ve read about endianness before but I can&amp;rsquo;t remember what it is.</description>
     </item>
     <item>
       <title>Binary Search (picoCTF 9)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/binary-search-picoctf-9/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/binary-search-picoctf-9/</link>
       <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/binary-search-picoctf-9/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/binary-search-picoctf-9/</guid>
       <description>Challenge Author: Jeffery John&#xA;Difficulty: Easy&#xA;Description Want to play a game? As you use more of the shell, you might be interested in how they work! Binary search is a classic algorithm used to quickly find an item in a sorted list. Can you find the flag? You&amp;rsquo;ll have 1000 possibilities and only 10 guesses.&#xA;Cyber security often has a huge amount of data to look through - from logs, vulnerability reports, and forensics.</description>
     </item>
     <item>
       <title>Collaborative Development (picoCTF 7)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/collaborative-development-picoctf-7/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/collaborative-development-picoctf-7/</link>
       <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/collaborative-development-picoctf-7/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/collaborative-development-picoctf-7/</guid>
       <description>Challenge Author: Jeffery John&#xA;Difficulty: Easy&#xA;Description My team has been working very hard on new features for our flag printing program! I wonder how they&amp;rsquo;ll work together?&#xA;Process / Notes wget the zip Another git-based challenge There&amp;rsquo;s a python file (.py) cat on the commitedit message says to add part 3 to the program in refs/heads/feature here seem to be 3 parts git log It looks like we&amp;rsquo;re on the version with just the flag printer.</description>
     </item>
     <item>
       <title>Commitment Issues (picoCTF 6)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/commitment-issues-picoctf-6/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description I accidentally wrote the flag down. Good thing I deleted it!&#xA;Process / Notes A lot of files in a .git folder got unzipped cat on a message reads &amp;ldquo;TOP SECRET&amp;rdquo; Recursively grepping grep -r &#39;pico&#39; .git/* - a few things pop up, looks like it&amp;rsquo;ll be in the log file with the initial commit Using tree to help navigate around cat into the files doesn&amp;rsquo;t seem to help.</description>
     </item>
     <item>
       <title>Super SSH (picoCTF 3)</title>
-      <link>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</link>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/super-ssh-picoctf-3/</guid>
       <description>Challenge Author:&#xA;Difficulty: Easy&#xA;Description Using a secure shell (ssh) is going to be pretty important. Additional details will be available after launching your challenge instance.&#xA;Process / Notes Will need to ssh into this one. ssh -p &amp;rsquo;the port number&amp;rsquo; username@destination enter the password It gave me the flag! 3 minutes 52 seconds to complete&#xA;Hints None used Core Lessons Understanding how to SSH into a specific port with a specific username at a desired target is a core skill.</description>
     </item>
   </channel>

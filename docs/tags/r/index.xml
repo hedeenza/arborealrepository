@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on The Arboreal Repository</title>
-    <link>http://localhost:4321/arborealrepository/tags/r/</link>
+    <link>https://hedeenza.github.io/arborealrepository/tags/r/</link>
     <description>Recent content in R on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/arborealrepository/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Critical Role: The Almost Impossible (Campaign 1 - Vox Machina)</title>
-      <link>http://localhost:4321/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/projects/critical-role-the-almost-impossible-campaign-1/</guid>
       <description>This is a repost of a previous project originally from 15 June 2024.&#xA;1. Introduction Critical Role is a series in which a star-studded cast of Hollywood voice actors play Dungeons &amp;amp; Dragons. It&amp;rsquo;s a story known for its length (and you thought catching up on the Marvel Cinematic Universe was bad):&#xA;Critical Role Run Time in Context&#xD;Campaign Start Date End Date Play Time # of 45&#39; Cable TV Episodes 1 - Vox Machina March 2015 October 2017 373 hours 23 minutes 497.</description>
     </item>
     <item>
       <title>Rower Hometown Map - pt.1</title>
-      <link>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/projects/rower-hometown-map-pt-1/</guid>
       <description>Introduction An important part of building a continually successful rowing team - or any team with turnover for that matter - is strategic recruitment. If you don&amp;rsquo;t have high quality people coming in as your previous high quality people leave, you&amp;rsquo;re going to be in a tough spot. Many Division 1 teams in the United States recruit from all across the country and internationally to find the talent that will help their team continue their storied legacy of excellence.</description>
     </item>
     <item>
       <title>New live test</title>
-      <link>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</link>
+      <link>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</guid>
       <description>We made it! If you&amp;rsquo;re reading this, it means that the site is live. As a beginner with {blogdown}, I ran into many challenges that will likely give my later self a good laugh. Adding the .nojekyll file and adding the &amp;ldquo;publishDir: docs&amp;rdquo; line to the config.yaml seem to have done the trick in getting this live.&#xA;Now that it&amp;rsquo;s live, I need to test updating the content. My first attempt will be the following steps:</description>
     </item>
     <item>
       <title>CSS: Break It to Learn It - Day 1</title>
-      <link>http://localhost:4321/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
+      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
       <description>Building a Blogdown Site Learning by Breaking </description>
     </item>
   </channel>
