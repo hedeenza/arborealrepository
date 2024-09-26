@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Challenge on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/tags/challenge/</link>
+    <link>http://localhost:4321/arborealrepository/tags/challenge/</link>
     <description>Recent content in Challenge on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/challenge/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/tags/challenge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Luminarium (pwn.college)</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/linux-luminarium-pwn-college/</link>
+      <link>http://localhost:4321/arborealrepository/notes/linux-luminarium-pwn-college/</link>
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/linux-luminarium-pwn-college/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/linux-luminarium-pwn-college/</guid>
       <description>Linux Luminarium As agreed, I would not be doing any write-ups for pwn.college because that&amp;rsquo;s against the ground rules for their generously offered free educational material. That being said, I do want to keep record of the core skills I&amp;rsquo;ve gained through each section of their course in such a way that the notes won&amp;rsquo;t take away from the challenges - because it&amp;rsquo;s in the struggling that learning really happens.</description>
     </item>
     <item>
       <title>Civic Data Challenge (Open Data Syracuse pt. 1)</title>
-      <link>https://hedeenza.github.io/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</link>
+      <link>http://localhost:4321/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</link>
       <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/projects/civic-data-challenge-open-data-syracuse-pt-1/</guid>
       <description>The Syracuse Civic Data Challenge from https://data.syr.gov/pages/data-challenge&#xA;&amp;ldquo;Civic Data Challenge is a month-long contest where members of the community get the chance to use datasets from Open Data Syracuse to build an interesting data visualization, website application, data analysis, map, chatbot, or any other type of project that uses the featured dataset.&amp;rdquo;&#xA;Judging Criteria Judging Criteria&#xD;Category Weights Not Known Creativity Execution Wow factor Informational value Data Sources It sounds like we&amp;rsquo;ll need to use one data set from Open Data Syracuse, and any other additional data sets that will help strengthen the project.</description>
     </item>
   </channel>

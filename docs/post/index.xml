@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/post/</link>
+    <link>http://localhost:4321/arborealrepository/post/</link>
     <description>Recent content in Posts on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 23 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>picoCTF Medium Challenges</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/23/picoctf-medium-challenges/</link>
+      <link>http://localhost:4321/arborealrepository/2024/09/23/picoctf-medium-challenges/</link>
       <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/23/picoctf-medium-challenges/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/09/23/picoctf-medium-challenges/</guid>
       <description>A Step Up I&amp;rsquo;ve completed a couple of the medium-graded picoCTF challenges so far, and it&amp;rsquo;s a noticeable step up in difficulty. Perhaps it was due to my first attempt being in my weakest category, but the knowledge base required for this level of challenge seems to be slightly beyond where I am. After switching to the &amp;lsquo;General Skills&amp;rsquo; category I had a bit better luck, but was definitely pushed harder than I was by several of the last easy challenges.</description>
     </item>
     <item>
       <title>picoCTF Easy Challenges Complete</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</link>
+      <link>http://localhost:4321/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/09/20/picoctf-easy-challenges-complete/</guid>
       <description>Easy Challenges I&amp;rsquo;ve just completed the last of the &amp;rsquo;easy&amp;rsquo; challenges in the picoCTF practice gym. It&amp;rsquo;s been a very educational and fun experience so far. While it&amp;rsquo;s unclear how much more difficult the &amp;lsquo;medium&amp;rsquo; challenges will be, the skills I&amp;rsquo;ve learned so far in the easy challenges should serve as a good foundation for how they think and structure the solutions. Web Exploitation and Reverse Engineering seem to be the most challenging right now.</description>
     </item>
     <item>
       <title>picoCTF Timelines</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/16/picoctf-timelines/</link>
+      <link>http://localhost:4321/arborealrepository/2024/09/16/picoctf-timelines/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/16/picoctf-timelines/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/09/16/picoctf-timelines/</guid>
       <description>Decisions After creating the timelines for pwn.college I became interested in what different completion rates would look like for picoCTF as well. For now I&amp;rsquo;ll continue to post 1 challenge per day, but it&amp;rsquo;s not often that I&amp;rsquo;ll only complete one per day. As with pwn.college, it&amp;rsquo;s very likely that &amp;gt; 5 completed per day will not be feasible, but it&amp;rsquo;s interesting to see what very accelerated timelines look like.</description>
     </item>
     <item>
       <title>Enrolling at pwn.college</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/15/enrolling-at-pwn-college/</link>
+      <link>http://localhost:4321/arborealrepository/2024/09/15/enrolling-at-pwn-college/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/15/enrolling-at-pwn-college/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/09/15/enrolling-at-pwn-college/</guid>
       <description>pwn.college &amp;ldquo;pwn.college is an education platform for students (and other interested parties) to learn about, and practice, core cybersecurity concepts in a hands-on fashion. In martial arts terms, it is designed to take a “white belt” in cybersecurity through the journey to becoming a “blue belt”, able to approach (simple) cybersecurity competitions (CTFs) and wargames. Our philosophy is “practice makes perfect”.&#xA;The platform is maintained by an awesome team of hackers at Arizona State University.</description>
     </item>
     <item>
       <title>pwn.college Timelines</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/15/pwn-college-timelines/</link>
+      <link>http://localhost:4321/arborealrepository/2024/09/15/pwn-college-timelines/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/15/pwn-college-timelines/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/09/15/pwn-college-timelines/</guid>
       <description>&#xD;Contemplation Deciding a realistic - but somewhat accelerated - learning rate will be important. I&amp;rsquo;ll need to balance pwn.college learning with Data Camp courses and picoCTF challenges and figure out where my time will be best spent while still making progress on all parts. Creating these tables was great practice with {lubridate} and {dplyr}.&#xA;Level Completion Timeline at Different Learning Rates (Starting from 2024-09-16)&#xD;Level Challenges 1/Day 2/Day 3/Day 4/Day 5/Day White Belt 10 2024-09-26 2024-09-21 2024-09-20 2024-09-19 2024-09-18 Linux Luminarium 84 2024-12-19 2024-11-02 2024-10-18 2024-10-10 2024-10-05 Optional Refreshers 228 2025-08-04 2025-02-24 2025-01-02 2024-12-06 2024-11-20 Orange Belt 124 2025-12-06 2025-04-27 2025-02-13 2025-01-06 2024-12-15 Yellow Belt 110 2026-03-26 2025-06-21 2025-03-22 2025-02-03 2025-01-06 Green Belt 80 2026-06-14 2025-07-31 2025-04-18 2025-02-23 2025-01-22 Blue Belt 173 2026-12-04 2025-10-26 2025-06-15 2025-04-08 2025-02-26 Level Completion Timeline at Different Learning Rates (Starting from 2024-09-16)&#xD;Level Challenges 6/Day 7/Day 8/Day 9/Day 10/Day White Belt 10 2024-09-18 2024-09-18 2024-09-18 2024-09-18 2024-09-17 Linux Luminarium 84 2024-10-02 2024-09-30 2024-09-29 2024-09-28 2024-09-26 Optional Refreshers 228 2024-11-09 2024-11-02 2024-10-28 2024-10-24 2024-10-19 Orange Belt 124 2024-11-30 2024-11-20 2024-11-13 2024-11-07 2024-11-01 Yellow Belt 110 2024-12-19 2024-12-06 2024-11-27 2024-11-20 2024-11-12 Green Belt 80 2025-01-02 2024-12-18 2024-12-07 2024-11-29 2024-11-20 Blue Belt 173 2025-01-31 2025-01-12 2024-12-29 2024-12-19 2024-12-08 </description>
     </item>
     <item>
       <title>picoCTF Challenge Count</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/09/12/picoctf-challenge-count/</link>
+      <link>http://localhost:4321/arborealrepository/2024/09/12/picoctf-challenge-count/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/09/12/picoctf-challenge-count/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/09/12/picoctf-challenge-count/</guid>
       <description>Challenge Count Even though they&amp;rsquo;ve just been the easy challenges so far, I feel like I&amp;rsquo;ve been learning a lot from the picoCTF challenges I&amp;rsquo;ve completed. In the practice section, they have many challenges graded easy, medium, and hard available to complete. At posting one challenge write up each day, getting through the easy challenges will take me to the beginning of November, the medium challenges will take me through mid-May, and the hard challenges will take me to almost the end of July.</description>
     </item>
     <item>
       <title>Installing PyTorch</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/08/29/installing-pytorch/</link>
+      <link>http://localhost:4321/arborealrepository/2024/08/29/installing-pytorch/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/08/29/installing-pytorch/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/08/29/installing-pytorch/</guid>
       <description>Introduction I looked into working with PyTorch because it appears I&amp;rsquo;ll be running some machine-learning type projects in the near future, and PyTorch is a way to run that within Python - another area I&amp;rsquo;m actively expanding my skills. My hardware isn&amp;rsquo;t the strongest, so it was a question about whether I&amp;rsquo;d even meet the system requirements going in.&#xA;What is PyTorch? From their github page:&#xA;&amp;quot;PyTorch is a Python package that provides two high-level features: - Tensor computation (like NumPy) with strong GPU acceleration - Deep neural networks built on a tape-based autograd system You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed.</description>
     </item>
     <item>
       <title>New live test</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</link>
+      <link>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/08/09/new-live-test/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/08/09/new-live-test/</guid>
       <description>We made it! If you&amp;rsquo;re reading this, it means that the site is live. As a beginner with {blogdown}, I ran into many challenges that will likely give my later self a good laugh. Adding the .nojekyll file and adding the &amp;ldquo;publishDir: docs&amp;rdquo; line to the config.yaml seem to have done the trick in getting this live.&#xA;Now that it&amp;rsquo;s live, I need to test updating the content. My first attempt will be the following steps:</description>
     </item>
     <item>
       <title>&#34;The Arboreal Repository&#34;</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</link>
+      <link>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/07/23/the-arboreal-repository/</guid>
       <description>Recent Realizations At the time of writing I&amp;rsquo;m only a little more than 4 months into my all-consuming focus on coding, but I&amp;rsquo;m learning a lot quickly. I started my learning acceleration with a one-day, six-hour workshop with the University of Oregon data services department covering basic R in late March. The skills I learned in that workshop served as the foundation for the more powerful data processing that further amplified my primary career.</description>
     </item>
     <item>
       <title>CSS: Break It to Learn It - Day 1</title>
-      <link>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
+      <link>http://localhost:4321/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
+      <guid>http://localhost:4321/arborealrepository/2024/07/23/css-break-it-to-learn-it-day-1/</guid>
       <description>Building a Blogdown Site Learning by Breaking </description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CLI on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/categories/cli/</link>
+    <link>http://localhost:4321/arborealrepository/categories/cli/</link>
     <description>Recent content in CLI on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/cli/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/categories/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting with tmux</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/starting-with-tmux/</link>
+      <link>http://localhost:4321/arborealrepository/notes/starting-with-tmux/</link>
       <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/starting-with-tmux/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/starting-with-tmux/</guid>
       <description>What is tmux? Link tmux is a &amp;ldquo;terminal multiplexer&amp;rdquo;, allowing you to have multiple terminal log-ins controlled within one single terminal window. With tmux you don&amp;rsquo;t have to open additional windows or additional tabs to access something else with the terminal while keeping your existing session going.&#xA;Benefits Persistence (You can reconnect after you disconnect) Sharing (multiple people can use the same session) Multiple windows and panes General Commands tmux - Start a tmux session, will display the user, time, program, etc</description>
     </item>
     <item>
       <title>jq Command Line Tool</title>
-      <link>https://hedeenza.github.io/arborealrepository/notes/jq-command-line-tool/</link>
+      <link>http://localhost:4321/arborealrepository/notes/jq-command-line-tool/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/notes/jq-command-line-tool/</guid>
+      <guid>http://localhost:4321/arborealrepository/notes/jq-command-line-tool/</guid>
       <description>Intro jq is a lightweight and flexible command-line JSON processor akin to sed,awk,grep, and friends for JSON data. It&amp;rsquo;s written in portable C and has zero runtime dependencies, allowing you to easily slice, filter, map, and transform structured data. knitr::tufte::quote_footer(&amp;ldquo;From The jq [github page](jq is a lightweight and flexible command-line JSON processor akin to sed,awk,grep, and friends for JSON data. It&amp;rsquo;s written in portable C and has zero runtime dependencies, allowing you to easily slice, filter, map, and transform structured data.</description>
     </item>
   </channel>

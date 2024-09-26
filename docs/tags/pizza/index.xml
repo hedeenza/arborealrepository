@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pizza on The Arboreal Repository</title>
-    <link>https://hedeenza.github.io/arborealrepository/tags/pizza/</link>
+    <link>http://localhost:4321/arborealrepository/tags/pizza/</link>
     <description>Recent content in Pizza on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hedeenza.github.io/arborealrepository/tags/pizza/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/arborealrepository/tags/pizza/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pizza Dough</title>
-      <link>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</link>
+      <link>http://localhost:4321/arborealrepository/recipes/pizza-dought/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://hedeenza.github.io/arborealrepository/recipes/pizza-dought/</guid>
+      <guid>http://localhost:4321/arborealrepository/recipes/pizza-dought/</guid>
       <description>by B&#xA;Ingredients Yields 1 batch&#xD;Ingredient Amount Warm Water 325 - 340 g Sugar 1 tsp Yeast 2 1/4 tsp OR 1 package All Purpose Flour OR Bread Flour 500 g Olive Oil 1 Tbsp + for coating Salt 1 tsp Preparation Combine the water, sugar, and yeast in a small bowl.&#xA;Place the flour into a bowl, and add the salt along with the olive oil.&#xA;Add the yeast mixture and mix/knead with until you have a stretchy dough.</description>
     </item>
   </channel>
