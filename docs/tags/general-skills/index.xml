@@ -6,8 +6,15 @@
     <description>Recent content in General Skills on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 26 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/general-skills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PW Crack 1 (picoCTF 26)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/pw-crack-1-picoctf-26/</link>
+      <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/pw-crack-1-picoctf-26/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Can you crack the password to get the flag?&#xA;Process / Notes wget the encrypted flag and the checker program cat on both - the flag is encrypted if( user_pw = &amp;quot;691d&amp;quot; ): then provide the flag Input the password, 691d The flag has been revealed! 4 minutes 54 seconds to complete&#xA;Hints To view the file in the web shell, do $ nano level1.</description>
+    </item>
     <item>
       <title>PW Crack 2 (picoCTF 25)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/pw-crack-2-picoctf-25/</link>
