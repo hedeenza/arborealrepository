@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>HashingJobApp (picoCTF 27) - The Arboreal Repository</title>
+<meta property="og:title" content="HashingJobApp (picoCTF 27) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">HashingJobApp (picoCTF 27)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author: LT &lsquo;SYREAL&rsquo; JONES</p>
+<p>Category: General Skills</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>If you want to hash with the best, beat this test!</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li><code>nc</code> into the challenge instance</li>
+<li><code>md5</code> has the provided text &lsquo;cold pizza&rsquo;
+  <code>$echo 'cold pizza' | md5sum</code></li>
+<li>Why didn&rsquo;t it work?</li>
+<li>Tried again</li>
+<li>Looked up the <code>md5sum</code> command and found that you may need to include the &lsquo;-n&rsquo; option on the echo to avoid the encoding of the new line character at the end
+  <code>$echo -n 'cold pizza' | md5sum</code></li>
+<li>That worked!</li>
+<li>Two more quick md5sums and the flag is provided</li>
+</ol>
+<p><strong>8 minutes 3 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<ol>
+<li>You can use a commandline tool or a web app to has text</li>
+<li>Press CTRL and c on your keyboard to close your connection and return to the command prompt</li>
+</ol>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Understand what a hash is</li>
+<li>Understand how to redirect desired input to the hashing protocol to get your desired output</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  
+
+
+  </body>
+</html>
+

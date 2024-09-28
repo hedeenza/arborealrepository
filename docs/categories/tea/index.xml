@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tea on The Arboreal Repository</title>
+    <link>https://hedeenza.github.io/arborealrepository/categories/tea/</link>
+    <description>Recent content in Tea on The Arboreal Repository</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hedeenza.github.io/arborealrepository/categories/tea/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>State of the Tea Collection</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/09/28/state-of-the-tea-collection/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/09/28/state-of-the-tea-collection/</guid>
+      <description>## Rows: 46 Columns: 8&#xD;## ── Column specification ────────────────────────────────────────────────────────&#xD;## Delimiter: &amp;quot;,&amp;quot;&#xD;## chr (4): Name, Sub-Category, Category, Distributor&#xD;## dbl (3): Index, Year, Amount&#xD;## date (1): Date Logged&#xD;## ## ℹ Use `spec()` to retrieve the full column specification for this data.&#xD;## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.&#xD;## [1] 4080&#xD;## # A tibble: 6 × 2&#xD;## Distributor `Amount (grams)`&#xD;## &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt;&#xD;## 1 Yunnan Sourcing 38.</description>
+    </item>
+  </channel>
+</rss>

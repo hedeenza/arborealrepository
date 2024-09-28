@@ -6,8 +6,15 @@
     <description>Recent content in PicoCTF on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 27 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/picoctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HashingJobApp (picoCTF 27)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/hashingjobapp-picoctf-27/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/hashingjobapp-picoctf-27/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description If you want to hash with the best, beat this test!&#xA;Process / Notes nc into the challenge instance md5 has the provided text &amp;lsquo;cold pizza&amp;rsquo; $echo &#39;cold pizza&#39; | md5sum Why didn&amp;rsquo;t it work? Tried again Looked up the md5sum command and found that you may need to include the &amp;lsquo;-n&amp;rsquo; option on the echo to avoid the encoding of the new line character at the end $echo -n &#39;cold pizza&#39; | md5sum That worked!</description>
+    </item>
     <item>
       <title>PW Crack 1 (picoCTF 26)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/pw-crack-1-picoctf-26/</link>
