@@ -6,8 +6,22 @@
     <description>Recent content on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Light Roadblock</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/09/29/a-light-roadblock/</link>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/09/29/a-light-roadblock/</guid>
+      <description>Good Problems? At the current point in the journey, I have hit a bit of a road block. Some of the skills to advance in pwn.college and picoCTF require knowledge of C. While I can read very basic C most of the way due to my experience with other languages, I cannot write it without reference. In order to progress further on both fronts I&amp;rsquo;ll need to spend some time focusing on learning C until such a time I don&amp;rsquo;t have to look every single thing up.</description>
+    </item>
+    <item>
+      <title>Glitch Cat (picoCTF 28)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/glitch-cat-picoctf-28/</link>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/glitch-cat-picoctf-28/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Our flag printing services has started glitching!&#xA;Process / Notes nc into the challenge instance Most of the flag was presented Flag will be this decrypted echo &#39;0x62 0x64 0x61 0x36 0x38 0x66 0x37 0x35&#39; | xxd -rp Returns &amp;lsquo;bda68f75&amp;rsquo; Add that to the end of the presented flag and the full thing is revealed! 6 minutes 34 seconds to complete</description>
+    </item>
     <item>
       <title>Core Values Activity</title>
       <link>https://hedeenza.github.io/arborealrepository/projects/core-values-activity/</link>
