@@ -6,8 +6,15 @@
     <description>Recent content on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fixme1.py (picoCTF 30)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/fixme1-py-picoctf-30/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/fixme1-py-picoctf-30/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Fix the syntax error in the Python script to print the flag&#xA;Process / Notes wget the Python script appears to be the same = vs == as before? No it was correct this time Running the script said there was an indentation error - the print statement was indented when it shouldn&amp;rsquo;t have been Fixing it and running again returned the flag 3 minutes 20 seconds to complete</description>
+    </item>
     <item>
       <title>fixme2.py (picoCTF 29)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/fixme2-py-picoctf-29/</link>
