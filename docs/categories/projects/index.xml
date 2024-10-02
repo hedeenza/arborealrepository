@@ -6,8 +6,15 @@
     <description>Recent content in Projects on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Healthy Housing: Quality, Safety, Accessibility (Open Data Syracuse pt. 2)</title>
+      <link>https://hedeenza.github.io/arborealrepository/2024/10/02/healthy-housing-quality-safety-accessibility-open-data-syracuse-pt-2/</link>
+      <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/2024/10/02/healthy-housing-quality-safety-accessibility-open-data-syracuse-pt-2/</guid>
+      <description>The Topic The topic for the Syracuse Open Data challenge has been announced. This round the theme will be &amp;ldquo;Healthy Housing: Quality, Safety, Accessibility.&amp;rdquo; They&amp;rsquo;re listed relevant Open Data Syracuse data sets:&#xA;Syracuse Rental Registry Code Violations Vacant Properties Permit Requests Assessment Final Tax Roll 2024 Syracuse Parcel Map 2027 As well as some potentially useful sources for additional data sets:&#xA;NYS Unified Court System- Statewide Landlord Tenant Eviction Dashboard CNY Vitals Pro (Source of data and visualizations for CNY Neighborhood topics) Zillow Real Estate Housing data and API&amp;rsquo;s Apartmentes.</description>
+    </item>
     <item>
       <title>ASCII Conversion Tool</title>
       <link>https://hedeenza.github.io/arborealrepository/projects/ascii-conversion-tool/</link>

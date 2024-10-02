@@ -6,8 +6,15 @@
     <description>Recent content in Ctfs on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>convertme.py (picoCTF 31)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/convertme-py-picoctf-31/</link>
+      <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/convertme-py-picoctf-31/</guid>
+      <description>Challenge Author: LT &amp;lsquo;SYREAL&amp;rsquo; JONES&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Run the Python script and convert the given number from decimal to binary to get the flag&#xA;Process / Notes wget the file Based on the script, it looks like you just need to convert the decimal number into binary to get the flag 56 in decimal = 32 + 16 + 8 + 0 + 0 + 0 = 111000 Entered the binary number and the flag was returned 4 minutes 41 seconds to complete</description>
+    </item>
     <item>
       <title>fixme1.py (picoCTF 30)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/fixme1-py-picoctf-30/</link>
