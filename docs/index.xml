@@ -6,8 +6,15 @@
     <description>Recent content on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magikarp Ground Mission (picoCTF 32)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/magikarp-ground-mission-picoctf-32/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/magikarp-ground-mission-picoctf-32/</guid>
+      <description>Challenge Author: SYREAL&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Do you know how to move between directories and read files in the shell?&#xA;Process / Notes Start the challenge instance ssh into the container ls to open the session There&amp;rsquo;s a text file with the beginning of the flag + directions to part 2 of 3 ls -la to check for anything hidden &amp;ndash;&amp;gt; nothing there cat the first part &amp;ndash;&amp;gt; we have the first part of the flag cat the instructions &amp;ndash;&amp;gt; tells us to go to the root directory &amp;lsquo;/&amp;rsquo; In the root, we have part 2 of 3 of the instructions and the second part of the flag cat the instructions &amp;ndash;&amp;gt; tells us to go to the home directory &amp;lsquo;~&amp;rsquo; cd ~ We have the last part of the flag The flag is assembled!</description>
+    </item>
     <item>
       <title>convertme.py (picoCTF 31)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/convertme-py-picoctf-31/</link>
@@ -76,7 +83,7 @@
       <link>https://hedeenza.github.io/arborealrepository/2024/09/28/state-of-the-tea-collection/</link>
       <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://hedeenza.github.io/arborealrepository/2024/09/28/state-of-the-tea-collection/</guid>
-      <description>Number of Teas: 64 Total Tea Mass (g): 4,445 By Category By Category&#xD;Type Count Oolong 37 Pu&#39;ehr 8 White 8 Black 7 Green 2 Heicha 2 By Category&#xD;Type % White 33.7 Oolong 30.0 Pu&#39;ehr 25.7 Heicha 4.9 Green 2.9 Black 2.8 By Distributor By Distributor&#xD;Distributor Count Old Ways Tea 33 Mei Leaf 13 Yunnan Sourcing 9 Taiwan Sourcing 5 King Tea Mall 3 J Tea 1 By Distributor&#xD;Distributor Count Yunnan Sourcing 35.</description>
+      <description>Number of Teas: 64 Total Tea Mass (g): 4,445 By Category By Category&#xA;Type&#xD;Count&#xD;Oolong&#xD;37&#xD;Pu’ehr&#xD;8&#xD;White&#xD;8&#xD;Black&#xD;7&#xD;Green&#xD;2&#xD;Heicha&#xD;2&#xD;By Category&#xA;Type&#xD;%&#xD;White&#xD;33.7&#xD;Oolong&#xD;30.0&#xD;Pu’ehr&#xD;25.7&#xD;Heicha&#xD;4.9&#xD;Green&#xD;2.9&#xD;Black&#xD;2.8&#xD;## By Distributor&#xA;By Distributor&#xA;Distributor&#xD;Count&#xD;Old Ways Tea&#xD;33&#xD;Mei Leaf&#xD;13&#xD;Yunnan Sourcing&#xD;9&#xD;Taiwan Sourcing&#xD;5&#xD;King Tea Mall&#xD;3&#xD;J Tea&#xD;1&#xD;By Distributor</description>
     </item>
     <item>
       <title>PW Crack 1 (picoCTF 26)</title>

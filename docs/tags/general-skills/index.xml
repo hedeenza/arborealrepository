@@ -6,8 +6,15 @@
     <description>Recent content in General Skills on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/general-skills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magikarp Ground Mission (picoCTF 32)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/magikarp-ground-mission-picoctf-32/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/magikarp-ground-mission-picoctf-32/</guid>
+      <description>Challenge Author: SYREAL&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Do you know how to move between directories and read files in the shell?&#xA;Process / Notes Start the challenge instance ssh into the container ls to open the session There&amp;rsquo;s a text file with the beginning of the flag + directions to part 2 of 3 ls -la to check for anything hidden &amp;ndash;&amp;gt; nothing there cat the first part &amp;ndash;&amp;gt; we have the first part of the flag cat the instructions &amp;ndash;&amp;gt; tells us to go to the root directory &amp;lsquo;/&amp;rsquo; In the root, we have part 2 of 3 of the instructions and the second part of the flag cat the instructions &amp;ndash;&amp;gt; tells us to go to the home directory &amp;lsquo;~&amp;rsquo; cd ~ We have the last part of the flag The flag is assembled!</description>
+    </item>
     <item>
       <title>convertme.py (picoCTF 31)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/convertme-py-picoctf-31/</link>
