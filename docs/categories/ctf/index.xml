@@ -6,8 +6,15 @@
     <description>Recent content in CTF on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cookies (picoCTF 36)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/cookies-picoctf-36/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/cookies-picoctf-36/</guid>
+      <description>Challenge Author: MADSTACKS&#xA;Category: Web Exploitation&#xA;Difficulty: Easy&#xA;Description Who doesn&amp;rsquo;t lobe cookies? Try to figure out the best one&#xA;Process / Notes Follow the http link Enter a cookie name? Chocolate chip &amp;ndash;&amp;gt; &amp;ldquo;That is a good cookie! Not very special though&amp;hellip;&amp;rdquo; Check the page source to see if the answer is there Didn&amp;rsquo;t find anything in the source code or nested JavaScript Testing different things At 20:50 in, checking what to do In the inspector, going all the way over to &amp;ldquo;Application&amp;rdquo;, there&amp;rsquo;s a cookies tab under &amp;ldquo;Storage&amp;rdquo; - you can change the value across from name Changing that value and reloading the page will display different cookie names When you enter the value 18 in the box, it prints the flag 10 From the tutorial: &amp;ldquo;It will store info on your computer, then you can alter those values, refresh the page, and it will use those values INSTEAD of the ones it gave you initially.</description>
+    </item>
     <item>
       <title>Wave a Flag (picoCTF 35)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/wave-a-flag-picoctf-35/</link>
