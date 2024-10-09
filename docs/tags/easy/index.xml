@@ -6,8 +6,15 @@
     <description>Recent content in Easy on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Wrangling (picoCTF 37)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/python-wrangling-picoctf-37/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/python-wrangling-picoctf-37/</guid>
+      <description>Challenge Author: SYREAL&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Python scripts are invoked kind of like programs in the Terminal&amp;hellip; Can you run this Python script using this password to get the flag?&#xA;Process / Notes Running in the web-shell cat ende.py &amp;ndash;&amp;gt; grabbing some system arguments, probably need to grab the pw.txt and flag.txt.en to fill those out Looks like there are specific options for each of our arguments Going to check those with the -h flag after I cat the other two Password is a long mess - looks like hex Flag is really a long encoded mess - glad we have the program Ran python ende.</description>
+    </item>
     <item>
       <title>Cookies (picoCTF 36)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/cookies-picoctf-36/</link>
