@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.129.0">
+
+
+<title>Scavenger Hung (picoCTF 39) - The Arboreal Repository</title>
+<meta property="og:title" content="Scavenger Hung (picoCTF 39) - The Arboreal Repository">
+
+
+  <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/arborealrepository/css/fonts.css" media="all">
+<link rel="stylesheet" href="/arborealrepository/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/arborealrepository/images/miquella.png"
+         width="150"
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/arborealrepository/">Home</a></li>
+    
+    <li><a href="/arborealrepository/about/">About</a></li>
+    
+    <li><a href="/arborealrepository/post/">Post</a></li>
+    
+    <li><a href="/arborealrepository/projects/">Projects</a></li>
+    
+    <li><a href="/arborealrepository/ctf/">CTF</a></li>
+    
+    <li><a href="/arborealrepository/notes/">Notes</a></li>
+    
+    <li><a href="/arborealrepository/future/">Future</a></li>
+    
+    <li><a href="/arborealrepository/recipes/">Recipes</a></li>
+    
+    <li><a href="https://github.com/hedeenza">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">Scavenger Hung (picoCTF 39)</h1>
+
+    
+
+    <div class="article-content">
+      
+      <p>Challenge Author: MADSTACKS</p>
+<p>Category: Web Exploitation</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>There is some interesting information hidden around this site. Can you find it?</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li>Open site</li>
+<li>Two tabs - how and what</li>
+<li>How = liking the website; what = html, css, JS were used to make the site</li>
+<li>Examine the source code</li>
+<li>First part of the flag in some &lt;!-&gt; text toward the bottom</li>
+<li>Remembering to check the embedded css and JS, will check those at the top</li>
+<li>Another part of the flag in the css</li>
+<li>Seemingly nothing of note in the JS</li>
+<li>Inspector to see about running the JS</li>
+<li>No wait, the clue is &ldquo;how can I keep google from indexing my website?&rdquo; - the robots.txt!</li>
+<li>Adding &lsquo;/robots.txt&rsquo; to the url got me the third part of the flag</li>
+<li>Next hint is that it&rsquo;s an apache server</li>
+<li>Reading how to interact with an apache server and nothing&rsquo;s coming of it</li>
+<li>At 18:40 looking up what to do next in the challenge</li>
+<li>add &lsquo;/.htaccess&rsquo; to the url! Definitely wouldn&rsquo;t have figured that out by chance</li>
+<li>Next clue is about making websites on their mac because they can store a lot of information</li>
+<li>Checking the storage in the inspector</li>
+<li>Nothing there</li>
+<li>From the walk-through, it&rsquo;s actually under another url change to &lsquo;/.DS_Store&rsquo;</li>
+<li>That contained the last part of the flag</li>
+</ol>
+<p><strong>22 minutes 23 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Understand how to access the page source and the embedded css and JS</li>
+<li>Understand various endings to urls including <a href="https://en.wikipedia.org/wiki/Robots.txt"><code>/robots.txt</code></a>, <a href="https://httpd.apache.org/docs/current/howto/htaccess.html"><code>/.htaccess</code></a>, and <a href="https://en.wikipedia.org/wiki/.DS_Store"><code>/.DS_Store</code></a></li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://github.com/yihui/hugo-lithium" class="footer-links-kudos">Made with <img src="/arborealrepository/images/miquella.png" alt="Img link to Hugo-Lithium website" width="22" height="22"></a>
+          </li>
+        </ul>
+	<ul class="footer-links-quote">
+	  <li> 
+	    <a href="https://www.youtube.com/watch?v=CrtoyB2fcMI&t=2283s">"You can hold all the knowledge in the world. But if it dies with you, it doesn't matter."</a>
+          </li>
+	</ul>
+	<ul class="footer-links-attribution">
+	  <li> 
+	    <a> -- Marisha Ray as Patia Por'co, Critical Role - Exandria Unlimited: Calamity</a>
+          </li>
+	</ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  
+
+
+  </body>
+</html>
+
