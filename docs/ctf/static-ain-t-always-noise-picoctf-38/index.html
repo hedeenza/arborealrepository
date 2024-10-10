@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.129.0">
 
 
-<title>Fig Balsamic Dressing - The Arboreal Repository</title>
-<meta property="og:title" content="Fig Balsamic Dressing - The Arboreal Repository">
+<title>Static ain&#39;t always noise (picoCTF 38) - The Arboreal Repository</title>
+<meta property="og:title" content="Static ain&#39;t always noise (picoCTF 38) - The Arboreal Repository">
 
 
   <link href='https://hedeenza.github.io/arborealrepository/ar-icon.ico' rel='icon' type='image/x-icon'/>
@@ -70,66 +70,34 @@
   <article class="article">
     
 
-    <h1 class="article-title">Fig Balsamic Dressing</h1>
+    <h1 class="article-title">Static ain&#39;t always noise (picoCTF 38)</h1>
 
     
 
     <div class="article-content">
       
-      <script src="https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/index_files/kePrint/kePrint.js"></script>
-<link href="https://hedeenza.github.io/arborealrepository/recipes/fig-balsamic-dressing/index_files/lightable/lightable.css" rel="stylesheet" />
-<p>by Fresh Corner Market (University of Oregon)</p>
-<h1 id="ingredients">Ingredients</h1>
-<table class="table" style="margin-left: auto; margin-right: auto;">
- <thead>
-<tr><th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Yields 2 Cups</div></th></tr>
-  <tr>
-   <th style="text-align:left;"> Ingredient </th>
-   <th style="text-align:right;"> Amount </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Soaked Black Mission Figs </td>
-   <td style="text-align:right;"> 10 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Balsamic Vinegar </td>
-   <td style="text-align:right;"> 1/3 Cup </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Olive Oil </td>
-   <td style="text-align:right;"> 1 Cup </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Black Pepper </td>
-   <td style="text-align:right;"> 1/2 tsp </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Salt </td>
-   <td style="text-align:right;"> 1 tsp </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Lemon Juice </td>
-   <td style="text-align:right;"> 1 tsp </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Dijon Mustard </td>
-   <td style="text-align:right;"> 1 Tbsp </td>
-  </tr>
-</tbody>
-</table>
-<h1 id="preparation">Preparation</h1>
-<ol start="0">
-<li>
-<p>Pre-soak Black Mission Figs in 1 cup of water for 2 hours, then reserve the water for later.</p>
-</li>
-<li>
-<p>Blend all ingredients until smooth, starting slow and adding reserved water if necessary.</p>
-</li>
-<li>
-<p>Should be creamy and thick.</p>
-</li>
+      <p>Challenge Author: SYREAL</p>
+<p>Category: General Skills</p>
+<p>Difficulty: Easy</p>
+<h1 id="description">Description</h1>
+<p>Can you look at the data in this binary: static? This BASH script might help!</p>
+<h1 id="process--notes">Process / Notes</h1>
+<ol>
+<li><code>wget</code> the items</li>
+<li><code>file</code> shows static is also an ELF 64-bit LSB pie executable</li>
+<li><code>file</code> shows ltdis.sh is a BASH script</li>
+<li><code>cat ltdis.sh</code></li>
+<li>Shows the bash script checks for the presence of the binary file and runs <code>objdump -Dj .text</code> to disassemble all of the file, then only print out the &ldquo;.text&rdquo; sections.</li>
+<li>Need to make the BASH script executable, then run the &ldquo;static&rdquo; through the bash script by listing the file after the bash script</li>
+<li><code>cat</code> the newly created file</li>
+<li>Lots of stuff in there, but one of the items was the flag!</li>
+</ol>
+<p><strong>6 minutes 14 seconds to complete</strong></p>
+<h1 id="hints">Hints</h1>
+<h1 id="core-lessons">Core Lessons</h1>
+<ol>
+<li>Understand how to <code>cat</code> a BASH file to assess its operation</li>
+<li>Understand enough of how <code>objdump</code> works with binary files that you understand how the command is interacting with the binary</li>
 </ol>
 
     </div>

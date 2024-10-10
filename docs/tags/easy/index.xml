@@ -6,8 +6,15 @@
     <description>Recent content in Easy on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static ain&#39;t always noise (picoCTF 38)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/static-ain-t-always-noise-picoctf-38/</link>
+      <pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/static-ain-t-always-noise-picoctf-38/</guid>
+      <description>Challenge Author: SYREAL&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Can you look at the data in this binary: static? This BASH script might help!&#xA;Process / Notes wget the items file shows static is also an ELF 64-bit LSB pie executable file shows ltdis.sh is a BASH script cat ltdis.sh Shows the bash script checks for the presence of the binary file and runs objdump -Dj .text to disassemble all of the file, then only print out the &amp;ldquo;.</description>
+    </item>
     <item>
       <title>Python Wrangling (picoCTF 37)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/python-wrangling-picoctf-37/</link>
