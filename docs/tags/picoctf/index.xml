@@ -6,8 +6,15 @@
     <description>Recent content in PicoCTF on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/tags/picoctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obedient Cat (picoCTF 40)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/obedient-cat-picoctf-40/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/obedient-cat-picoctf-40/</guid>
+      <description>Challenge Author: SYREAL&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description This file has a flag in plain sight (aka &amp;lsquo;in-the-clear&amp;rsquo;)&#xA;Process / Notes wget the flag cat the flag file - and it&amp;rsquo;s there! 1 minutes 24 seconds to complete&#xA;Hints Core Lessons Understand how to retrieve a file with wget Understand how to read a file&amp;rsquo;s contents with cat </description>
+    </item>
     <item>
       <title>Scavenger Hung (picoCTF 39)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/scavenger-hung-picoctf-39/</link>
