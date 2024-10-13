@@ -2,35 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hedeenza.github.io/arborealrepository/ctf/2warm-picoctf-42/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/categories/</loc>
-    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/ctf/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/easy/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/general-skills/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hedeenza.github.io/arborealrepository/</loc>
+    <lastmod>2024-10-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/tags/cryptography/</loc>
     <lastmod>2024-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/categories/ctf/</loc>
-    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/ctf/</loc>
-    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/easy/</loc>
-    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/mod-26-picoctf-41/</loc>
     <lastmod>2024-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/picoctf/</loc>
-    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/</loc>
-    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/</loc>
-    <lastmod>2024-10-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hedeenza.github.io/arborealrepository/tags/general-skills/</loc>
-    <lastmod>2024-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hedeenza.github.io/arborealrepository/ctf/obedient-cat-picoctf-40/</loc>
     <lastmod>2024-10-11T00:00:00+00:00</lastmod>

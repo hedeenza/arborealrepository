@@ -6,8 +6,15 @@
     <description>Recent content in Ctfs on The Arboreal Repository</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hedeenza.github.io/arborealrepository/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2Warm (picoCTF 42)</title>
+      <link>https://hedeenza.github.io/arborealrepository/ctf/2warm-picoctf-42/</link>
+      <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hedeenza.github.io/arborealrepository/ctf/2warm-picoctf-42/</guid>
+      <description>Challenge Author: SANJAY C / DANNY TUNITIS&#xA;Category: General Skills&#xA;Difficulty: Easy&#xA;Description Can you convert the number 42 (base 10) to binary (base 2)?&#xA;Process / Notes 32 is the largest base 2 number that fits in 42 Then 8, leaving 2 left 32 is 2 to the 5th power, 8 is 2 to the 3rd power, and 2 is 2 to the 1st power So&amp;hellip; 101010 Entered in the flag format and it was correct!</description>
+    </item>
     <item>
       <title>Mod 26 (picoCTF 41)</title>
       <link>https://hedeenza.github.io/arborealrepository/ctf/mod-26-picoctf-41/</link>
